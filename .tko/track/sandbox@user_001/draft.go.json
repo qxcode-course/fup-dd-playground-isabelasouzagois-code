@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-10_17-20-59",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -33,16 +33,17 @@\n ain() %7B%0A\n+ \n    fmt.P\n@@ -54,17 +54,17 @@\n ln(%22\n-ola mundo\n+atividade\n %22)%0A%7D\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-10_17-31-47",
+            "content": "@@ -39,39 +39,8 @@\n ) %7B%0A\n-    var num1,num2 float64%0A    %0A\n    f\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-10_17-41-24",
+            "content": "@@ -44,25 +44,24 @@\n    var num1,\n- \n num2 float64\n@@ -65,18 +65,12 @@\n t64%0A\n-fmt.Scan()\n+    \n %0A   \n@@ -96,22 +96,8 @@\n ndo%22\n-, num1, num2)  \n+)\n %0A%7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-10_17-44-18",
+            "content": "@@ -75,29 +75,8 @@\n can(\n-&num1)%0Afmt.Scan(&num2\n )%0A  \n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-10_17-46-46",
+            "content": "@@ -80,17 +80,26 @@\n num1\n-,\n+)%0Afmt.Scan(\n &num2)%0A\n-%0A\n    f\n@@ -113,13 +113,27 @@\n tln(\n+%22ola mundo%22, \n num1\n-+\n+, \n num2\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-10_17-57-38",
+            "content": "@@ -108,9 +108,9 @@\n num1\n--\n++\n num2\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-10_17-58-36",
+            "content": "@@ -108,9 +108,9 @@\n num1\n-+\n+-\n num2\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-10_17-58-50",
+            "content": "@@ -115,34 +115,8 @@\n m2) \n-%0A   fmt.Println(num1-num2)\n  %0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-10_18-01-23",
+            "content": "@@ -115,11 +115,34 @@\n m2) %0A   \n+fmt.Println(num1-num2) \n %0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-10_18-01-36",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    var num1, num2 float64\nfmt.Scan(&num1,&num2)\n\n   fmt.Println(num1+num2) \n   \n}\n",
+            "lines": "11"
+        }
+    ]
+}
