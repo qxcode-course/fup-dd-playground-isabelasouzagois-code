@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-16_00-11-25",
+            "content": "@@ -37,357 +37,8 @@\n ) %7B%0A\n-    var p1,p2,p3 float64%0A    var vp1,vp2,vp3 float64%0A    var dinheiro float64%0A    fmt.Scan(p1)%0A    fmt.Scan(p2)%0A    fmt.Scan(p3)%0A    fmt.Scan(vp1)%0A    fmt.Scan(vp2)%0A    fmt.Scan(vp3)%0A    fmt.Scan(dinheiro)%0A    vp1 = vp1 * p1%0A    vp2 = vp2 * p2%0A    vp3 = vp3 * p3%0A    var troco float64 =  dinheiro - (vp1 + vp2 + vp3)  %0A    fmt.Printf(%22%25.2f%22, troco)%0A\n     \n@@ -61,9 +61,8 @@\n ode%22)%0A%7D%0A\n- \n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-16_01-11-34",
+            "content": "@@ -386,12 +386,33 @@\n co)%0A    \n+fmt.Println(%22qxcode%22)\n %0A%7D%0A \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-03-16_01-11-45",
+            "content": "@@ -124,17 +124,16 @@\n mt.Scan(\n-&\n p1)%0A    \n@@ -141,17 +141,16 @@\n mt.Scan(\n-&\n p2)%0A    \n@@ -158,17 +158,16 @@\n mt.Scan(\n-&\n p3)%0A    \n@@ -175,17 +175,16 @@\n mt.Scan(\n-&\n vp1)%0A   \n@@ -193,17 +193,16 @@\n mt.Scan(\n-&\n vp2)%0A   \n@@ -211,17 +211,16 @@\n mt.Scan(\n-&\n vp3)%0A   \n@@ -233,9 +233,8 @@\n can(\n-&\n dinh\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-03-16_01-14-21",
+            "content": "@@ -383,10 +383,8 @@\n %25.2f\n-%5Cn\n %22, t\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-03-16_01-14-39",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var p1,p2,p3 float64\n    var vp1,vp2,vp3 float64\n    var dinheiro float64\n    fmt.Scan(&p1)\n    fmt.Scan(&p2)\n    fmt.Scan(&p3)\n    fmt.Scan(&vp1)\n    fmt.Scan(&vp2)\n    fmt.Scan(&vp3)\n    fmt.Scan(&dinheiro)\n    vp1 = vp1 * p1\n    vp2 = vp2 * p2\n    vp3 = vp3 * p3\n    var troco float64 =  dinheiro - (vp1 + vp2 + vp3)  \n    fmt.Printf(\"%.2f\\n\", troco)\n    \n}\n ",
+            "lines": "21"
+        }
+    ]
+}

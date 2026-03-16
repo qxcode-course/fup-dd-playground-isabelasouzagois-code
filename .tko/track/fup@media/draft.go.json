@@ -1,0 +1,59 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-15_23-53-58",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,22 +37,26 @@\n ) %7B%0A\n-%09\n+    \n var a\n+ \n , b int%0A\n %09fmt\n@@ -51,17 +51,20 @@\n , b int%0A\n-%09\n+    \n fmt.Scan\n@@ -68,17 +68,20 @@\n can(&a)%0A\n-%09\n+    \n fmt.Scan\n@@ -85,17 +85,20 @@\n can(&b)%0A\n-%09\n+    \n var medi\n@@ -108,22 +108,23 @@\n nt =\n- \n (\n+ \n a + b)\n- / 2%0A%09\n+/2%0A    \n fmt.\n@@ -135,14 +135,21 @@\n tln(\n+%22\n media\n+%22\n )%0A\n+     \n %0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-15_23-55-25",
+            "content": "@@ -45,23 +45,19 @@\n ar a, b \n-float64\n+int\n %0A%09fmt.Sc\n@@ -92,15 +92,11 @@\n dia \n-float64\n+int\n  = (\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-15_23-56-35",
+            "content": "@@ -50,18 +50,18 @@\n  b float\n-32\n+64\n %0A%09fmt.Sc\n@@ -101,10 +101,10 @@\n loat\n-32\n+64\n  = (\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-15_23-57-21",
+            "content": "@@ -131,15 +131,8 @@\n tln(\n-%22%25.1f%22,\n medi\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-15_23-58-33",
+            "content": "@@ -131,19 +131,20 @@\n tln(\n-media, %22.0%22\n+%22%25.1f%22,media\n )%0A%0A%7D\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-15_23-59-25",
+            "content": "@@ -133,16 +133,17 @@\n n(media,\n+ \n %22.0%22)%0A%0A%7D\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-15_23-59-37",
+            "content": "@@ -132,13 +132,18 @@\n ln(media\n+,%22.0%22\n )%0A%0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-15_23-59-54",
+            "content": "@@ -123,23 +123,16 @@\n fmt.\n-Sp\n+P\n rint\n-f(%22%25.1f%22,\n+ln(\n medi\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-16_00-01-27",
+            "content": "@@ -123,9 +123,10 @@\n fmt.\n-P\n+Sp\n rint\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-16_00-03-49",
+            "content": "@@ -135,10 +135,8 @@\n %25.1f\n-%5Cn\n %22,me\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-16_00-07-24",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar a, b float32\n\tfmt.Scan(&a)\n\tfmt.Scan(&b)\n\tvar media float32 = (a + b) / 2\n\tfmt.Printf(\"%.1f\\n\",media)\n\n}\n",
+            "lines": "12"
+        }
+    ]
+}

@@ -1,9 +1,9 @@
 {
     "patches": [
         {
-            "label": "2026-03-10_18-13-10",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"qxcode\")\n}\n",
-            "lines": "5"
+            "label": "2026-03-15_23-53-37",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main (){\n\tvar a,b int\n  fmt.Scan(&a)\n  fmt.Scan(&b)\n  var div int = a/b\n  var resto int = a%b\n  fmt.Println(div,resto)\n\n}\n ",
+            "lines": "14"
         }
     ]
 }
