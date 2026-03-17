@@ -22,8 +22,13 @@
         },
         {
             "label": "2026-03-16_01-14-39",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var p1,p2,p3 float64\n    var vp1,vp2,vp3 float64\n    var dinheiro float64\n    fmt.Scan(&p1)\n    fmt.Scan(&p2)\n    fmt.Scan(&p3)\n    fmt.Scan(&vp1)\n    fmt.Scan(&vp2)\n    fmt.Scan(&vp3)\n    fmt.Scan(&dinheiro)\n    vp1 = vp1 * p1\n    vp2 = vp2 * p2\n    vp3 = vp3 * p3\n    var troco float64 =  dinheiro - (vp1 + vp2 + vp3)  \n    fmt.Printf(\"%.2f\\n\", troco)\n    \n}\n ",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,21 +37,22 @@\n ) %7B%0A\n-%09\n+    \n var p1,\n- \n p2,\n- \n p3 f\n@@ -62,17 +62,20 @@\n t64%0A\n-%09\n+    \n var vp1,\n  vp2\n@@ -74,14 +74,12 @@\n vp1,\n- \n vp2,\n- \n vp3 \n@@ -86,17 +86,20 @@\n float64%0A\n-%09\n+    \n var dinh\n@@ -111,17 +111,20 @@\n float64%0A\n-%09\n+    \n fmt.Scan\n@@ -125,25 +125,28 @@\n t.Scan(&p1)%0A\n-%09\n+    \n fmt.Scan(&p2\n@@ -143,25 +143,28 @@\n t.Scan(&p2)%0A\n-%09\n+    \n fmt.Scan(&p3\n@@ -161,25 +161,28 @@\n t.Scan(&p3)%0A\n-%09\n+    \n fmt.Scan(&vp\n@@ -184,17 +184,20 @@\n n(&vp1)%0A\n-%09\n+    \n fmt.Scan\n@@ -203,17 +203,20 @@\n n(&vp2)%0A\n-%09\n+    \n fmt.Scan\n@@ -218,25 +218,28 @@\n .Scan(&vp3)%0A\n-%09\n+    \n fmt.Scan(&di\n@@ -246,17 +246,20 @@\n nheiro)%0A\n-%09\n+    \n vp1 = vp\n@@ -265,17 +265,20 @@\n p1 * p1%0A\n-%09\n+    \n vp2 = vp\n@@ -284,17 +284,20 @@\n p2 * p2%0A\n-%09\n+    \n vp3 = vp\n@@ -303,17 +303,20 @@\n p3 * p3%0A\n-%09\n+    \n var troc\n@@ -326,16 +326,17 @@\n loat64 =\n+ \n  dinheir\n@@ -360,10 +360,15 @@\n vp3)\n-%0A%09\n+  %0A    \n fmt.\n@@ -395,7 +395,12 @@\n co)%0A\n+    \n %0A%7D%0A\n+ \n",
             "lines": "21"
+        },
+        {
+            "label": "2026-03-16_18-22-40",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar p1, p2, p3 float64\n\tvar vp1, vp2, vp3 float64\n\tvar dinheiro float64\n\tfmt.Scan(&p1)\n\tfmt.Scan(&p2)\n\tfmt.Scan(&p3)\n\tfmt.Scan(&vp1)\n\tfmt.Scan(&vp2)\n\tfmt.Scan(&vp3)\n\tfmt.Scan(&dinheiro)\n\tvp1 = vp1 * p1\n\tvp2 = vp2 * p2\n\tvp3 = vp3 * p3\n\tvar troco float64 = dinheiro - (vp1 + vp2 + vp3)\n\tfmt.Printf(\"%.2f\\n\", troco)\n\n}\n",
+            "lines": "22"
         }
     ]
 }

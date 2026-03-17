@@ -23,3 +23,15 @@
 2026-03-16 01:20:29, SELF, v:1, k:fup@tres, self:1, rate:100, study:20, friend:sim,do professor , guided:1
 2026-03-16 01:20:30, MOVE, v:1, k:fup@tres, mode:PICK
 2026-03-16 01:20:33, MOVE, v:1, k:fup@tres, mode:BACK
+2026-03-16 17:50:09, MOVE, v:1, k:fup@resto, mode:PICK
+2026-03-16 17:50:13, EXEC, v:1, k:fup@resto, mode:FULL, rate:100
+2026-03-16 17:50:37, MOVE, v:1, k:fup@resto, mode:BACK
+2026-03-16 17:52:31, MOVE, v:1, k:fup@segundos, mode:DOWN
+2026-03-16 17:52:34, MOVE, v:1, k:fup@segundos, mode:PICK
+2026-03-16 17:52:36, EXEC, v:1, k:fup@segundos, mode:FULL, rate:0, size:5
+2026-03-16 17:52:43, EXEC, v:1, k:fup@segundos, mode:FULL, rate:0
+2026-03-16 18:22:31, MOVE, v:1, k:fup@segundos, mode:BACK
+2026-03-16 18:22:39, MOVE, v:1, k:fup@sobrou, mode:PICK
+2026-03-16 18:22:40, EXEC, v:1, k:fup@sobrou, mode:FULL, rate:100, size:22
+2026-03-16 18:22:42, EXEC, v:1, k:fup@sobrou, mode:FULL, rate:100
+2026-03-16 18:26:37, MOVE, v:1, k:fup@sobrou, mode:BACK
