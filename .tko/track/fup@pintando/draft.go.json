@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-21_13-58-02",
+            "content": "@@ -23,24 +23,8 @@\n mt%22%0A\n- import  %22math%22%0A\n func\n@@ -41,205 +41,28 @@\n     \n-var lado1, lado2, lado3 ,p,a float64%0A    fmt.Scan(&lado1,&lado2,&lado3)%0A    p = (lado1+ lado2+ lado3)/2%0A    a = math.Sqrt(p*(p-lado1)* (p-lado2)* (p-lado3))%0A    fmt.Printf(%22%25.2f%22 lado1 ,lado2,lado3\n+fmt.Println(%22qxcode%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-21_14-21-26",
+            "content": "@@ -231,12 +231,31 @@\n f(%22%25.2f%22\n+ lado1 ,lado2,lado3\n )%0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-21_14-21-44",
+            "content": "@@ -234,13 +234,9 @@\n %25.2f\n-%5Cn%22 a\n+%22\n )%0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-21_14-22-26",
+            "content": "@@ -233,15 +233,14 @@\n %22%25.2f%5Cn%22\n-,\n  a)%0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-21_14-22-55",
+            "content": "package main\nimport \"fmt\"\n import  \"math\"\nfunc main() {\n    var lado1, lado2, lado3 ,p,a float64\n    fmt.Scan(&lado1,&lado2,&lado3)\n    p = (lado1+ lado2+ lado3)/2\n    a = math.Sqrt(p*(p-lado1)* (p-lado2)* (p-lado3))\n    fmt.Printf(\"%.2f\\n\", a)\n}\n",
+            "lines": "10"
+        }
+    ]
+}

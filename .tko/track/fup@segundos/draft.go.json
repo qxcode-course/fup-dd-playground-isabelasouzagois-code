@@ -2,8 +2,43 @@
     "patches": [
         {
             "label": "2026-03-16_17-52-36",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"qxcode\")\n}\n",
+            "content": "@@ -41,224 +41,28 @@\n     \n-var hora , minutos , segundos int%0A    fmt.Scan(&segundos) %0A    hora = segundos * 60 %0A    hora = hora/3600%0A    minutos = (hora %25 3600)/60%0A    segundos = (hora %25 3600 )%2560%0A    fmt.Println(hora, %22:%22,minutos,%22:%22,segundos\n+fmt.Println(%22qxcode%22\n )%0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-03-21_13-13-56",
+            "content": "@@ -120,18 +120,34 @@\n dos \n-/3600\n+* 60 \n %0A    \n+hora = hora/3600\n %0A   \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-21_13-15-47",
+            "content": "@@ -142,24 +142,20 @@\n utos = (\n-segundos\n+hora\n  %25 3600)\n@@ -173,23 +173,30 @@\n undos = \n-minutos\n+(hora %25 3600 )\n %2560%0A    \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-21_13-17-53",
+            "content": "@@ -180,26 +180,16 @@\n os =\n-(segundos %25 3600) \n+ minutos\n %2560%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-21_13-20-12",
+            "content": "@@ -218,43 +218,26 @@\n tln(\n-%0A        %22%25d:%25d:%25d%22, \n hora, \n+%22:%22,\n minutos,\n  seg\n@@ -232,25 +232,28 @@\n minutos,\n- \n+%22:%22,\n segundos\n %0A    )%0A%7D\n@@ -244,17 +244,12 @@\n segundos\n-%0A    \n )%0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-21_13-21-23",
+            "content": "@@ -214,16 +214,25 @@\n Println(\n+%0A        \n %22%25d:%25d:%25\n@@ -258,12 +258,17 @@\n segundos\n+%0A    \n )%0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-21_13-21-51",
+            "content": "@@ -211,17 +211,18 @@\n mt.Print\n-f\n+ln\n (%22%25d:%25d:\n@@ -227,10 +227,8 @@\n d:%25d\n-%5Cn\n %22, h\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-21_13-22-12",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var hora , minutos , segundos int\n    fmt.Scan(&segundos) \n    hora = segundos /3600\n    \n    minutos = (segundos % 3600)/60\n    segundos =(segundos % 3600) %60\n    fmt.Printf(\"%d:%d:%d\\n\", hora, minutos, segundos)\n}\n",
+            "lines": "11"
         }
     ]
 }

@@ -1,0 +1,36 @@
+2026-03-21 12:42:55, MOVE, v:1, k:fup@segundos, mode:PICK
+2026-03-21 12:43:11, EXEC, v:1, k:fup@segundos, mode:FULL, rate:0
+2026-03-21 12:43:12, EXEC, v:1, k:fup@segundos, mode:FULL, rate:0
+2026-03-21 13:13:56, EXEC, v:1, k:fup@segundos, mode:FULL, rate:0, size:11
+2026-03-21 13:15:47, EXEC, v:1, k:fup@segundos, mode:FULL, rate:0, size:11
+2026-03-21 13:17:53, EXEC, v:1, k:fup@segundos, mode:FULL, rate:0, size:11
+2026-03-21 13:20:12, EXEC, v:1, k:fup@segundos, mode:FULL, rate:0, size:11
+2026-03-21 13:21:23, EXEC, v:1, k:fup@segundos, mode:FULL, size:13, fail:COMP
+2026-03-21 13:21:51, EXEC, v:1, k:fup@segundos, mode:FULL, rate:0, size:11
+2026-03-21 13:22:12, EXEC, v:1, k:fup@segundos, mode:FULL, rate:100, size:11
+2026-03-21 13:24:57, MOVE, v:1, k:fup@segundos, mode:BACK
+2026-03-21 13:25:48, MOVE, v:1, k:fup@celsius, mode:DOWN
+2026-03-21 13:25:51, MOVE, v:1, k:fup@celsius, mode:PICK
+2026-03-21 13:25:53, EXEC, v:1, k:fup@celsius, mode:FULL, rate:0, size:5
+2026-03-21 13:49:30, EXEC, v:1, k:fup@celsius, mode:FULL, rate:0, size:7
+2026-03-21 13:50:41, EXEC, v:1, k:fup@celsius, mode:FULL, size:8, fail:COMP
+2026-03-21 13:51:14, EXEC, v:1, k:fup@celsius, mode:FULL, rate:0, size:8
+2026-03-21 13:52:27, EXEC, v:1, k:fup@celsius, mode:FULL, size:8, fail:COMP
+2026-03-21 13:52:33, EXEC, v:1, k:fup@celsius, mode:FULL, rate:0, size:8
+2026-03-21 13:53:40, EXEC, v:1, k:fup@celsius, mode:FULL, size:8, fail:COMP
+2026-03-21 13:54:18, EXEC, v:1, k:fup@celsius, mode:FULL, rate:0, size:8
+2026-03-21 13:55:31, EXEC, v:1, k:fup@celsius, mode:FULL, rate:0, size:8
+2026-03-21 13:56:11, EXEC, v:1, k:fup@celsius, mode:FULL, rate:100, size:9
+2026-03-21 13:57:45, MOVE, v:1, k:fup@celsius, mode:BACK
+2026-03-21 13:57:57, MOVE, v:1, k:fup@pintando, mode:DOWN
+2026-03-21 13:57:59, MOVE, v:1, k:fup@pintando, mode:PICK
+2026-03-21 13:58:02, EXEC, v:1, k:fup@pintando, mode:FULL, rate:0, size:5
+2026-03-21 14:21:26, EXEC, v:1, k:fup@pintando, mode:FULL, size:10, fail:COMP
+2026-03-21 14:21:44, EXEC, v:1, k:fup@pintando, mode:FULL, size:10, fail:COMP
+2026-03-21 14:22:26, EXEC, v:1, k:fup@pintando, mode:FULL, size:10, fail:COMP
+2026-03-21 14:22:55, EXEC, v:1, k:fup@pintando, mode:FULL, rate:100, size:10
+2026-03-21 14:28:17, MOVE, v:1, k:fup@pintando, mode:BACK
+2026-03-21 14:28:48, MOVE, v:1, k:fup@bala, mode:DOWN
+2026-03-21 14:28:50, MOVE, v:1, k:fup@bala, mode:PICK
+2026-03-21 14:28:53, EXEC, v:1, k:fup@bala, mode:FULL, rate:0, size:5
+2026-03-21 14:57:12, MOVE, v:1, k:fup@bala, mode:BACK

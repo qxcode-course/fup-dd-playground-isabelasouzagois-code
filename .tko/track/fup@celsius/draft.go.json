@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-21_13-25-53",
+            "content": "@@ -41,110 +41,28 @@\n     \n-var Celsius, fahrenheit float64%0A    fahrenheit = 1.8 * Celsius + 32%0A    fmt.Printf(%22%25.6f%5Cn%22,fahrenheit\n+fmt.Println(%22qxcode%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-21_13-49-30",
+            "content": "@@ -96,25 +96,20 @@\n 8 * \n-32%0A    fmt.Scan()\n+Celsius + 32\n %0A   \n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-21_13-50-41",
+            "content": "@@ -95,18 +95,8 @@\n .8 *\n- Celsius +\n  32%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-21_13-51-14",
+            "content": "@@ -108,10 +108,8 @@\n + 32\n-$$\n %0A   \n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-21_13-52-27",
+            "content": "@@ -104,16 +104,18 @@\n ius + 32\n+$$\n %0A    fmt\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-21_13-52-33",
+            "content": "@@ -77,22 +77,8 @@\n     \n-%0A    fmt.Scan(\n fahr\n@@ -104,16 +104,30 @@\n ius + 32\n+%0A    fmt.Scan(\n )%0A    fm\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-21_13-53-40",
+            "content": "@@ -73,16 +73,30 @@\n t64%0A    \n+%0A    fmt.Scan(\n fahrenhe\n@@ -122,23 +122,8 @@\n + 32\n-%0A    fmt.Scan( \n )%0A  \n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-21_13-54-18",
+            "content": "@@ -122,16 +122,8 @@\n can(\n-&Celsius\n  )%0A \n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-21_13-55-31",
+            "content": "@@ -76,36 +76,8 @@\n %0A   \n-%0A    fmt.Scan(&Celsius)%0A    \n  fah\n@@ -105,16 +105,40 @@\n us + 32%0A\n+    fmt.Scan(&Celsius )%0A\n     fmt.\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-21_13-56-11",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var Celsius, fahrenheit float64\n   \n    fmt.Scan(&Celsius)\n     fahrenheit = 1.8 * Celsius + 32\n    fmt.Printf(\"%.6f\\n\",fahrenheit)\n}\n",
+            "lines": "9"
+        }
+    ]
+}

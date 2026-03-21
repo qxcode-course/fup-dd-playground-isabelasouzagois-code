@@ -13,14 +13,17 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@repositorio-de-problemas
-- sandbox@student_sandbox_alias
-- fup@campanha-principal
-- fup@missão-operações
 - sandbox@student_sandbox_alias:00_rascunhos
+- fup@campanha-principal
+- sandbox@student_sandbox_alias
+- fup@repositorio-de-problemas
+- fup@missão-operações
 tasks:
   fup@resto: '{rate:100}'
   fup@sobrou: '{rate:100}'
+  fup@segundos: '{rate:100}'
+  fup@celsius: '{rate:100}'
+  fup@pintando: '{rate:100}'
 flags:
   painel: 0
   quests: 0
@@ -29,4 +32,4 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@pintando
+selected: fup@bala
