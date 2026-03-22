@@ -2,8 +2,23 @@
     "patches": [
         {
             "label": "2026-03-21_14-28-52",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"qxcode\")\n}\n",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,9 +37,12 @@\n ) %7B%0A\n-%09\n+    \n fmt.\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-03-22_18-49-40",
+            "content": "@@ -24,21 +24,8 @@\n mt%22%0A\n-import %22math%22\n %0Afun\n@@ -40,173 +40,28 @@\n  %7B%0A%09\n-var x1,y1,x2,y2 float64%0A%09fmt.Scan(&x1,&y1,&x2,&y2)%0A%09dx := x2-x1%0A%09dy := y2-y1%0A%09soma := dx * dx + dy *dy%0A%09distancia := math.Sqrt(soma) %0A%09fmt.Println(%22%25.2f%5Cn%22,distancia\n+fmt.Println(%22qxcode%22\n )%0A%7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-22_19-03-00",
+            "content": "@@ -193,17 +193,18 @@\n mt.Print\n-f\n+ln\n (%22%25.2f%5Cn\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-22_19-03-11",
+            "content": "package main\n\nimport \"fmt\"\nimport \"math\"\nfunc main() {\n\tvar x1,y1,x2,y2 float64\n\tfmt.Scan(&x1,&y1,&x2,&y2)\n\tdx := x2-x1\n\tdy := y2-y1\n\tsoma := dx * dx + dy *dy\n\tdistancia := math.Sqrt(soma) \n\tfmt.Printf(\"%.2f\\n\",distancia)\n}\n",
+            "lines": "13"
         }
     ]
 }

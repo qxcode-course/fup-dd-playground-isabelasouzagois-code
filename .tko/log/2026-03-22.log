@@ -1,0 +1,25 @@
+2026-03-22 18:49:36, MOVE, v:1, k:fup@bala, mode:PICK
+2026-03-22 18:49:40, EXEC, v:1, k:fup@bala, mode:FULL, rate:0, size:7
+2026-03-22 19:03:00, EXEC, v:1, k:fup@bala, mode:FULL, rate:0, size:13
+2026-03-22 19:03:11, EXEC, v:1, k:fup@bala, mode:FULL, rate:100, size:13
+2026-03-22 19:05:04, MOVE, v:1, k:fup@bala, mode:BACK
+2026-03-22 19:06:00, SELF, v:1, k:fup@bala, self:1, rate:100, friend:nao, concept:1
+2026-03-22 19:06:15, SELF, v:1, k:fup@pintando, self:1, rate:100, friend:nao
+2026-03-22 19:06:21, MOVE, v:1, k:fup@celsius, mode:PICK
+2026-03-22 19:06:24, MOVE, v:1, k:fup@celsius, mode:BACK
+2026-03-22 19:06:38, SELF, v:1, k:fup@celsius, self:1, rate:100, friend:nao
+2026-03-22 19:07:20, SELF, v:1, k:fup@segundos, self:1, rate:100, friend:sim,alec
+2026-03-22 19:07:28, MOVE, v:1, k:fup@sobrou, mode:PICK
+2026-03-22 19:07:30, MOVE, v:1, k:fup@sobrou, mode:BACK
+2026-03-22 19:07:56, SELF, v:1, k:fup@sobrou, self:1, rate:100, friend:nao
+2026-03-22 19:08:04, MOVE, v:1, k:fup@media, mode:PICK
+2026-03-22 19:08:06, MOVE, v:1, k:fup@media, mode:BACK
+2026-03-22 19:08:22, SELF, v:1, k:fup@media, self:1, friend:sim,alec
+2026-03-22 19:08:32, MOVE, v:1, k:fup@media, mode:PICK
+2026-03-22 19:08:34, EXEC, v:1, k:fup@media, mode:FULL, rate:100
+2026-03-22 19:08:37, MOVE, v:1, k:fup@media, mode:BACK
+2026-03-22 19:08:58, SELF, v:1, k:fup@resto, self:1, rate:100, friend:nao, guided:1
+2026-03-22 19:09:30, SELF, v:1, k:fup@tres, self:1, friend:nao, guided:1
+2026-03-22 19:09:34, MOVE, v:1, k:fup@tres, mode:PICK
+2026-03-22 19:09:35, EXEC, v:1, k:fup@tres, mode:FULL, rate:100
+2026-03-22 19:09:37, MOVE, v:1, k:fup@tres, mode:BACK

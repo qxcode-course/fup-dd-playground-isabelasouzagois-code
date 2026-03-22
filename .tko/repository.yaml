@@ -13,17 +13,20 @@ sources:
   quests: null
   tasks: null
 expanded:
-- sandbox@student_sandbox_alias:00_rascunhos
-- fup@campanha-principal
+- fup@missão-seleção-1
 - sandbox@student_sandbox_alias
 - fup@repositorio-de-problemas
-- fup@missão-operações
+- sandbox@student_sandbox_alias:00_rascunhos
+- fup@campanha-principal
 tasks:
-  fup@resto: '{rate:100}'
-  fup@sobrou: '{rate:100}'
-  fup@segundos: '{rate:100}'
-  fup@celsius: '{rate:100}'
-  fup@pintando: '{rate:100}'
+  fup@tres: '{self:1, rate:100, friend:nao, guided:1}'
+  fup@resto: '{self:1, rate:100, friend:nao, guided:1}'
+  fup@media: '{self:1, rate:100, friend:sim,alec}'
+  fup@sobrou: '{self:1, rate:100, friend:nao}'
+  fup@segundos: '{self:1, rate:100, friend:sim,alec}'
+  fup@celsius: '{self:1, rate:100, friend:nao}'
+  fup@pintando: '{self:1, rate:100, friend:nao}'
+  fup@bala: '{self:1, rate:100, friend:nao, concept:1}'
 flags:
   painel: 0
   quests: 0
@@ -32,4 +35,4 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@bala
+selected: fup@missão-seleção-1
