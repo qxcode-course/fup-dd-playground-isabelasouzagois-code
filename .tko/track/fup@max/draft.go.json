@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-25_17-56-39",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,219 +37,39 @@\n ) %7B%0A\n-%09var num1, num2 int%0A%09fmt.Scan(&num1, &num2)%0A%09maior := num1 - num2%0A%09if num1 %3E num2 %7B%0A%09%09//num1 %C3%A9 maior%0A%09%7D else if num1 %3C num2 %7B%0A        //num2 %C3%A9 maior%0A%09%7Delse num1=num2 %7B%0A     //s%C3%A3o iguais%0A    %7D%0A%0A%09fmt.Println(maior\n+    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-25_18-10-34",
+            "content": "@@ -125,25 +125,22 @@\n %7B%0A%09%09\n-fmt.Println(num1)\n+//num1 %C3%A9 maior\n %0A%09%7D \n@@ -171,25 +171,24 @@\n     \n-fmt.Println(num2)\n+  //num2 %C3%A9 maior\n %0A%09%7De\n@@ -210,27 +210,22 @@\n %0A   \n-fmt.Println(\n+  //s%C3%A3o \n iguais\n-)\n %0A   \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-25_18-12-20",
+            "content": "@@ -254,20 +254,13 @@\n tln(\n-%22s%C3%A3o iguais%22\n+maior\n )%0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-25_18-12-46",
+            "content": "@@ -195,16 +195,26 @@\n %0A%09%7Delse \n+num1=num2 \n %7B%0A   fmt\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-25_18-13-23",
+            "content": "@@ -225,8 +225,39 @@\n s)%0A    %7D\n+%0A%0A%09fmt.Println(%22s%C3%A3o iguais%22)%0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-25_18-15-28",
+            "content": "@@ -147,16 +147,18 @@\n %09%7D else \n+if\n  num1 %3C \n@@ -190,16 +190,22 @@\n num2)%0A%09%7D\n+else %7B\n %0A   fmt.\n@@ -216,16 +216,17 @@\n tln(\n-num2\n+iguais\n )%0A    %7D\n-%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-25_18-18-39",
+            "content": "@@ -148,16 +148,28 @@\n %7D else  \n+num1 %3C num2 \n %7B%0A      \n@@ -192,15 +192,32 @@\n )%0A%09%7D%0A   \n+fmt.Println(num2)\n %0A    %7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-25_18-19-19",
+            "content": "@@ -80,16 +80,36 @@\n &num2)%0A%09\n+maior := num1 - num2\n %0A%09if num\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-25_18-19-36",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar num1, num2 int\n\tfmt.Scan(&num1, &num2)\n\t\n\tif num1 > num2 {\n\t\tfmt.Println(num1)\n\t} else  {\n      fmt.Println(num2)\n\t}\n   \n    }\n",
+            "lines": "15"
+        }
+    ]
+}

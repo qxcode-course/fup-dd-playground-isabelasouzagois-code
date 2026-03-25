@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-25_18-20-55",
+            "content": "@@ -41,138 +41,35 @@\n     \n-var num1,num2 int%0A    fmt.Scan(&num1,&num2)%0A    if 5 ou 3 %7B%0A          fmt.Println(%22SIM%22)%0A    %7Delse%7B%0A        fmt.Scan(%22N%C3%82O%22)%0A    %7D%0A   \n+fmt.Println(%22Hello, World!%22)%0A%7D\n %0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-25_18-25-15",
+            "content": "@@ -94,10 +94,10 @@\n f 5 \n-==\n+ou\n  3 %7B\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-25_18-25-30",
+            "content": "@@ -92,25 +92,13 @@\n  if \n+5\n  \n-num1==5 %7C%7Cnum2\n ==\n+ \n 3 %7B%0A\n@@ -171,9 +171,8 @@\n   %7D%0A   %0A\n-%7D\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-25_18-27-13",
+            "content": "@@ -161,22 +161,19 @@\n     fmt.\n-Printl\n+Sca\n n(%22N%C3%82O%22)\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-25_18-27-41",
+            "content": "@@ -85,13 +85,8 @@\n m2)%0A\n-    %0A\n     \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-25_18-27-53",
+            "content": "@@ -81,16 +81,20 @@\n ,&num2)%0A\n+    \n %0A    if \n@@ -180,9 +180,9 @@\n n(%22N\n-A\n+%C3%82\n O%22)%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-25_18-28-27",
+            "content": "@@ -107,29 +107,9 @@\n %7Cnum\n-1==3 %7C%7Cnum2==5%7C%7Cnum2 \n+2\n ==3 \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-25_18-30-49",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var num1,num2 int\n    fmt.Scan(&num1,&num2)\n\n    if  num1==5 ||num1==3 ||num2==5||num2 ==3 {\n          fmt.Println(\"SIM\")\n    }else{\n        fmt.Println(\"NAO\")\n    }\n   \n}",
+            "lines": "13"
+        }
+    ]
+}
