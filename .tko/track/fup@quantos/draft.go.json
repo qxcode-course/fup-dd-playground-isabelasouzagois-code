@@ -1,0 +1,139 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-29_21-41-09",
+            "content": "@@ -41,112 +41,35 @@\n     \n-var com1,com2,com3 int%0A    fmt.Scan(&com1,&com2,&com3)%0A    if com1==com2==com3%7B%0A fmt.Println(2)%0A%7D%0A    %7D%0A   \n+fmt.Println(%22Hello, World!%22)%0A%7D\n %0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-29_21-50-36",
+            "content": "@@ -60,12 +60,11 @@\n om3 \n-bool\n+int\n %0A   \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-29_21-50-53",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -33,17 +33,20 @@\n ain() %7B%0A\n-%09\n+    \n var com1\n@@ -50,15 +50,13 @@\n om1,\n- \n com2,\n- \n com3\n@@ -61,17 +61,20 @@\n m3 bool%0A\n-%09\n+    \n fmt.Scan\n@@ -84,59 +84,47 @@\n om1,\n- \n &com2,\n- \n &com3)%0A\n-%09\n+    \n if com1\n- \n ==\n- \n com2\n- %7C%7Ccom1 \n ==\n- \n com3\n- \n %7B%0A\n-%09%09\n+ \n fmt.\n@@ -138,9 +138,16 @@\n (2)%0A\n-%09\n %7D%0A\n-%7D\n+    %7D%0A   \n %0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-29_21-51-49",
+            "content": "@@ -110,16 +110,23 @@\n == com2 \n+%7C%7Ccom1 \n == com3 \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-29_21-52-01",
+            "content": "@@ -110,16 +110,24 @@\n == com2 \n+== com3 \n %7B%0A%09%09fmt.\n@@ -143,50 +143,7 @@\n )%0A%09%7D\n-if com2==com3==com1%7B%0A        fmt.Println(3)\n %0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-29_21-54-03",
+            "content": "@@ -142,20 +142,16 @@\n com2\n- \n ==\n- \n com3\n- \n ==\n- \n com1\n@@ -177,9 +177,8 @@\n ln(3)%0A%7D%0A\n-%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-29_21-54-26",
+            "content": "@@ -133,24 +133,16 @@\n (2)%0A%09%7Dif\n- com1 ==\n  com2 ==\n@@ -146,16 +146,24 @@\n  == com3\n+ == com1\n %7B%0A      \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-29_21-54-50",
+            "content": "@@ -133,16 +133,24 @@\n (2)%0A%09%7Dif\n+ com1 ==\n  com2 ==\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-29_21-55-02",
+            "content": "@@ -168,14 +168,14 @@\n Println(\n-2\n+3\n )%0A%7D%0A%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-29_21-55-11",
+            "content": "@@ -135,15 +135,47 @@\n )%0A%09%7D\n-%0A        \n+if com2 == com3%7B%0A        fmt.Println(2)%0A%7D\n %0A%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-29_21-55-26",
+            "content": "@@ -135,44 +135,12 @@\n )%0A%09%7D\n-if com1 == com3 %7B%0A%09%09fmt.Println(2)%0A%7D\n+%0A   \n     \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-29_21-55-58",
+            "content": "@@ -131,16 +131,50 @@\n ln(2)%0A%09%7D\n+if com1 == com3 %7B%0A%09%09fmt.Println(2)\n %0A%7D     %0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-29_21-56-08",
+            "content": "@@ -114,16 +114,8 @@\n om2 \n-== com3 \n %7B%0A%09%09\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-29_21-56-25",
+            "content": "@@ -134,17 +134,17 @@\n Println(\n-3\n+2\n )%0A%09%7D%0A%7D  \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-29_21-56-48",
+            "content": "@@ -143,50 +143,8 @@\n )%0A%09%7D\n-if com1 == com2 == com3 %7B%0A%09%09fmt.Println(2)\n %0A%7D  \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-29_21-57-12",
+            "content": "@@ -143,13 +143,8 @@\n )%0A%09%7D\n-else \n if c\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-29_21-57-22",
+            "content": "@@ -139,19 +139,31 @@\n ln(3)%0A%09%7D\n-if \n+else if com1 ==\n  com2 ==\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-29_21-57-38",
+            "content": "@@ -143,17 +143,16 @@\n )%0A%09%7Dif  \n-%7B\n com2 == \n@@ -155,16 +155,18 @@\n  == com3\n+ %7B\n %0A%09%09fmt.P\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-29_21-58-12",
+            "content": "@@ -138,13 +138,47 @@\n tln(\n-2\n+3\n )%0A%09%7D\n+if  %7Bcom2 == com3%0A%09%09fmt.Println(2)\n %0A%7D  \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-29_21-58-25",
+            "content": "@@ -114,30 +114,11 @@\n om2 \n-%7C%7Ccom1 == com3%7C%7Ccom2\n ==\n+ \n com3\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-29_21-59-34",
+            "content": "@@ -153,17 +153,17 @@\n Println(\n-3\n+2\n )%0A%09%7D%0A%7D  \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-29_21-59-49",
+            "content": "@@ -162,56 +162,8 @@\n )%0A%09%7D\n-if com1 == com2 %7C%7Ccom1 == com3%7B%0A%09%09fmt.Println(2)\n %0A%7D  \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-29_22-00-48",
+            "content": "@@ -158,16 +158,64 @@\n ln(3)%0A%09%7D\n+if com1 == com2 %7C%7Ccom1 == com3%7B%0A%09%09fmt.Println(2)\n %0A%7D     %0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-29_22-00-55",
+            "content": "@@ -108,65 +108,8 @@\n 1 ==\n- com2 && com2 == com3%7B%0A%09%09fmt.Println(3)%0A%09%7Delse if com1 ==\n  com\n@@ -116,18 +116,20 @@\n 2 %7C%7Ccom1\n+ \n ==\n+ \n com3%7C%7Cco\n@@ -134,25 +134,19 @@\n com2\n- \n ==com3\n+ \n %7B%0A\n-        \n+%09%09\n fmt.\n@@ -157,15 +157,12 @@\n tln(\n-2)%0A    \n+3)%0A%09\n %7D%0A%7D \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-29_22-04-59",
+            "content": "@@ -221,43 +221,8 @@\n (2)%0A\n-    %7Delse %7B%0A        fmt.Println(0)%0A\n     \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-29_22-05-50",
+            "content": "@@ -57,19 +57,20 @@\n 2, com3 \n-int\n+bool\n %0A%09fmt.Sc\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-29_22-06-20",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar com1, com2, com3 int\n\tfmt.Scan(&com1, &com2, &com3)\n\tif com1 == com2 && com2 == com3{\n\t\tfmt.Println(3)\n\t}else if com1 == com2 ||com1==com3||com2 ==com3{\n        fmt.Println(2)\n    }else {\n        fmt.Println(0)\n    }\n}     \n\n",
+            "lines": "16"
+        }
+    ]
+}

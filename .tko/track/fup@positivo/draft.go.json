@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-29_21-29-27",
+            "content": "@@ -41,156 +41,34 @@\n     \n-%09var num1, num2 int%0A%09fmt.Scan(&num1, &num2)%0A%0A%09diferenca := num1 - num2%0A%0A%09if diferenca %3C 0 %7B%0A%09%09diferenca = diferenca * (-1)%0A%09%7D%0A%09%0A    fmt.Println(%22SIM\n+fmt.Println(%22Hello, World!\n %22)%0A%7D\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-29_21-33-14",
+            "content": "@@ -156,16 +156,17 @@\n enca * (\n+-\n 1)%0A%09%7D%0A%09%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-29_21-34-39",
+            "content": "@@ -153,16 +153,21 @@\n ferenca \n+* (1)\n %0A%09%7D%0A%09%0A  \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-29_21-34-54",
+            "content": "@@ -157,20 +157,14 @@\n nca \n-* (-1)%0A     \n+%0A%09%7D%0A%09%0A\n     \n@@ -186,53 +186,6 @@\n M%22)%0A\n-%09%7Delse%7B%0A     fmt.Println(%22NAO%22)   %0A    %7D%0A%09%0A   %0A\n %7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-29_21-37-29",
+            "content": "@@ -188,16 +188,47 @@\n (%22SIM%22)%0A\n+%09%7Delse%7B%0A     fmt.Println(%22NAO%22)\n    %0A    \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-03-29_21-37-47",
+            "content": "@@ -157,14 +157,20 @@\n nca \n-%0A%09%7D%0A%09%0A\n+* (-1)%0A     \n     \n@@ -188,10 +188,26 @@\n (%22SIM%22)%0A\n+   %0A    %7D%0A%09%0A   %0A\n %7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-29_21-38-15",
+            "content": "@@ -87,93 +87,105 @@\n )%0A%0A%09\n+d\n if\n- num1 %3E= 0 %7B%0A%09%09 fmt.Println(%22SIM%22)%0A%09%7Delse%7B%0A        %09%09 fmt.Println(%22NAO%22)%0A    %7D%0A%09%0A   \n+erenca := num1 - num2%0A%0A%09if diferenca %3C 0 %7B%0A%09%09diferenca = diferenca %0A%09%7D%0A%09%0A    fmt.Println(%22SIM%22)\n %0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-29_21-39-43",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -33,16 +33,20 @@\n ain() %7B%0A\n+    \n %09var num\n@@ -46,16 +46,22 @@\n var num1\n+, num2\n  int%0A%09fm\n@@ -72,16 +72,23 @@\n an(&num1\n+, &num2\n )%0A%0A%09if n\n@@ -96,24 +96,25 @@\n m1 %3E= 0 %7B%0A%09%09\n+ \n fmt.Println(\n@@ -126,18 +126,25 @@\n )%0A%09%7D\n- \n else\n- \n %7B%0A\n+        \n %09%09\n+ \n fmt.\n@@ -162,10 +162,18 @@\n O%22)%0A\n-%09%7D%0A\n+    %7D%0A%09%0A   \n %0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-29_21-40-16",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar num1 int\n\tfmt.Scan(&num1)\n\n\tif num1 >= 0 {\n\t\tfmt.Println(\"SIM\")\n\t} else {\n\t\tfmt.Println(\"NAO\")\n\t}\n\n}\n",
+            "lines": "15"
+        }
+    ]
+}

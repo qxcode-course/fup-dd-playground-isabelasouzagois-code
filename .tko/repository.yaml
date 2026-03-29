@@ -13,8 +13,8 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@games
 - fup@if1
+- fup@games
 tasks:
   fup@tres: '{self:1, rate:100, friend:nao, guided:1}'
   fup@resto: '{self:1, rate:100, friend:nao, guided:1}'
@@ -24,16 +24,18 @@ tasks:
   fup@celsius: '{self:1, rate:100, friend:nao}'
   fup@pintando: '{self:1, rate:100, friend:nao}'
   fup@bala: '{self:1, rate:100, friend:nao, concept:1}'
-  fup@abs: '{self:1, rate:100, friend:sim,alec}'
+  fup@abs: '{self:1, rate:100, friend:sim}'
   fup@max: '{self:1, rate:100, friend:nao}'
   fup@ou: '{self:1, rate:100, friend:nao}'
+  fup@positivo: '{self:1, rate:100}'
   fup@calc: '{self:1, rate:100, friend:nao}'
+  fup@guarda: '{self:1, rate:100}'
+  fup@quantos: '{self:1, rate:100, concept:1}'
 flags:
   panel: 1
   inbox: 0
   show_panel: 0
-  tasks: 0
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@round
+selected: fup@positivo

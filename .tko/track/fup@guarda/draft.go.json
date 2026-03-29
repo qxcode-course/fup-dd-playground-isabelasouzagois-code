@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-29_21-03-15",
+            "content": "@@ -41,336 +41,35 @@\n     \n-var wifi,login,admin bool%0A    fmt.Scan(&wifi,&login,&admin)%0A%0A    if wifi == false%7B%0A         fmt.Println(%22you must connect to wifi%22)%0A    %7Delse if login== false%7B%0A    fmt.Println(%22you need to login first%22)%0A    %7Delse if admin == false%7B%0A         fmt.Println(%22you must login as admin%22)%0A    %7Delse%7B%0A        fmt.Println(%22done%22)%0A    %7D%0A    \n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-29_21-27-21",
+            "content": "@@ -300,19 +300,16 @@\n ou must \n-to \n login as\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-03-29_21-27-50",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var wifi,login,admin bool\n    fmt.Scan(&wifi,&login,&admin)\n\n    if wifi == false{\n         fmt.Println(\"you must connect to wifi\")\n    }else if login== false{\n    fmt.Println(\"you need to login first\")\n    }else if admin == false{\n         fmt.Println(\"you must to login as admin\")\n    }else{\n        fmt.Println(\"done\")\n    }\n    \n}\n",
+            "lines": "17"
+        }
+    ]
+}

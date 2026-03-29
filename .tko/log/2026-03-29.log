@@ -1,0 +1,57 @@
+2026-03-29 20:57:40, MOVE, v:1, k:fup@round, mode:DOWN
+2026-03-29 20:57:42, MOVE, v:1, k:fup@round, mode:PICK
+2026-03-29 20:57:44, EXEC, v:1, k:fup@round, mode:FULL, rate:0, size:5
+2026-03-29 21:02:56, MOVE, v:1, k:fup@round, mode:BACK
+2026-03-29 21:03:10, MOVE, v:1, k:fup@guarda, mode:DOWN
+2026-03-29 21:03:14, MOVE, v:1, k:fup@guarda, mode:PICK
+2026-03-29 21:03:15, EXEC, v:1, k:fup@guarda, mode:FULL, rate:0, size:5
+2026-03-29 21:27:21, EXEC, v:1, k:fup@guarda, mode:FULL, rate:85, size:17
+2026-03-29 21:27:50, EXEC, v:1, k:fup@guarda, mode:FULL, rate:100, size:17
+2026-03-29 21:28:53, MOVE, v:1, k:fup@guarda, mode:BACK
+2026-03-29 21:29:24, MOVE, v:1, k:fup@positivo, mode:DOWN
+2026-03-29 21:29:26, MOVE, v:1, k:fup@positivo, mode:PICK
+2026-03-29 21:29:27, EXEC, v:1, k:fup@positivo, mode:FULL, rate:0, size:5
+2026-03-29 21:33:14, EXEC, v:1, k:fup@positivo, mode:FULL, rate:60, size:14
+2026-03-29 21:34:39, EXEC, v:1, k:fup@positivo, mode:FULL, rate:60, size:14
+2026-03-29 21:34:54, EXEC, v:1, k:fup@positivo, mode:FULL, rate:60, size:14
+2026-03-29 21:37:30, EXEC, v:1, k:fup@positivo, mode:FULL, rate:0, size:17
+2026-03-29 21:37:47, EXEC, v:1, k:fup@positivo, mode:FULL, rate:0, size:16
+2026-03-29 21:38:15, EXEC, v:1, k:fup@positivo, mode:FULL, rate:60, size:14
+2026-03-29 21:39:43, EXEC, v:1, k:fup@positivo, mode:FULL, rate:100, size:14
+2026-03-29 21:40:16, EXEC, v:1, k:fup@positivo, mode:FULL, rate:100, size:15
+2026-03-29 21:40:34, MOVE, v:1, k:fup@positivo, mode:BACK
+2026-03-29 21:41:06, MOVE, v:1, k:fup@quantos, mode:DOWN
+2026-03-29 21:41:07, MOVE, v:1, k:fup@quantos, mode:PICK
+2026-03-29 21:41:09, EXEC, v:1, k:fup@quantos, mode:FULL, rate:0, size:5
+2026-03-29 21:50:36, EXEC, v:1, k:fup@quantos, mode:FULL, size:10, fail:COMP
+2026-03-29 21:50:53, EXEC, v:1, k:fup@quantos, mode:FULL, rate:25, size:10
+2026-03-29 21:51:49, EXEC, v:1, k:fup@quantos, mode:FULL, rate:12, size:11
+2026-03-29 21:52:01, EXEC, v:1, k:fup@quantos, mode:FULL, rate:25, size:11
+2026-03-29 21:54:03, EXEC, v:1, k:fup@quantos, mode:FULL, size:12, fail:COMP
+2026-03-29 21:54:26, EXEC, v:1, k:fup@quantos, mode:FULL, size:13, fail:COMP
+2026-03-29 21:54:50, EXEC, v:1, k:fup@quantos, mode:FULL, size:13, fail:COMP
+2026-03-29 21:55:02, EXEC, v:1, k:fup@quantos, mode:FULL, size:13, fail:COMP
+2026-03-29 21:55:11, EXEC, v:1, k:fup@quantos, mode:FULL, size:13, fail:COMP
+2026-03-29 21:55:26, EXEC, v:1, k:fup@quantos, mode:FULL, size:12, fail:COMP
+2026-03-29 21:55:58, EXEC, v:1, k:fup@quantos, mode:FULL, size:13, fail:COMP
+2026-03-29 21:56:08, EXEC, v:1, k:fup@quantos, mode:FULL, rate:0, size:12
+2026-03-29 21:56:25, EXEC, v:1, k:fup@quantos, mode:FULL, rate:25, size:12
+2026-03-29 21:56:48, EXEC, v:1, k:fup@quantos, mode:FULL, rate:12, size:12
+2026-03-29 21:57:12, EXEC, v:1, k:fup@quantos, mode:FULL, size:13, fail:COMP
+2026-03-29 21:57:22, EXEC, v:1, k:fup@quantos, mode:FULL, size:13, fail:COMP
+2026-03-29 21:57:38, EXEC, v:1, k:fup@quantos, mode:FULL, size:13, fail:COMP
+2026-03-29 21:58:12, EXEC, v:1, k:fup@quantos, mode:FULL, size:13, fail:COMP
+2026-03-29 21:58:25, EXEC, v:1, k:fup@quantos, mode:FULL, rate:25, size:12
+2026-03-29 21:59:34, EXEC, v:1, k:fup@quantos, mode:FULL, rate:37, size:12
+2026-03-29 21:59:49, EXEC, v:1, k:fup@quantos, mode:FULL, rate:25, size:12
+2026-03-29 22:00:48, EXEC, v:1, k:fup@quantos, mode:FULL, size:13, fail:COMP
+2026-03-29 22:00:55, EXEC, v:1, k:fup@quantos, mode:FULL, rate:25, size:12
+2026-03-29 22:04:59, EXEC, v:1, k:fup@quantos, mode:FULL, rate:62, size:14
+2026-03-29 22:05:50, EXEC, v:1, k:fup@quantos, mode:FULL, rate:62, size:16
+2026-03-29 22:06:20, EXEC, v:1, k:fup@quantos, mode:FULL, rate:100, size:16
+2026-03-29 22:08:04, MOVE, v:1, k:fup@quantos, mode:BACK
+2026-03-29 22:09:21, SELF, v:1, k:fup@quantos, self:1, rate:100, concept:1
+2026-03-29 22:09:48, SELF, v:1, k:fup@guarda, self:1, rate:100
+2026-03-29 22:10:19, MOVE, v:1, k:fup@positivo, mode:PICK
+2026-03-29 22:10:21, MOVE, v:1, k:fup@positivo, mode:BACK
+2026-03-29 22:10:38, SELF, v:1, k:fup@positivo, self:1, rate:100
