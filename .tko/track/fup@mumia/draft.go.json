@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-30_18-07-04",
+            "content": "@@ -41,370 +41,35 @@\n     \n-var crianca,jovem,adulto,idoso,mumia int%0A    fmt.Scan(&crianca ,&jovem,&adulto,&idoso,&mumia)%0A    if crianca %3C 12 %7B%0A       fmt.Println(%22crianca%22) %0A    %7Delse if jovem %3C 18%7B%0A        fmt.Println(%22jovem%22)%0A    %7Delse if adulto %3C65%7B%0A         fmt.Println(%22adulto%22)%0A    %7Delse if idoso %3C1000%7B%0A         fmt.Println(%22idoso%22)%0A    %7Delse%7B%0A        fmt.Println(%22mumia%22)%0A%7D%0A    %7D%0A    \n+fmt.Println(%22Hello, World!%22)%0A%7D\n %0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-30_18-16-30",
+            "content": "@@ -150,9 +150,9 @@\n nca \n-%3E\n+%3C\n  12 \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-30_18-18-40",
+            "content": "@@ -146,17 +146,17 @@\n crianca \n-%3C\n+%3E\n  12 %7B%0A  \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-30_18-18-50",
+            "content": "@@ -203,17 +203,17 @@\n f jovem \n-%3E\n+%3C\n  18%7B%0A   \n@@ -258,17 +258,17 @@\n  adulto \n-%3E\n+%3C\n 65%7B%0A    \n@@ -317,9 +317,9 @@\n oso \n-%3E\n+%3C\n 1000\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-30_18-19-30",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,24 +37,57 @@\n ) %7B%0A\n-%09var idade\n+    var crianca,jovem,adulto,idoso,mumia\n  int%0A\n-%09\n+    \n fmt.\n@@ -96,32 +96,69 @@\n an(&\n-idade)%0A%09if idade\n+crianca ,&jovem,&adulto,&idoso,&mumia)%0A    if crianca\n  %3C 12 %7B%0A\n %09%09fm\n@@ -153,18 +153,23 @@\n  %3C 12 %7B%0A\n-%09%09\n+       \n fmt.Prin\n@@ -182,28 +182,31 @@\n rianca%22)\n-%0A%09%7D \n+ %0A    %7D\n else if \n idade %3E \n@@ -201,23 +201,28 @@\n  if \n-idade\n+jovem\n  %3E 18\n- \n %7B%0A\n-%09%09\n+        \n fmt.\n@@ -238,27 +238,29 @@\n jovem%22)%0A\n-%09%7D \n+    %7D\n else if \n idade %3E \n@@ -255,23 +255,29 @@\n  if \n-idade\n+adulto\n  %3E\n- \n 65\n- \n %7B%0A\n-%09%09\n+         \n fmt.\n@@ -290,27 +290,29 @@\n n(%22adulto%22)%0A\n-%09%7D \n+    %7D\n else if idad\n@@ -313,23 +313,28 @@\n f id\n-ade\n+oso\n  %3E\n- \n 1000\n- \n %7B%0A\n-%09%09\n+         \n fmt.\n@@ -354,20 +354,27 @@\n o%22)%0A\n-%09%7D \n+    %7D\n else\n- \n %7B%0A\n-%09%09\n+        \n fmt.\n@@ -394,9 +394,17 @@\n a%22)%0A\n-%09\n %7D%0A\n-%7D\n+    %7D%0A    \n %0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-30_18-21-22",
+            "content": "@@ -78,17 +78,17 @@\n f idade \n-%3E\n+%3C\n  12 %7B%0A%09%09\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-30_18-21-36",
+            "content": "@@ -78,17 +78,17 @@\n f idade \n-%3C\n+%3E\n  12 %7B%0A%09%09\n@@ -127,17 +127,17 @@\n f idade \n-%3C\n+%3E\n  18 %7B%0A%09%09\n@@ -174,17 +174,17 @@\n f idade \n-%3C\n+%3E\n  65 %7B%0A%09%09\n@@ -226,9 +226,9 @@\n ade \n-%3C\n+%3E\n  100\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-30_18-22-17",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar idade int\n\tfmt.Scan(&idade)\n\tif idade < 12 {\n\t\tfmt.Println(\"crianca\")\n\t} else if idade < 18 {\n\t\tfmt.Println(\"jovem\")\n\t} else if idade < 65 {\n\t\tfmt.Println(\"adulto\")\n\t} else if idade < 1000 {\n\t\tfmt.Println(\"idoso\")\n\t} else {\n\t\tfmt.Println(\"mumia\")\n\t}\n}\n",
+            "lines": "19"
+        }
+    ]
+}

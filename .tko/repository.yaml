@@ -13,7 +13,9 @@ sources:
   quests: null
   tasks: null
 expanded:
+- fup@if2
 - fup@if1
+- fup@base
 - fup@games
 tasks:
   fup@tres: '{self:1, rate:100, friend:nao, guided:1}'
@@ -28,14 +30,16 @@ tasks:
   fup@max: '{self:1, rate:100, friend:nao}'
   fup@ou: '{self:1, rate:100, friend:nao}'
   fup@positivo: '{self:1, rate:100}'
+  fup@multiplo: '{self:1, rate:100}'
   fup@calc: '{self:1, rate:100, friend:nao}'
   fup@guarda: '{self:1, rate:100}'
   fup@quantos: '{self:1, rate:100, concept:1}'
+  fup@impar: '{self:1, rate:100, concept:1}'
 flags:
-  panel: 1
+  panel: 3
   inbox: 0
-  show_panel: 0
+  show_panel: 1
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@positivo
+selected: fup@mumia

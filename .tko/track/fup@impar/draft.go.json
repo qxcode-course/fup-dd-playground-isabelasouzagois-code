@@ -1,0 +1,59 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-30_17-47-15",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,86 +37,12 @@\n ) %7B%0A\n-%09var d1, d2 int%0A%09fmt.Scan(&d1, &d2)%0A%09if d1 == 0 %7B%0Afmt.Printf(%22%25f%5Cn%22impar)%0A%09%7D%0A%09\n+    \n fmt.\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-30_17-55-01",
+            "content": "@@ -102,18 +102,16 @@\n f(%22%25f%5Cn%22\n-, \n impar)%0A%09\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-30_17-55-16",
+            "content": "@@ -81,20 +81,13 @@\n f d1\n-%7C%7Cd2 %252\n  ==\n-0\n  \n+0\n  %7B%0Af\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-30_17-56-58",
+            "content": "@@ -75,17 +75,58 @@\n d2)%0A%09if \n-%7B\n+d1%7C%7Cd2 %252 ==0  %7B%0Afmt.Printf(%22%25f%5Cn%22, impar)\n %0A%09%7D%0A%09fmt\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-30_17-57-42",
+            "content": "@@ -79,18 +79,8 @@\n %09if \n-d1%25 2 ==0 \n %7B%0A%09%7D\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-30_17-58-14",
+            "content": "@@ -51,12 +51,8 @@\n  d2 \n-,d3 \n int%0A\n@@ -73,12 +73,8 @@\n  &d2\n-,&d3\n )%0A%09i\n@@ -87,17 +87,16 @@\n 2 ==\n- \n 0 %7B%0A\n-    \n+%09%7D%0A%09\n fmt.\n@@ -107,42 +107,23 @@\n tln(\n-0)%0A%7Delse%7B%0A    fmt.Println(1\n+%22Hello, World!%22\n )%0A\n-%0A\n %7D%0A\n-%09%7D%0A%09%0A%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-30_18-01-03",
+            "content": "@@ -98,31 +98,8 @@\n = 0 \n-%7C%7C d2%25 2==0 %7C%7C d3%25 2==0\n %7B%0A  \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-30_18-02-14",
+            "content": "@@ -83,28 +83,8 @@\n d3)%0A\n-    soma :=d1=d2=d3%0A\n %09if \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-30_18-03-58",
+            "content": "@@ -94,18 +94,14 @@\n a :=\n- \n d1\n- +d2 + \n+=d2=\n d3%0A%09\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-03-30_18-04-22",
+            "content": "@@ -111,13 +111,38 @@\n %09if \n-soma%25\n+d1%25 2 == 0 %7C%7C d2%25 2==0 %7C%7C d3%25 \n 2==0\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-03-30_18-04-59",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar d1, d2 ,d3 int\n\tfmt.Scan(&d1, &d2,&d3)\n    soma := d1 +d2 + d3\n\tif soma%2==0{\n    fmt.Println(0)\n}else{\n    fmt.Println(1)\n\n}\n\t}\n\t\n\n",
+            "lines": "17"
+        }
+    ]
+}
