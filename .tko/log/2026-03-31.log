@@ -1,0 +1,18 @@
+2026-03-31 00:03:29, EXEC, v:1, k:fup@final, mode:FULL, size:21, fail:COMP
+2026-03-31 00:03:53, EXEC, v:1, k:fup@final, mode:FULL, size:21, fail:COMP
+2026-03-31 00:04:12, EXEC, v:1, k:fup@final, mode:FULL, size:21, fail:COMP
+2026-03-31 00:04:13, EXEC, v:1, k:fup@final, mode:FULL, fail:COMP
+2026-03-31 00:05:25, EXEC, v:1, k:fup@final, mode:FULL, size:21, fail:COMP
+2026-03-31 00:06:09, EXEC, v:1, k:fup@final, mode:FULL, size:21, fail:COMP
+2026-03-31 00:06:52, EXEC, v:1, k:fup@final, mode:FULL, size:21, fail:COMP
+2026-03-31 00:07:55, EXEC, v:1, k:fup@final, mode:FULL, size:23, fail:COMP
+2026-03-31 00:08:18, EXEC, v:1, k:fup@final, mode:FULL, size:23, fail:COMP
+2026-03-31 00:08:29, EXEC, v:1, k:fup@final, mode:FULL, size:23, fail:COMP
+2026-03-31 00:09:25, EXEC, v:1, k:fup@final, mode:FULL, size:23, fail:COMP
+2026-03-31 00:09:36, EXEC, v:1, k:fup@final, mode:FULL, size:23, fail:COMP
+2026-03-31 00:12:03, EXEC, v:1, k:fup@final, mode:FULL, size:27, fail:COMP
+2026-03-31 00:13:36, EXEC, v:1, k:fup@final, mode:FULL, size:26, fail:COMP
+2026-03-31 00:13:43, EXEC, v:1, k:fup@final, mode:FULL, size:26, fail:COMP
+2026-03-31 00:14:02, EXEC, v:1, k:fup@final, mode:FULL, rate:100, size:26
+2026-03-31 00:21:05, MOVE, v:1, k:fup@final, mode:BACK
+2026-03-31 00:21:15, SELF, v:1, k:fup@final, self:1, rate:100

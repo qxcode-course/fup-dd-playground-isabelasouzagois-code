@@ -4,17 +4,18 @@ import "fmt"
 
 func main() {
 	var idade int
-	fmt.Scan(&idade)
+	var nome string
+	fmt.Scan(&nome, &idade)
 
 	if idade < 12 {
-		fmt.Println("crianca")
+		fmt.Printf("%s eh crianca\n", nome)
 	} else if idade < 18 {
-		fmt.Println("jovem")
+		fmt.Printf("%s eh jovem\n", nome)
 	} else if idade < 65 {
-		fmt.Println("adulto")
+		fmt.Printf("%s eh adulto\n", nome)
 	} else if idade < 1000 {
-		fmt.Println("idoso")
+		fmt.Printf("%s eh idoso\n", nome)
 	} else {
-		fmt.Println("mumia")
+		fmt.Printf("%s eh mumia\n", nome)
 	}
 }
