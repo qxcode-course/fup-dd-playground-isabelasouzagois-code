@@ -15,6 +15,7 @@ sources:
 expanded:
 - fup@if2
 - fup@if1
+- fup@games
 tasks:
   fup@tres: '{self:1, rate:100, friend:nao, guided:1}'
   fup@resto: '{self:1, rate:100, friend:nao, guided:1}'
@@ -35,6 +36,7 @@ tasks:
   fup@impar: '{self:1, rate:100, concept:1}'
   fup@mumia: '{self:1, rate:100, concept:1}'
   fup@final: '{self:1, rate:100}'
+  fup@semana: '{self:1, rate:100, concept:1}'
 flags:
   panel: 3
   inbox: 0
@@ -42,4 +44,4 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@impar
+selected: fup@jokenpo

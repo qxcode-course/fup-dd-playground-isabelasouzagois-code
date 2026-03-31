@@ -1,0 +1,94 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-31_16-52-34",
+            "content": "@@ -37,238 +37,8 @@\n ) %7B%0A\n-    var hora int%0A    var dia string%0A    fmt.Scan(&dia,&hora)%0A    %0A    if dia==%22segunda%22 %7C%7C dia==%22terca%22 %7C%7Cdia==%22quarta %22%7C%7Cdia==%22quinta%22%7C%7Cdia==%22sexta%22  %7B%0A        if hora%3E=8&&hora%3C11 %7B%0A            fmt.Println(%22SIM%22)%0A        %7D%0A    %7D%0A\n     \n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-31_17-06-42",
+            "content": "@@ -218,31 +218,8 @@\n %3C11 \n-%7C%7Chora %3E= 14 && hora%3C17\n %7B%0A  \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-31_17-07-34",
+            "content": "@@ -274,55 +274,8 @@\n M%22)%0A\n-        %7Delse%7B%0A             fmt.Println(%22NAO%22)%0A\n     \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-31_17-08-12",
+            "content": "@@ -336,149 +336,40 @@\n    %7D\n-else if dia==%22sabado%22%0A        if hora%3E=8 && hora%3C11 %7B%0A             fmt.Println(%22SIM%22)%0A        %7Delse%7B%0A        fmt.Println(%22NAO%22)%0A        %7D%0A    \n+%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-31_17-10-53",
+            "content": "@@ -66,12 +66,14 @@\n dia \n-bool\n+string\n %0A   \n@@ -205,16 +205,13 @@\n hora\n- \n %3E=8\n- \n &&\n- \n hora\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-03-31_17-11-35",
+            "content": "@@ -66,14 +66,12 @@\n dia \n-string\n+bool\n %0A   \n@@ -419,26 +419,16 @@\n (%22SIM%22)%0A\n-        %7D%0A\n         \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-03-31_17-12-21",
+            "content": "@@ -425,24 +425,25 @@\n M%22)%0A        \n+%7D\n %0A        %7Del\n@@ -490,41 +490,8 @@\n %0A   \n-%7D else%7B%0A        fmt.Println(%22NAO%22)\n+ \n %0A%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-31_17-13-20",
+            "content": "@@ -413,32 +413,41 @@\n .Println(%22SIM%22)%0A\n+        %0A\n         %7Delse%7B%0A \n@@ -476,24 +476,25 @@\n O%22)%0A        \n+%7D\n %0A   %7D else%7B%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-03-31_17-13-39",
+            "content": "@@ -356,17 +356,16 @@\n %22sabado%22\n-%7B\n %0A       \n@@ -387,13 +387,13 @@\n hora\n- \n %3C11 \n+%7B\n %0A   \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-31_17-14-31",
+            "content": "@@ -468,25 +468,24 @@\n O%22)%0A        \n-%7D\n %0A   %7D else%7B%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-31_17-15-01",
+            "content": "@@ -197,17 +197,16 @@\n      if \n-(\n hora %3E=8\n@@ -240,17 +240,16 @@\n  hora%3C17\n-)\n %7B%0A      \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-31_17-16-00",
+            "content": "@@ -391,17 +391,16 @@\n ora %3C11 \n-%7B\n %0A       \n@@ -516,9 +516,8 @@\n NAO%22)%0A%7D%0A\n-%7D\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-31_17-16-56",
+            "content": "@@ -45,18 +45,16 @@\n var \n-dia string\n+hora int\n %0A   \n@@ -54,32 +54,34 @@\n int%0A    var \n-hora int\n+dia string\n %0A    fmt.Sca\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-03-31_17-19-36",
+            "content": "@@ -45,19 +45,22 @@\n var dia \n+str\n in\n-t\n+g\n %0A    var\n@@ -115,9 +115,17 @@\n ia==\n-2\n+%22segunda%22\n  %7C%7C \n@@ -133,17 +133,23 @@\n ia==\n-3\n+%22terca%22\n  %7C%7Cdia==\n 4%7C%7Cd\n@@ -148,25 +148,46 @@\n ia==\n-4%7C%7Cdia==5%7C%7Cdia==6\n+%22quarta %22%7C%7Cdia==%22quinta%22%7C%7Cdia==%22sexta%22\n   %7B%0A\n@@ -352,13 +352,18 @@\n  dia\n- \n ==\n- 7\n+%22sabado%22\n %7B%0A  \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-03-31_17-21-34",
+            "content": "@@ -345,17 +345,16 @@\n & hora %3C\n-=\n 11 %7B%0A   \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-03-31_17-22-21",
+            "content": "@@ -201,17 +201,16 @@\n && hora%3C\n-=\n 17)%7B%0A   \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-03-31_17-22-58",
+            "content": "@@ -177,17 +177,16 @@\n && hora%3C\n-=\n 11 %7C%7Chor\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-03-31_17-23-23",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var dia int\n    var hora int\n    fmt.Scan(&dia,&hora)\n    \n    if dia==2 || dia==3 ||dia==4||dia==5||dia==6  {\n        if (hora >=8 && hora<=11 ||hora >= 14 && hora<=17){\n            fmt.Println(\"SIM\")\n        }else{\n             fmt.Println(\"NAO\")\n        }\n    }else if dia == 7{\n        if hora>=8 && hora <=11 {\n             fmt.Println(\"SIM\")\n        }else{\n        fmt.Println(\"NAO\")\n        }\n   } else{\n        fmt.Println(\"NAO\")\n}\n}",
+            "lines": "23"
+        }
+    ]
+}

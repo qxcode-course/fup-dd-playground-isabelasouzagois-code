@@ -16,3 +16,29 @@
 2026-03-31 00:14:02, EXEC, v:1, k:fup@final, mode:FULL, rate:100, size:26
 2026-03-31 00:21:05, MOVE, v:1, k:fup@final, mode:BACK
 2026-03-31 00:21:15, SELF, v:1, k:fup@final, self:1, rate:100
+2026-03-31 16:52:31, MOVE, v:1, k:fup@semana, mode:DOWN
+2026-03-31 16:52:33, MOVE, v:1, k:fup@semana, mode:PICK
+2026-03-31 16:52:34, EXEC, v:1, k:fup@semana, mode:FULL, rate:0, size:5
+2026-03-31 17:06:42, EXEC, v:1, k:fup@semana, mode:FULL, rate:0, size:14
+2026-03-31 17:07:34, EXEC, v:1, k:fup@semana, mode:FULL, rate:0, size:14
+2026-03-31 17:08:12, EXEC, v:1, k:fup@semana, mode:FULL, rate:0, size:16
+2026-03-31 17:10:53, EXEC, v:1, k:fup@semana, mode:FULL, size:21, fail:COMP
+2026-03-31 17:11:35, EXEC, v:1, k:fup@semana, mode:FULL, size:21, fail:COMP
+2026-03-31 17:12:21, EXEC, v:1, k:fup@semana, mode:FULL, size:22, fail:COMP
+2026-03-31 17:13:20, EXEC, v:1, k:fup@semana, mode:FULL, size:23, fail:COMP
+2026-03-31 17:13:39, EXEC, v:1, k:fup@semana, mode:FULL, size:22, fail:COMP
+2026-03-31 17:14:31, EXEC, v:1, k:fup@semana, mode:FULL, size:22, fail:COMP
+2026-03-31 17:15:01, EXEC, v:1, k:fup@semana, mode:FULL, size:22, fail:COMP
+2026-03-31 17:16:00, EXEC, v:1, k:fup@semana, mode:FULL, size:22, fail:COMP
+2026-03-31 17:16:57, EXEC, v:1, k:fup@semana, mode:FULL, rate:57, size:23
+2026-03-31 17:19:36, EXEC, v:1, k:fup@semana, mode:FULL, rate:57, size:23
+2026-03-31 17:21:34, EXEC, v:1, k:fup@semana, mode:FULL, rate:78, size:23
+2026-03-31 17:22:21, EXEC, v:1, k:fup@semana, mode:FULL, rate:84, size:23
+2026-03-31 17:22:58, EXEC, v:1, k:fup@semana, mode:FULL, rate:94, size:23
+2026-03-31 17:23:23, EXEC, v:1, k:fup@semana, mode:FULL, rate:100, size:23
+2026-03-31 17:25:56, MOVE, v:1, k:fup@semana, mode:BACK
+2026-03-31 17:26:28, SELF, v:1, k:fup@semana, self:1, rate:100, concept:1
+2026-03-31 17:27:10, MOVE, v:1, k:fup@cortada, mode:DOWN
+2026-03-31 17:27:11, MOVE, v:1, k:fup@cortada, mode:PICK
+2026-03-31 17:27:12, EXEC, v:1, k:fup@cortada, mode:FULL, rate:0, size:5
+2026-03-31 17:48:11, MOVE, v:1, k:fup@cortada, mode:BACK
