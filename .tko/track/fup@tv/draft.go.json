@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-06_17-02-06",
+            "content": "@@ -37,122 +37,8 @@\n ) %7B%0A\n-    var valor float64%0A    var parcelas int%0A  fmt.Scan(&valor,&parcelas)%0A  valor *=(1+0.05*(parcelas*))%0A%0A        %0A%0A\n     \n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-06_17-11-16",
+            "content": "@@ -39,14 +39,119 @@\n %7B%0A  \n+  var valor float64%0A    var parcelas int%0A  fmt.Scan(&valor,&parcelas)%0A  valor *=(1+0.05*(parcelas*))\n %0A%0A    \n+    %0A\n %0A   \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-06_17-13-09",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n  \n\n    \n    fmt.Println(\"Hello, World!\")\n}\n",
+            "lines": "8"
+        }
+    ]
+}

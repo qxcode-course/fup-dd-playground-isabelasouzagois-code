@@ -1,0 +1,89 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-06_18-19-30",
+            "content": "@@ -1,8 +1,27 @@\n+@@ -1,49 +1,31 @@%0A-\n package \n@@ -28,73 +28,261 @@\n main\n-%0A\n+%250A\n import \n-%22fmt%22%0Afunc main() %7B%0A    for i := 1;i %3C=10;i++%7B%0A%0A    %7D%0A    %0A%7D\n+%2522fmt%2522%250Afunc main() %257B%0A+@@ -42,40 +42,34 @@%0A %250A    f%0A+%250A-%0A or i%0A@@ -36,28 +36,82 @@%0A 1;i %0A-%253C%0A+%25253C%0A =10;i++%0A-%257B%250A%250A    %257D%250A    %250A%257D%0A+%25257B%25250A%25250A    %25257D%25250A    %250A+mt.Println(%252522Hello, World!%252522)%250A %25250A%25257D%25250A%0A %250A\n %0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-09_00-22-51",
+            "content": "@@ -23,22 +23,8 @@\n mt%22%0A\n-import %22math%22%0A\n func\n@@ -64,26 +64,8 @@\n ++%7B%0A\n-    fmt.Println(i)\n %0A   \n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-04-09_00-23-25",
+            "content": "@@ -19,16 +19,29 @@\n t %22fmt%22%0A\n+import %22math%22\n %0Afunc ma\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-04-09_00-23-42",
+            "content": "@@ -52,16 +52,17 @@\n := 1;i %3C\n+=\n 10;i++%7B%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-04-09_00-23-52",
+            "content": "@@ -52,17 +52,16 @@\n := 1;i %3C\n-=\n 10;i++%7B%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-04-09_00-23-59",
+            "content": "@@ -38,31 +38,8 @@\n ) %7B%0A\n-    var num1 ,num2 int%0A\n     \n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-04-09_00-26-04",
+            "content": "@@ -61,34 +61,8 @@\n int%0A\n-    fmt.Scan(&num1,&num2)%0A\n     \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-09_00-26-52",
+            "content": "@@ -100,22 +100,16 @@\n  := \n-0;i%3Cnum1-num2 \n+1;i %3C=10\n ;i++\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-09_00-32-19",
+            "content": "@@ -100,17 +100,16 @@\n  := 0;i%3C\n-=\n num1-num\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-09_00-32-34",
+            "content": "@@ -103,25 +103,20 @@\n  0;i\n- %3C( \n+%3C=\n num1\n- - \n+-\n num2 \n-)\n ;i++\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-09_00-33-53",
+            "content": "@@ -87,30 +87,8 @@\n m2)%0A\n-    num1 =num1 -num2 %0A\n     \n@@ -101,22 +101,31 @@\n := 0;i %3C\n+(\n  num1 \n+- num2 )\n ;i++%7B%0A  \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-09_00-36-47",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -38,17 +38,20 @@\n ) %7B%0A\n-%09\n+    \n var num1\n , nu\n@@ -46,18 +46,18 @@\n var num1\n-,\n  \n+,\n num2 int\n@@ -57,17 +57,20 @@\n um2 int%0A\n-%09\n+    \n fmt.Scan\n@@ -80,43 +80,41 @@\n um1,\n- \n &num2)%0A\n-%09resultado := \n+    num1 =\n num1 -\n- \n num2\n-%0A%09\n+ %0A    \n for \n@@ -124,32 +124,27 @@\n = 0;\n- \n i %3C \n-resultado; \n+num1 ;\n i++\n- \n %7B%0A\n-%09%09\n+    \n fmt.\n@@ -158,10 +158,17 @@\n (i)%0A\n-%09%7D%0A\n+    %7D%0A    \n %0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-09_00-39-10",
+            "content": "@@ -74,23 +74,10 @@\n num1\n-)%0A    fmt.Scan(\n+, \n &num\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-09_00-40-34",
+            "content": "@@ -128,12 +128,13 @@\n or i\n+ \n := \n-1\n+0\n ; i \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-09_00-43-16",
+            "content": "@@ -131,22 +131,24 @@\n i:= \n-num\n 1; i %3C \n-num2\n+resultado\n ; i+\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-09_00-46-52",
+            "content": "@@ -93,16 +93,40 @@\n &num2)%0A%09\n+resultado := num1 - num2\n %0A%09for i:\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-09_00-47-14",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar num1, num2 int\n\tfmt.Scan(&num1)\n    fmt.Scan(&num2)\n\t\n\tfor i:= num1; i < num2; i++ {\n\t\tfmt.Println(i)\n\t}\n\n}\n",
+            "lines": "14"
+        }
+    ]
+}

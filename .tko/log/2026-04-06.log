@@ -1,0 +1,31 @@
+2026-04-06 16:59:29, MOVE, v:1, k:fup@drone, mode:DOWN
+2026-04-06 16:59:31, MOVE, v:1, k:fup@drone, mode:PICK
+2026-04-06 16:59:34, EXEC, v:1, k:fup@drone, mode:FULL, rate:0, size:5
+2026-04-06 16:59:34, EXEC, v:1, k:fup@drone, mode:FULL, rate:0, size:5
+2026-04-06 16:59:38, MOVE, v:1, k:fup@drone, mode:BACK
+2026-04-06 17:02:04, MOVE, v:1, k:fup@tv, mode:DOWN
+2026-04-06 17:02:05, MOVE, v:1, k:fup@tv, mode:PICK
+2026-04-06 17:02:06, EXEC, v:1, k:fup@tv, mode:FULL, rate:0, size:5
+2026-04-06 17:09:39, MOVE, v:1, k:fup@tv, mode:BACK
+2026-04-06 17:10:54, MOVE, v:1, k:fup@salario, mode:DOWN
+2026-04-06 17:11:16, MOVE, v:1, k:fup@tv, mode:PICK
+2026-04-06 17:11:16, EXEC, v:1, k:fup@tv, mode:FULL, size:12, fail:COMP
+2026-04-06 17:11:18, EXEC, v:1, k:fup@tv, mode:FULL, fail:COMP
+2026-04-06 17:11:19, EXEC, v:1, k:fup@tv, mode:FULL, fail:COMP
+2026-04-06 17:11:19, EXEC, v:1, k:fup@tv, mode:FULL, fail:COMP
+2026-04-06 17:11:19, EXEC, v:1, k:fup@tv, mode:FULL, fail:COMP
+2026-04-06 17:11:26, EXEC, v:1, k:fup@tv, mode:FULL, fail:COMP
+2026-04-06 17:11:32, MOVE, v:1, k:fup@tv, mode:BACK
+2026-04-06 17:13:08, MOVE, v:1, k:fup@tv, mode:PICK
+2026-04-06 17:13:09, EXEC, v:1, k:fup@tv, mode:FULL, rate:0, size:8
+2026-04-06 18:01:03, MOVE, v:1, k:fup@tv, mode:BACK
+2026-04-06 18:01:49, MOVE, v:1, k:fup@pr_jokenpo, mode:PICK
+2026-04-06 18:01:51, EXEC, v:1, k:fup@pr_jokenpo, mode:LOCK, rate:0
+2026-04-06 18:02:10, MOVE, v:1, k:fup@pr_jokenpo, mode:BACK
+2026-04-06 18:02:19, MOVE, v:1, k:fup@pr_chute_a, mode:DOWN
+2026-04-06 18:02:23, MOVE, v:1, k:fup@pr_chute_a, mode:PICK
+2026-04-06 18:02:24, EXEC, v:1, k:fup@pr_chute_a, mode:LOCK, rate:0, size:5
+2026-04-06 18:02:27, MOVE, v:1, k:fup@pr_chute_a, mode:BACK
+2026-04-06 18:19:28, MOVE, v:1, k:fup@loop_i, mode:DOWN
+2026-04-06 18:19:29, MOVE, v:1, k:fup@loop_i, mode:PICK
+2026-04-06 18:19:30, EXEC, v:1, k:fup@loop_i, mode:FULL, rate:0, size:5
