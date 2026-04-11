@@ -15,18 +15,18 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@for1
-- fup@for2
-- fup@games
 - fup@if1
 - fup@if2
 - fup@for_extra
+- fup@for2
+- fup@for1
+- fup@games
 - fup@base
 flags:
   inbox: all
-  panel: skills
+  panel: logs
   show_panel: 'false'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@base
+selected: fup@pares

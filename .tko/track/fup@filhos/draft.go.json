@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-11_22-45-01",
+            "content": "@@ -37,101 +37,8 @@\n ) %7B%0A\n-    var qnt,id int%0A    fmt.Scan(&qnt,&id)%0A    for i:=qnt;i%3E0;i++%7B%0A        fmt.Print(i)%0A    %7D%0A\n     \n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-11_22-54-47",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var qnt,id int\n    fmt.Scan(&qnt,&id)\n    for i:=qnt;i>0;i++{\n        fmt.Print(i)\n    }\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "lines": "10"
+        }
+    ]
+}
