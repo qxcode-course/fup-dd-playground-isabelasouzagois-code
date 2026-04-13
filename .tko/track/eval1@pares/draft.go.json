@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-13_16-53-31",
+            "content": "@@ -41,190 +41,35 @@\n     \n-var a,b ,soma int%0A    fmt.Scan(&a,&b)%0A    if a%3Eb%7B%0A        fmt.Println(%22invalido%22)%0A    %7Dfor i := a;i%3Cb;i++%7B%0A        if i%252==0%7B%0A            soma=+i%0A        %7D%0A    %7D%0A    fmt.Println(soma\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-13_16-58-18",
+            "content": "@@ -123,23 +123,8 @@\n o%22)%0A\n-        return%0A\n     \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-13_16-58-48",
+            "content": "@@ -139,21 +139,16 @@\n rn%0A    %7D\n-%0A    \n for i :=\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-13_16-59-02",
+            "content": "@@ -203,10 +203,10 @@\n soma\n-+\n =\n++\n i%0A  \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-13_16-59-21",
+            "content": "@@ -85,17 +85,16 @@\n   if a%3Eb\n- \n %7B%0A      \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-13_16-59-57",
+            "content": "@@ -83,17 +83,16 @@\n     if a\n- \n %3Eb %7B%0A   \n@@ -162,11 +162,9 @@\n a;i%3C\n-=b \n+b\n ;i++\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-13_17-03-14",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a,b ,soma int\n    fmt.Scan(&a,&b)\n    if a >b {\n        fmt.Println(\"invalido\")\n        return\n    }\n    for i := a;i<=b ;i++{\n        if i%2==0{\n            soma+=i\n        }\n    }\n    fmt.Println(soma)\n}\n",
+            "lines": "16"
+        }
+    ]
+}

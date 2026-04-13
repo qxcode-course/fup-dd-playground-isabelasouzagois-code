@@ -1,0 +1,59 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-13_17-16-54",
+            "content": "@@ -33,16 +33,35 @@\n ain() %7B%0A\n+    var m,a ,b int%0A\n     fmt.\n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-04-13_17-20-36",
+            "content": "@@ -41,190 +41,35 @@\n     \n-var m,f1,f2 int%0A    fmt.Scan(&m,&f1,&f2)%0A    f3 := m - f1 - f2%0A    maior := f1%0A    if maior%3Cf2 %7B%0A        f2=maior%0A    %7D%0A    if maior%3Cf3 %7B%0A        f3=maior%0A    %7D%0A    fmt.Println(maior\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-13_17-34-06",
+            "content": "@@ -116,17 +116,16 @@\n r := f1%0A\n-%0A\n     if m\n@@ -144,19 +144,17 @@\n       f2\n- = \n+=\n maior%0A  \n@@ -189,11 +189,9 @@\n   f3\n- = \n+=\n maio\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-13_17-35-55",
+            "content": "@@ -52,14 +52,8 @@\n 1,f2\n-,maior\n  int\n@@ -104,28 +104,40 @@\n  f2%0A\n-%0A    if f1%3Ef2&&f1%3Ef3\n+    maior := f1%0A%0A    if maior%3Cf2\n  %7B%0A \n@@ -144,17 +144,17 @@\n        f\n-1\n+2\n  = maior\n@@ -171,51 +171,17 @@\n  if \n-f2%3Ef1&&f2%3Ef3 %7B%0A        f2 = maior%0A    %7Delse\n+maior%3Cf3 \n %7B%0A  \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-13_17-39-13",
+            "content": "@@ -52,13 +52,19 @@\n 1,f2\n+,maior\n  int%0A\n-\n     \n@@ -121,17 +121,15 @@\n  f1%3E\n-=\n f2&&f1%3E\n-=\n f3 %7B\n@@ -137,34 +137,28 @@\n     \n+  \n-fmt.Println(f1)%0A   \n+  f1 = maior%0A\n     \n- %7D%0A\n+%7D\n %0A   \n@@ -168,17 +168,15 @@\n  f2%3E\n-=\n f1&&f2%3E\n-=\n f3 %7B\n@@ -189,107 +189,75 @@\n    f\n-mt.Println(f2)%0A        %7Delse%7B%0A            fmt.Println(f3)%0A        %7D%0A    %0A    %0A        %0A    %0A    %0A    %0A\n+2 = maior%0A    %7Delse%7B%0A        f3 = maior%0A    %7D%0A    fmt.Println(maior)%0A%7D\n %0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-13_17-42-25",
+            "content": "@@ -257,17 +257,20 @@\n       %7D%0A\n-%7D\n+    \n %0A    %0A  \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-13_17-42-34",
+            "content": "@@ -87,16 +87,20 @@\n    f3 :=\n+ m -\n  f1 - f2\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-13_17-43-31",
+            "content": "@@ -91,12 +91,8 @@\n 3 :=\n- m -\n  f1 \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-13_17-43-39",
+            "content": "@@ -159,20 +159,12 @@\n   %7D%0A\n+%0A\n    \n-     else\n  if \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-13_17-45-39",
+            "content": "@@ -150,24 +150,33 @@\n 1)%0A        %7D\n+%0A        \n else if f2%3E=\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-13_17-46-08",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var m,f1,f2 int\n    fmt.Scan(&m,&f1,&f2)\n    f3 := m - f1 - f2\n\n    if f1>=f2&&f1>=f3 {\n    fmt.Println(f1)\n        }else if f2>=f1&&f2>=f3 {\n        fmt.Println(f2)\n        }else{\n            fmt.Println(f3)\n        }\n}\n    \n        \n    \n    \n    \n\n",
+            "lines": "21"
+        }
+    ]
+}

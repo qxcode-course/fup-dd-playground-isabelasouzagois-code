@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-13_17-10-05",
+            "content": "@@ -10,36 +10,21 @@\n ain%0A\n-%0A\n import \n-(%0A%09\n %22fmt%22%0A\n-%09%22math%22%0A)%0A%0A\n func\n@@ -37,181 +37,39 @@\n ) %7B%0A\n-%09var x1, x2, y1, y2 float64%0A%09fmt.Scan(&x1, &y1, &x2, &y2)%0A%09dx := x2 - x1%0A%09dy := y2 - y1%0A%09soma := dx*dx + dy*dy%0A%09distancia := math.Sqrt(soma)%0A%09fmt.Printf(%22%25.2f%5Cn%22, distancia)%0A\n+    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-13_17-14-01",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\n\nfunc main() {\n\tvar x1, x2, y1, y2 float64\n\tfmt.Scan(&x1, &y1, &x2, &y2)\n\tdx := x2 - x1\n\tdy := y2 - y1\n\tsoma := dx*dx + dy*dy\n\tdistancia := math.Sqrt(soma)\n\tfmt.Printf(\"%.2f\\n\", distancia)\n\n}\n",
+            "lines": "17"
+        }
+    ]
+}
