@@ -1,0 +1,32 @@
+2026-04-13 12:26:42, MOVE, v:1, k:fup@pares, mode:DOWN
+2026-04-13 12:26:43, MOVE, v:1, k:fup@pares, mode:PICK
+2026-04-13 12:26:46, EXEC, v:1, k:fup@pares, mode:FULL, rate:0, size:5
+2026-04-13 12:26:42, MOVE, v:1, k:fup@pares, mode:EDIT
+2026-04-13 12:26:42, MOVE, v:1, k:fup@pares, mode:EDIT
+2026-04-13 12:26:46, MOVE, v:1, k:fup@pares, mode:EDIT
+2026-04-13 12:39:11, EXEC, v:1, k:fup@pares, mode:FULL, rate:0, size:14
+2026-04-13 12:39:20, EXEC, v:1, k:fup@pares, mode:FULL, rate:0, size:14
+2026-04-13 12:41:07, EXEC, v:1, k:fup@pares, mode:FULL, rate:0, size:14
+2026-04-13 12:41:11, EXEC, v:1, k:fup@pares, mode:FULL, rate:0
+2026-04-13 12:41:06, MOVE, v:1, k:fup@pares, mode:EDIT
+2026-04-13 12:41:11, MOVE, v:1, k:fup@pares, mode:EDIT
+2026-04-13 12:41:27, EXEC, v:1, k:fup@pares, mode:FULL, rate:0, size:14
+2026-04-13 12:41:56, EXEC, v:1, k:fup@pares, mode:FULL, size:14, fail:COMP
+2026-04-13 12:42:05, EXEC, v:1, k:fup@pares, mode:FULL, rate:0, size:14
+2026-04-13 12:42:25, EXEC, v:1, k:fup@pares, mode:FULL, rate:0, size:14
+2026-04-13 12:46:08, MOVE, v:1, k:fup@pares, mode:EDIT
+2026-04-13 12:42:25, MOVE, v:1, k:fup@pares, mode:EDIT
+2026-04-13 12:46:22, EXEC, v:1, k:fup@pares, mode:FULL, rate:0, size:14
+2026-04-13 12:46:40, EXEC, v:1, k:fup@pares, mode:FULL, rate:0
+2026-04-13 12:47:08, EXEC, v:1, k:fup@pares, mode:FULL, rate:0, size:14
+2026-04-13 12:50:21, EXEC, v:1, k:fup@pares, mode:FULL, size:14, fail:COMP
+2026-04-13 12:51:09, EXEC, v:1, k:fup@pares, mode:FULL, rate:0, size:14
+2026-04-13 12:51:07, MOVE, v:1, k:fup@pares, mode:EDIT
+2026-04-13 12:51:09, MOVE, v:1, k:fup@pares, mode:EDIT
+2026-04-13 12:54:42, EXEC, v:1, k:fup@pares, mode:FULL, rate:100, size:16
+2026-04-13 12:54:39, MOVE, v:1, k:fup@pares, mode:EDIT
+2026-04-13 12:54:41, MOVE, v:1, k:fup@pares, mode:EDIT
+2026-04-13 13:13:23, MOVE, v:1, k:fup@pares, mode:BACK
+2026-04-13 13:13:34, MOVE, v:1, k:fup@pares, mode:PICK
+2026-04-13 13:13:36, MOVE, v:1, k:fup@pares, mode:BACK
+2026-04-13 13:13:42, SELF, v:1, k:fup@pares, self:1, rate:100
