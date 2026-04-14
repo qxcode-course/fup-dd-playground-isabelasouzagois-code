@@ -1,0 +1,89 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-14_17-41-50",
+            "content": "@@ -28,351 +28,48 @@\n unc \n-ler (arr %5B%5Dint,sep string)%7B%0A    %0A    for i, valor := range arr%7B%0A        if i !=0%7B%0A            fmt.Print(sep)%0A        %7D%0A        fmt.Printf(%22%25v%22 , valor)%0A    %7D%0A    fmt.Print(%22%5D%5Cn%22)%0A%0A%7D%0Afunc main() %7B%0A%0A    var qnt int%0A    fmt.Scan(&qnt)%0A    var arr %5B%5D int = make(%5B%5Dint, qnt)%0A    for i := range arr %7B%0A        fmt.Scan(&arr%5Bi%5D)%0A    %7D%0A   ler(arr ,%22 \n+main() %7B%0A    fmt.Println(%22Hello, World!\n %22)%0A%7D%0A\n-%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-14_17-45-47",
+            "content": "@@ -196,16 +196,21 @@\n t.Print(\n+%22%5D%5Cn%22\n )%0A%0A%7D%0Afun\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-14_17-45-58",
+            "content": "@@ -199,10 +199,8 @@\n rint\n-ln\n ()%0A%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-14_17-46-08",
+            "content": "@@ -199,13 +199,11 @@\n rint\n-(%22%5Cn%22\n+ln(\n )%0A%0A%7D\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-14_17-46-42",
+            "content": "@@ -160,17 +160,25 @@\n mt.Print\n-(\n+f(%22%25v%22 , \n valor)%0A \n@@ -185,16 +185,32 @@\n    %7D%0A   \n+ fmt.Print(%22%5Cn%22)\n %0A%0A%7D%0Afunc\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-14_17-47-28",
+            "content": "@@ -164,10 +164,8 @@\n rint\n-ln\n (val\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-14_17-47-38",
+            "content": "@@ -341,14 +341,15 @@\n r(arr ,%22\n+ \n %22)%0A%7D%0A%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-14_17-47-50",
+            "content": "@@ -341,15 +341,14 @@\n r(arr ,%22\n- \n %22)%0A%7D%0A%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-14_17-47-56",
+            "content": "@@ -24,23 +24,19 @@\n t%22%0Afunc \n-vetores\n+ler\n  (arr %5B%5D\n@@ -160,16 +160,18 @@\n mt.Print\n+ln\n (valor)%0A\n@@ -184,25 +184,8 @@\n    %0A\n-    fmt.Println()\n %0A%7D%0Af\n@@ -335,15 +335,11 @@\n %0A   \n-vetores\n+ler\n (arr\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-14_17-50-15",
+            "content": "@@ -132,21 +132,19 @@\n t.Print(\n-valor\n+sep\n )%0A      \n@@ -151,24 +151,40 @@\n   %7D%0A        \n+fmt.Print(valor)\n %0A    %7D%0A   fm\n@@ -181,16 +181,21 @@\n    %7D%0A   \n+%0A    \n fmt.Prin\n@@ -195,26 +195,20 @@\n mt.Print\n-(sep)%0A    \n+ln()\n %0A%7D%0Afunc \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-14_17-51-36",
+            "content": "@@ -167,16 +167,30 @@\n    %7D%0A   \n+fmt.Print(sep)\n %0A    %0A%7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-14_17-51-43",
+            "content": "@@ -132,19 +132,21 @@\n t.Print(\n-sep\n+valor\n )%0A      \n@@ -161,26 +161,8 @@\n     \n-fmt.Println(valor)\n %0A   \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-14_17-51-55",
+            "content": "@@ -168,17 +168,11 @@\n rint\n-f(%22%25d%5Cn%22,\n+ln(\n valo\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-14_17-53-26",
+            "content": "@@ -359,14 +359,15 @@\n s(arr ,%22\n+ \n %22)%0A%7D%0A%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-14_17-54-43",
+            "content": "@@ -135,10 +135,8 @@\n rint\n-ln\n (sep\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-14_17-58-22",
+            "content": "@@ -170,17 +170,19 @@\n rintf(%22%25\n-v\n+d%5Cn\n %22,valor)\n@@ -195,23 +195,8 @@\n %0A   \n-fmt.Print(%22%5Cn%22)\n %0A   \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-14_17-58-57",
+            "content": "package main\nimport \"fmt\"\nfunc vetores (arr []int,sep string){\n    \n    for i, valor := range arr{\n        if i !=0{\n            fmt.Println(sep)\n        }\n        fmt.Printf(\"%v\",valor)\n    }\n   fmt.Print(\"\\n\")\n    \n}\nfunc main() {\n\n    var qnt int\n    fmt.Scan(&qnt)\n    var arr [] int = make([]int, qnt)\n    for i := range arr {\n        fmt.Scan(&arr[i])\n    }\n   vetores(arr ,\"\")\n}\n\n",
+            "lines": "24"
+        }
+    ]
+}
