@@ -1,0 +1,62 @@
+2026-04-26 20:07:50, MOVE, v:1, k:fup@vet_i, mode:PICK
+2026-04-26 20:07:53, EXEC, v:1, k:fup@vet_i, mode:FULL, rate:100
+2026-04-26 20:08:30, MOVE, v:1, k:fup@vet_i, mode:BACK
+2026-04-26 20:08:58, SELF, v:1, k:fup@vet_i, self:1, rate:100, guided:1
+2026-04-26 20:09:38, MOVE, v:1, k:fup@vet_ii, mode:DOWN
+2026-04-26 20:09:39, MOVE, v:1, k:fup@vet_ii, mode:PICK
+2026-04-26 20:11:40, MOVE, v:1, k:fup@vet_ii, mode:PICK
+2026-04-26 20:11:42, EXEC, v:1, k:fup@vet_ii, mode:FULL, rate:0, size:5
+2026-04-26 20:11:42, MOVE, v:1, k:fup@vet_ii, mode:EDIT
+2026-04-26 20:15:13, MOVE, v:1, k:fup@vet_ii, mode:EDIT
+2026-04-26 20:21:05, MOVE, v:1, k:fup@vet_ii, mode:EDIT
+2026-04-26 20:25:54, MOVE, v:1, k:fup@vet_ii, mode:EDIT
+2026-04-26 20:31:17, MOVE, v:1, k:fup@vet_ii, mode:EDIT
+2026-04-26 20:32:51, EXEC, v:1, k:fup@vet_ii, mode:FULL, rate:0, size:23
+2026-04-26 20:34:52, EXEC, v:1, k:fup@vet_ii, mode:FULL, rate:0, size:23
+2026-04-26 20:36:01, EXEC, v:1, k:fup@vet_ii, mode:FULL, rate:0, size:23
+2026-04-26 20:35:58, MOVE, v:1, k:fup@vet_ii, mode:EDIT
+2026-04-26 20:36:01, MOVE, v:1, k:fup@vet_ii, mode:EDIT
+2026-04-26 20:39:03, EXEC, v:1, k:fup@vet_ii, mode:FULL, rate:0, size:24
+2026-04-26 20:40:01, EXEC, v:1, k:fup@vet_ii, mode:FULL, rate:0, size:24
+2026-04-26 20:41:08, EXEC, v:1, k:fup@vet_ii, mode:FULL, rate:0, size:30
+2026-04-26 20:41:26, EXEC, v:1, k:fup@vet_ii, mode:FULL, rate:0, size:30
+2026-04-26 20:41:25, MOVE, v:1, k:fup@vet_ii, mode:EDIT
+2026-04-26 20:41:26, MOVE, v:1, k:fup@vet_ii, mode:EDIT
+2026-04-26 21:06:31, MOVE, v:1, k:fup@vet_ii, mode:EDIT
+2026-04-26 21:06:45, EXEC, v:1, k:fup@vet_ii, mode:FULL, rate:0, size:26
+2026-04-26 21:08:20, EXEC, v:1, k:fup@vet_ii, mode:FULL, rate:0, size:27
+2026-04-26 21:08:38, EXEC, v:1, k:fup@vet_ii, mode:FULL, rate:0, size:27
+2026-04-26 21:08:53, EXEC, v:1, k:fup@vet_ii, mode:FULL, rate:0, size:27
+2026-04-26 21:09:11, EXEC, v:1, k:fup@vet_ii, mode:FULL, rate:75, size:27
+2026-04-26 21:09:20, EXEC, v:1, k:fup@vet_ii, mode:FULL, rate:25, size:27
+2026-04-26 21:09:35, EXEC, v:1, k:fup@vet_ii, mode:FULL, rate:75, size:27
+2026-04-26 21:10:23, EXEC, v:1, k:fup@vet_ii, mode:FULL, rate:75, size:32
+2026-04-26 21:10:29, EXEC, v:1, k:fup@vet_ii, mode:FULL, rate:75, size:32
+2026-04-26 21:10:49, EXEC, v:1, k:fup@vet_ii, mode:FULL, rate:75, size:32
+2026-04-26 21:11:21, MOVE, v:1, k:fup@vet_ii, mode:EDIT
+2026-04-26 21:10:48, MOVE, v:1, k:fup@vet_ii, mode:EDIT
+2026-04-26 21:12:00, EXEC, v:1, k:fup@vet_ii, mode:FULL, rate:75, size:34
+2026-04-26 21:13:07, EXEC, v:1, k:fup@vet_ii, mode:FULL, rate:75, size:32
+2026-04-26 21:13:23, EXEC, v:1, k:fup@vet_ii, mode:FULL, rate:100, size:32
+2026-04-26 21:14:33, MOVE, v:1, k:fup@vet_ii, mode:BACK
+2026-04-26 21:14:56, SELF, v:1, k:fup@vet_ii, self:1, rate:100, friend:alec
+2026-04-26 21:15:13, MOVE, v:1, k:fup@vet_iii, mode:DOWN
+2026-04-26 21:15:15, MOVE, v:1, k:fup@vet_iii, mode:PICK
+2026-04-26 21:15:16, EXEC, v:1, k:fup@vet_iii, mode:FULL, rate:0, size:5
+2026-04-26 21:13:22, MOVE, v:1, k:fup@vet_ii, mode:EDIT
+2026-04-26 21:13:23, MOVE, v:1, k:fup@vet_ii, mode:EDIT
+2026-04-26 21:15:13, MOVE, v:1, k:fup@vet_iii, mode:EDIT
+2026-04-26 21:15:13, MOVE, v:1, k:fup@vet_iii, mode:EDIT
+2026-04-26 21:15:16, MOVE, v:1, k:fup@vet_iii, mode:EDIT
+2026-04-26 21:17:56, EXEC, v:1, k:fup@vet_iii, mode:FULL, rate:0, size:32
+2026-04-26 21:19:27, EXEC, v:1, k:fup@vet_iii, mode:FULL, rate:0, size:33
+2026-04-26 21:20:38, EXEC, v:1, k:fup@vet_iii, mode:FULL, rate:25, size:33
+2026-04-26 21:20:31, MOVE, v:1, k:fup@vet_iii, mode:EDIT
+2026-04-26 21:20:38, MOVE, v:1, k:fup@vet_iii, mode:EDIT
+2026-04-26 21:23:37, EXEC, v:1, k:fup@vet_iii, mode:FULL, rate:25, size:33
+2026-04-26 21:24:16, EXEC, v:1, k:fup@vet_iii, mode:FULL, rate:75, size:31
+2026-04-26 21:24:26, EXEC, v:1, k:fup@vet_iii, mode:FULL, rate:100, size:31
+2026-04-26 21:25:15, MOVE, v:1, k:fup@vet_iii, mode:BACK
+2026-04-26 21:25:30, SELF, v:1, k:fup@vet_iii, self:1, rate:100
+2026-04-26 21:24:25, MOVE, v:1, k:fup@vet_iii, mode:EDIT
+2026-04-26 21:24:26, MOVE, v:1, k:fup@vet_iii, mode:EDIT

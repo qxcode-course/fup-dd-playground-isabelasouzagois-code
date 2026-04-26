@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-26_21-15-16",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,383 +37,39 @@\n ) %7B%0A\n-%09var num int%0A%09fmt.Scan(&num)%0Avetor := make(%5B%5Dint, num)%0A      if(num == 0)%7B%0A        fmt.Print(%22%5B %5D%5Cn%22)%0A        %0A    %7D  else%7B%0A%09for i := 0; i %3C num; i++ %7B%0A%09%09fmt.Scan(&vetor%5Bi%5D)%0A%09%7D%0A    fmt.Printf(%22%5B %22)%0A%0A%09for i := 0; i %3C num; i++ %7B%0A%09%09if i == num -1 %7B%0A%09%09%09fmt.Print(vetor%5Bi%5D )%0A%09%09%7Delse%7B%0A            fmt.Print(vetor%5Bi%5D,%22 %22)%0A        %7D%0A%0A%0A%09%09%09%0A%09%09%7D%0A      %0A        fmt.Printf(%22 %5D%5Cn%22)%0A    %7D%0A%09%7D%0A\n+    fmt.Println(%22Hello, World!%22)%0A%7D\n %0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-26_21-17-56",
+            "content": "@@ -364,78 +364,9 @@\n   %7D%0A\n-        if i != num - 1%7B%0A            fmt.Print(vetor%5Bi%5D,%22,%22)%0A        %7D\n+%0A\n %0A%09%09%09\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-04-26_21-19-27",
+            "content": "@@ -229,16 +229,17 @@\n rintf(%22%5B\n+ \n %22)%0A%0A%09for\n@@ -466,16 +466,17 @@\n Printf(%22\n+ \n %5D%5Cn%22)%0A  \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-04-26_21-20-38",
+            "content": "@@ -406,16 +406,25 @@\n t.Print(\n+vetor%5Bi%5D,\n %22,%22)%0A   \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-04-26_21-23-37",
+            "content": "@@ -345,17 +345,16 @@\n tor%5Bi%5D,%22\n-,\n  %22)%0A    \n@@ -367,16 +367,69 @@\n         \n+if i != num - 1%7B%0A            fmt.Print(%22,%22)%0A        %7D\n %0A%09%09%09%0A%09%09%7D\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-04-26_21-24-16",
+            "content": "@@ -130,16 +130,17 @@\n Print(%22%5B\n+ \n %5D%5Cn%22)%0A  \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-04-26_21-24-26",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar num int\n\tfmt.Scan(&num)\nvetor := make([]int, num)\n      if(num == 0){\n        fmt.Print(\"[]\\n\")\n        \n    }  else{\n\tfor i := 0; i < num; i++ {\n\t\tfmt.Scan(&vetor[i])\n\t}\n    fmt.Printf(\"[\")\n\n\tfor i := 0; i < num; i++ {\n\t\tif i == num -1 {\n\t\t\tfmt.Print(vetor[i] )\n\t\t}else{\n            fmt.Print(vetor[i],\", \")\n        }\n        \n\t\t\t\n\t\t}\n      \n        fmt.Printf(\"]\\n\")\n    }\n\t}\n\n",
+            "lines": "31"
+        }
+    ]
+}
