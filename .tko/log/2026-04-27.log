@@ -1,0 +1,16 @@
+2026-04-27 16:52:07, SELF, v:1, k:fup@vet_iii, self:1, rate:75
+2026-04-27 16:52:17, MOVE, v:1, k:fup@vet_ii, mode:PICK
+2026-04-27 16:52:19, MOVE, v:1, k:fup@vet_ii, mode:BACK
+2026-04-27 16:52:25, SELF, v:1, k:fup@vet_ii, self:1, rate:75, friend:alec
+2026-04-27 17:57:52, MOVE, v:1, k:sandbox@user_002, mode:PICK
+2026-04-27 17:58:00, EXEC, v:1, k:sandbox@user_002, mode:LOCK, rate:0, size:5
+2026-04-27 17:57:42, MOVE, v:1, k:sandbox@user_002, mode:EDIT
+2026-04-27 17:58:00, MOVE, v:1, k:sandbox@user_002, mode:EDIT
+2026-04-27 17:58:59, MOVE, v:1, k:sandbox@user_002, mode:EDIT
+2026-04-27 18:07:17, MOVE, v:1, k:sandbox@user_002, mode:EDIT
+2026-04-27 18:12:18, MOVE, v:1, k:sandbox@user_002, mode:EDIT
+2026-04-27 18:17:19, MOVE, v:1, k:sandbox@user_002, mode:EDIT
+2026-04-27 18:22:18, MOVE, v:1, k:sandbox@user_002, mode:EDIT
+2026-04-27 18:27:18, MOVE, v:1, k:sandbox@user_002, mode:EDIT
+2026-04-27 18:29:55, EXEC, v:1, k:sandbox@user_002, mode:FULL, size:70, fail:COMP
+2026-04-27 18:30:01, MOVE, v:1, k:sandbox@user_002, mode:BACK
