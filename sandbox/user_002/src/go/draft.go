@@ -1,9 +1,9 @@
 package main
-import {
-    "fmt"
-    "slices"
-    "strconv"
-}
+import "fmt"
+ import   "slices"
+ import   "strconv"
+   
+
 func filtrar_impares (nums []int) []int{
     impares := make([]int,0,len(nums))
     for _,elem := range nums{
@@ -64,7 +64,7 @@ func main() {
         fmt.Println(err)
     }
     album, repet := separar_figurinha(montante)
-    slices.sort(repet)
+    slices.Sort(repet)
     fmt.Println(album)
     fmt.Println(repet)
 }

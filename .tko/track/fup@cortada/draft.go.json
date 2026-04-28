@@ -2,8 +2,13 @@
     "patches": [
         {
             "label": "2026-03-31_17-27-12",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -41,266 +41,35 @@\n     \n-var b,t int%0A    h:= 70%0A    fmt.Scan(&b,&t)%0A    area :=((b+t)*h)/2%0A    areat:=70*160%0A    if area %3E areat - area%7B%0A        fmt.Println(%221%22)%0A    %7Delse if area%3Careat - area%7B%0A        fmt.Println(%222%22)%0A    %7Delse if area == areat - area%7B%0A    fmt.Println(%220%22)%0A    %7D%0A   \n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-04-28_18-08-46",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var b,t int\n    h:= 70\n    fmt.Scan(&b,&t)\n    area :=((b+t)*h)/2\n    areat:=70*160\n    if area > areat - area{\n        fmt.Println(\"1\")\n    }else if area<areat - area{\n        fmt.Println(\"2\")\n    }else if area == areat - area{\n    fmt.Println(\"0\")\n    }\n   \n}\n",
+            "lines": "17"
         }
     ]
 }

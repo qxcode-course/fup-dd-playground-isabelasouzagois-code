@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-28_18-02-26",
+            "content": "@@ -41,199 +41,35 @@\n     \n-var f1,f2,f3 int%0A    fmt.Scan(&f1,&f2,&f3)%0A    if f1 %3E=f2 && f1 %3E=f3%7B%0A        fmt.Println(f1)%0A    %7Delse if f2 %3E=f1 &&f2%3E=f3%7B%0A        fmt.Println(f2)%0A    %7Delse%7B%0A        fmt.Print(f3)%0A    %7D%0A    \n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-28_18-22-50",
+            "content": "@@ -214,18 +214,16 @@\n mt.Print\n-ln\n (f3)%0A   \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-28_18-23-25",
+            "content": "@@ -53,10 +53,8 @@\n 2,f3\n-.m\n  int\n@@ -84,26 +84,8 @@\n f3)%0A\n-    f3 := m-f1-f2%0A\n     \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-28_18-25-03",
+            "content": "@@ -84,11 +84,8 @@\n ,&f3\n-,&m\n )%0A  \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-28_18-25-15",
+            "content": "@@ -47,16 +47,19 @@\n r f1,f2,\n+f3.\n m int%0A  \n@@ -78,16 +78,20 @@\n f1,&f2,&\n+f3,&\n m)%0A    f\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-28_18-25-31",
+            "content": "@@ -90,20 +90,18 @@\n f3 := m-\n- \n f1\n- \n -f2%0A    \n@@ -108,17 +108,16 @@\n if f1 %3E=\n- \n f2 && f1\n@@ -119,20 +119,18 @@\n && f1 %3E=\n- \n f3\n- \n %7B%0A      \n@@ -165,17 +165,16 @@\n if f2 %3E=\n- \n f1 &&f2%3E\n@@ -176,17 +176,16 @@\n &&f2%3E=f3\n- \n %7B%0A      \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-28_18-26-11",
+            "content": "@@ -47,19 +47,16 @@\n r f1,f2,\n-f3,\n m int%0A  \n@@ -79,12 +79,8 @@\n f2,&\n-f3,&\n m)%0A \n@@ -85,16 +85,17 @@\n %0A    f3 \n+:\n = m- f1 \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-28_18-26-37",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var f1,f2,f3,m int\n    fmt.Scan(&f1,&f2,&f3,&m)\n    f3 = m- f1 -f2\n    if f1 >= f2 && f1 >= f3 {\n        fmt.Println(f1)\n    }else if f2 >= f1 &&f2>=f3 {\n        fmt.Println(f2)\n    }else{\n        fmt.Println(f3)\n    }\n    \n}\n",
+            "lines": "15"
+        }
+    ]
+}
