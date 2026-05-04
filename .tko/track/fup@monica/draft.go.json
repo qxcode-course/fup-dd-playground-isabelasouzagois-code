@@ -37,7 +37,82 @@
         },
         {
             "label": "2026-04-28_18-26-37",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var f1,f2,f3,m int\n    fmt.Scan(&f1,&f2,&f3,&m)\n    f3 = m- f1 -f2\n    if f1 >= f2 && f1 >= f3 {\n        fmt.Println(f1)\n    }else if f2 >= f1 &&f2>=f3 {\n        fmt.Println(f2)\n    }else{\n        fmt.Println(f3)\n    }\n    \n}\n",
+            "content": "@@ -96,9 +96,8 @@\n  f3 \n-:\n = m-\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-03_16-52-01",
+            "content": "@@ -47,16 +47,19 @@\n r f1,f2,\n+f3,\n m int%0A  \n@@ -78,16 +78,20 @@\n f1,&f2,&\n+f3,&\n m)%0A    f\n@@ -105,9 +105,9 @@\n  f1 \n-+\n+-\n f2%0A \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-03_16-52-32",
+            "content": "@@ -93,17 +93,18 @@\n := m- f1\n--\n+ +\n f2%0A    i\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-03_16-52-54",
+            "content": "@@ -108,16 +108,17 @@\n  if f1 %3E\n+=\n  f2 && f\n@@ -120,16 +120,17 @@\n  && f1 %3E\n+=\n  f3 %7B%0A  \n@@ -168,16 +168,17 @@\n  if f2 %3E\n+=\n  f1 &&f2\n@@ -178,16 +178,17 @@\n f1 &&f2%3E\n+=\n f3 %7B%0A   \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-03_16-53-17",
+            "content": "@@ -89,17 +89,16 @@\n  f3 := m\n- \n - f1-f2%0A\n@@ -108,17 +108,16 @@\n  if f1 %3E\n-=\n  f2 && f\n@@ -119,17 +119,16 @@\n  && f1 %3E\n-=\n  f3 %7B%0A  \n@@ -170,20 +170,17 @@\n f2 %3E\n-=\n  f1 &&\n- \n f2%3E\n-=\n f3 %7B\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-03_16-56-14",
+            "content": "@@ -121,16 +121,17 @@\n  && f1 %3E\n+=\n  f3 %7B%0A  \n@@ -180,16 +180,17 @@\n 1 && f2%3E\n+=\n f3 %7B%0A   \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-03_16-56-59",
+            "content": "@@ -179,17 +179,16 @@\n 1 && f2%3E\n-=\n f3 %7B%0A   \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-03_16-57-09",
+            "content": "@@ -96,15 +96,13 @@\n m - \n-(\n f1-f2\n-)\n %0A   \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-03_16-57-25",
+            "content": "@@ -99,9 +99,9 @@\n  (f1\n-+\n+-\n f2)%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-03_16-57-34",
+            "content": "@@ -91,13 +91,17 @@\n 3 :=\n+ m -\n  (f1\n--\n++\n f2)%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-03_16-58-22",
+            "content": "@@ -107,16 +107,17 @@\n  if f1 %3E\n+=\n  f2 && f\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-03_16-58-51",
+            "content": "@@ -92,17 +92,15 @@\n  := \n+(\n f1-f2\n- - m\n+)\n %0A   \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-03_16-59-12",
+            "content": "@@ -71,17 +71,17 @@\n an(&\n-m,&\n f1,&f2\n+,&m\n )%0A  \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-03_16-59-32",
+            "content": "@@ -75,13 +75,13 @@\n m,&f\n-2,&f1\n+1,&f2\n )%0A  \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-03_17-00-04",
+            "content": "@@ -75,13 +75,13 @@\n m,&f\n-1,&f2\n+2,&f1\n )%0A  \n@@ -91,18 +91,18 @@\n 3 :=\n- m -\n  f1-f2\n+ - m\n %0A   \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-03_17-00-27",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var f1,f2,m int\n    fmt.Scan(&m,&f1,&f2)\n    f3 := m - f1-f2\n    if f1 > f2 && f1 > f3 {\n        fmt.Println(f1)\n    }else if f2 >= f1 && f2>=f3 {\n        fmt.Println(f2)\n    }else{\n        fmt.Println(f3)\n    }\n    \n}\n",
             "lines": "15"
         }
     ]

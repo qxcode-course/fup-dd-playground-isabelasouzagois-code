@@ -7,8 +7,13 @@
         },
         {
             "label": "2026-04-28_18-14-00",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a,b,c,h,l int\n    fmt.Scan(&a,&b,&c,&h,&l)\n    areaj:=h*l\n    if areaj >=a*b||areaj>=a*c||areaj>=b*c{\n        fmt.Println(\"S\")\n    }else{\n        fmt.Println(\"N\")\n    }\n    \n}\n",
+            "content": "@@ -217,9 +217,8 @@\n %0A    %0A%7D%0A\n-%0A\n",
             "lines": "13"
+        },
+        {
+            "label": "2026-05-03_17-01-27",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a,b,c,h,l int\n    fmt.Scan(&a,&b,&c,&h,&l)\n    areaj:=h*l\n    if areaj >=a*b||areaj>=a*c||areaj>=b*c{\n        fmt.Println(\"S\")\n    }else{\n        fmt.Println(\"N\")\n    }\n    \n}\n\n",
+            "lines": "14"
         }
     ]
 }

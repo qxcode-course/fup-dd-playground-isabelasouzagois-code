@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-04_13-33-56",
+            "content": "@@ -41,158 +41,35 @@\n     \n-var a ,b int%0A    var soma int = 0%0A    fmt.Scan(&a,&b)%0A    for i:=a;i%3C=b;i++%7B%0A        if i%252==0 && i%253 ==0%0A        soma += i%0A    %7D%0A    fmt.Println(soma\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-04_13-40-03",
+            "content": "@@ -142,17 +142,16 @@\n  i%253 ==0\n-%7B\n %0A       \n@@ -167,18 +167,16 @@\n i%0A    %7D%0A\n-%7D%0A\n     fmt.\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-04_13-40-32",
+            "content": "@@ -166,51 +166,8 @@\n = i%0A\n-    %7Delse%7B%0A        fmt.Println(%22invalido%22)%0A\n     \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-04_13-41-33",
+            "content": "@@ -162,16 +162,59 @@\n ma += i%0A\n+    %7Delse%7B%0A        fmt.Println(%22invalido%22)%0A\n     %7D%0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-04_13-41-52",
+            "content": "@@ -95,63 +95,8 @@\n &b)%0A\n-    if a%3Eb%7B%0A        fmt.Println(%22invalido%22)%0A    %7Delse%7B%0A\n     \n@@ -170,22 +170,16 @@\n     %7D%0A%7D%0A\n-    %7D%0A\n     fmt.\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-04_13-43-24",
+            "content": "@@ -229,16 +229,17 @@\n %7D%0A%7D%0A    \n+%7D\n %0A    fmt\n@@ -255,10 +255,8 @@\n soma)%0A%7D%0A\n-%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-04_13-44-41",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a ,b int\n    var soma int = 0\n    fmt.Scan(&a,&b)\n    if a>b{\n        fmt.Println(\"invalido\")\n    }else{\n    for i:=a;i<=b;i++{\n        if i%2==0 && i%3 ==0{\n        soma += i\n    }\n}\n    \n    fmt.Println(soma)\n}\n}\n",
+            "lines": "18"
+        }
+    ]
+}

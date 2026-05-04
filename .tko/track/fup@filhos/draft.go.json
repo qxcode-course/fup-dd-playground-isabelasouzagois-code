@@ -7,8 +7,48 @@
         },
         {
             "label": "2026-04-11_22-54-47",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var qnt,id int\n    fmt.Scan(&qnt,&id)\n    for i:=qnt;i>0;i++{\n        fmt.Print(i)\n    }\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -116,18 +116,16 @@\n mt.Print\n-ln\n (i)%0A    \n",
             "lines": "10"
+        },
+        {
+            "label": "2026-05-04_13-52-48",
+            "content": "@@ -90,21 +90,19 @@\n  i:=\n- \n qnt;i%3E0\n- \n ;i\n---\n+++\n %7B%0A  \n@@ -120,17 +120,16 @@\n rintln(i\n-d\n )%0A    %7D%0A\n@@ -132,11 +132,39 @@\n   %7D%0A    \n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-05-04_13-55-07",
+            "content": "@@ -91,20 +91,20 @@\n i:= \n-1;i%3C=id ;i++\n+qnt;i%3E0 ;i--\n %7B%0A  \n@@ -125,15 +125,10 @@\n tln(\n-qnt * \n i\n+d\n )%0A  \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-05-04_13-56-38",
+            "content": "@@ -125,14 +125,15 @@\n tln(\n-2\n+qnt \n * i\n-+1\n )%0A  \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-05-04_13-58-29",
+            "content": "@@ -127,12 +127,11 @@\n n(2*\n-i + \n+ i+\n 1)%0A \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-05-04_13-58-43",
+            "content": "@@ -79,22 +79,8 @@\n id)%0A\n-    valor :=1%0A\n     \n@@ -125,32 +125,16 @@\n tln(\n-valor)%0A        valor +=2\n+2*i + 1)\n %0A   \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-05-04_13-59-23",
+            "content": "@@ -87,20 +87,17 @@\n valor :=\n- qnt\n+1\n %0A    for\n@@ -105,9 +105,9 @@\n i:= \n-0\n+1\n ;i%3C=\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-04_14-00-47",
+            "content": "@@ -108,16 +108,17 @@\n i:= 0;i%3C\n+=\n id ;i++%7B\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-04_14-01-45",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var qnt,id int\n    fmt.Scan(&qnt,&id)\n    valor := qnt\n    for i:= 0;i<id ;i++{\n        fmt.Println(valor)\n        valor +=2\n    }\n    \n}\n",
+            "lines": "12"
         }
     ]
 }
