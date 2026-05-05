@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-04_17-11-57",
+            "content": "@@ -41,173 +41,35 @@\n     \n-var num,menor int%0A    fmt.Scan(&menor)%0A    for i:=0;i%3C4;i++%7B%0A        fmt.Scan(&num)%0A        if num %3Cmenor%7B%0A            menor =num%0A        %7D%0A    %7D%0A    fmt.Println(num\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-05_22-58-54",
+            "content": "@@ -199,17 +199,15 @@\n Println(\n-menor\n+num\n )%0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-05_22-59-07",
+            "content": "@@ -45,21 +45,42 @@\n var \n-v %5B5%5Dint%0A    \n+num,menor int%0A    fmt.Scan(&menor)\n %0A   \n@@ -91,17 +91,17 @@\n  i:=0;i%3C\n-5\n+4\n ;i++%7B%0A  \n@@ -116,20 +116,19 @@\n t.Scan(&\n-v%5Bi%5D\n+num\n )%0A      \n@@ -133,88 +133,27 @@\n     \n-%0A        %7D%0A        menor:=v%5B0%5D%0A         for i:=1;i%3C5;i++%7B%0A       if v%5Bi%5D%3Cmenor%7B%0A\n+if num %3Cmenor%7B%0A    \n     \n@@ -165,14 +165,15 @@\n enor\n-=v%5Bi%5D%0A\n+ =num%0A \n     \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-05_23-03-39",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var v [5]int\n    \n    for i:=0;i<5;i++{\n        fmt.Scan(&v[i])\n        \n        }\n        menor:=v[0]\n         for i:=1;i<5;i++{\n       if v[i]<menor{\n        menor=v[i]\n       }\n    }\n    fmt.Println(menor)\n}\n",
+            "lines": "17"
+        }
+    ]
+}

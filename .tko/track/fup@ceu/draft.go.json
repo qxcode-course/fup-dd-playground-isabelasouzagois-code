@@ -117,8 +117,168 @@
         },
         {
             "label": "2026-05-04_14-21-31",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var pedra int\n    fmt.Scan(&pedra)\n    fmt.Print(\"[ \")\n    for i := 0; i <= 10; i++{\n\n        if i == pedra{\n            continue\n        }\n\n        if i == 10{\n            fmt.Printf(\"ceu\")\n            break\n        }\n        fmt.Printf(\"%d\", i)\n        if i < 10{\n            fmt.Printf(\" \")\n        }\n    }\n    fmt.Printf(\" ]\")\n}\n",
+            "content": "@@ -122,16 +122,17 @@\n 0; i++%7B%0A\n+%0A\n         \n@@ -219,16 +219,17 @@\n mt.Print\n+f\n (%22ceu%22)%0A\n@@ -278,17 +278,16 @@\n intf(%22%25d\n- \n %22, i)%0A  \n@@ -291,26 +291,55 @@\n %0A       \n-%0A        %7D\n+ if i %3C 10%7B%0A            fmt.Printf(%22 %22)\n %0A       \n@@ -339,21 +339,24 @@\n         \n+%7D\n %0A    \n+%7D%0A\n     fmt.\n@@ -364,21 +364,14 @@\n rint\n+f\n (%22\n+ \n %5D%22)%0A\n-    %7D%0A   %0A\n+%7D\n %0A\n",
             "lines": "23"
+        },
+        {
+            "label": "2026-05-04_17-06-26",
+            "content": "@@ -329,17 +329,16 @@\n .Print(%22\n- \n %5D%22)%0A    \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-04_17-06-40",
+            "content": "@@ -279,16 +279,17 @@\n f(%22%25d %22,\n+ \n i)%0A     \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-04_17-09-55",
+            "content": "@@ -328,16 +328,17 @@\n .Print(%22\n+ \n %5D%22)%0A    \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-04_17-10-13",
+            "content": "@@ -328,17 +328,16 @@\n .Print(%22\n- \n %5D%22)%0A    \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-04_17-10-24",
+            "content": "@@ -330,10 +330,8 @@\n rint\n-ln\n (%22 %5D\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-05_21-55-13",
+            "content": "@@ -330,16 +330,17 @@\n rintln(%22\n+ \n %5D%22)%0A    \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-05_21-55-19",
+            "content": "@@ -330,17 +330,16 @@\n rintln(%22\n- \n %5D%22)%0A    \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-05_21-55-28",
+            "content": "@@ -276,16 +276,17 @@\n intf(%22%25d\n+ \n %22,i)%0A   \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-05_21-56-39",
+            "content": "@@ -276,17 +276,16 @@\n intf(%22%25d\n- \n %22,i)%0A   \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-05_21-56-45",
+            "content": "@@ -258,36 +258,8 @@\n   %7D%0A\n-        if ! primeiro %7B%0A    \n     \n@@ -275,12 +275,17 @@\n rint\n+f\n (%22\n- %22\n+%25d %22,i\n )%0A  \n@@ -281,34 +281,32 @@\n %22%25d %22,i)%0A       \n- %7D\n %0A        %7D%0A     \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-05_22-00-08",
+            "content": "@@ -246,32 +246,60 @@\n break%0A        %7D%0A\n+        if ! primeiro %7B%0A    \n         fmt.Prin\n@@ -303,17 +303,12 @@\n rint\n-f\n (%22\n-%25d %22,i\n+ %22\n )%0A  \n@@ -308,24 +308,26 @@\n %22 %22)%0A       \n+ %7D\n %0A        %7D%0A \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-05_22-00-30",
+            "content": "@@ -302,89 +302,9 @@\n     \n-if i == 9 && pedra == 10%7B%0A            fmt.Printf(%22 %22)%0A        %7D%0A        %7D%0A       \n+%7D\n %0A   \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-05_22-06-22",
+            "content": "@@ -348,16 +348,17 @@\n Printf(%22\n+ \n %22)%0A     \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-05-05_22-06-36",
+            "content": "@@ -289,32 +289,95 @@\n %0A       %0A       \n+ if i == 9 && pedra == 10%7B%0A            fmt.Printf(%22%22)%0A        %7D\n %0A        %7D%0A     \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-05-05_22-07-21",
+            "content": "@@ -246,33 +246,32 @@\n break%0A        %7D%0A\n-%0A\n         fmt.Prin\n@@ -276,16 +276,17 @@\n intf(%22%25d\n+ \n %22,i)%0A   \n@@ -294,75 +294,8 @@\n    %0A\n-        if i != 10%7B%0A            fmt.Printf(%22 %22)%0A        %7D%0A        %0A\n     \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-05_22-11-05",
+            "content": "@@ -285,61 +285,8 @@\n %22,i)\n-%0A%0A        if pedra == 10%7B%0A            break%0A        %7D\n %0A   \n@@ -308,17 +308,16 @@\n  i != 10\n- \n %7B%0A      \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-05_22-14-17",
+            "content": "@@ -306,19 +306,8 @@\n a ==\n- 10 && i ==\n  10%7B\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-05-05_22-14-29",
+            "content": "@@ -354,32 +354,44 @@\n        %0A        \n+if i != 10 %7B\n %0A            fmt\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-05-05_22-14-51",
+            "content": "@@ -345,32 +345,53 @@\n        %7D%0A       \n+%0A        %0A           \n  fmt.Printf(%22 %22)\n@@ -391,32 +391,33 @@\n tf(%22 %22)%0A        \n+%7D\n %0A        %0A      \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-05-05_22-15-05",
+            "content": "@@ -180,32 +180,8 @@\n   %7D%0A\n-         fmt.Printf(%22 %22)\n %0A   \n@@ -345,32 +345,48 @@\n        %7D%0A       \n+ fmt.Printf(%22 %22)\n %0A        %0A      \n@@ -444,16 +444,17 @@\n rintln(%22\n+ \n %5D%22)%0A    \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-05_22-17-31",
+            "content": "@@ -168,32 +168,56 @@\n tinue%0A        %7D%0A\n+         fmt.Printf(%22 %22)\n %0A        if i ==\n@@ -377,32 +377,16 @@\n %0A       \n- fmt.Printf(%22 %22)\n %0A       \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-05_22-17-41",
+            "content": "@@ -277,17 +277,16 @@\n intf(%22%25d\n- \n %22,i)%0A%0A  \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-05_22-18-09",
+            "content": "@@ -277,16 +277,17 @@\n intf(%22%25d\n+ \n %22,i)%0A%0A  \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-05_22-18-17",
+            "content": "@@ -444,17 +444,16 @@\n rintln(%22\n- \n %5D%22)%0A    \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-05_22-18-39",
+            "content": "@@ -334,84 +334,13 @@\n     \n-fmt.Println(%22%5D%22)%0A        %7D%0A        if i == 10%7B%0A            fmt.Println(%22 %5D%22)\n+break\n %0A   \n@@ -427,24 +427,41 @@\n    %0A        \n+fmt.Println(%22 %5D%22)\n %0A    %7D%0A   %0A%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-05_22-19-58",
+            "content": "@@ -377,9 +377,10 @@\n  == \n-9\n+10\n %7B%0A  \n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-05-05_22-20-19",
+            "content": "@@ -365,34 +365,33 @@\n         if i == \n-10\n+9\n %7B%0A            fm\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-05-05_22-20-30",
+            "content": "@@ -322,37 +322,108 @@\n 10%7B%0A            \n-break\n+fmt.Println(%22%5D%22)%0A        %7D%0A        if i == 10%7B%0A            fmt.Println(%22 %5D%22)\n %0A        %7D%0A     \n@@ -502,33 +502,16 @@\n         \n-fmt.Println(%22 %5D%22)\n %0A    %7D%0A \n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-05-05_22-21-58",
+            "content": "@@ -226,32 +226,41 @@\n (%22ceu%22)%0A        \n+    break\n %0A        %7Delse%7B%0A\n@@ -257,18 +257,10 @@\n    %7D\n-else%7B%0A    \n+%0A%0A\n     \n@@ -281,22 +281,22 @@\n (%22%25d\n- \n %22,i)%0A\n+%0A\n         \n %7D%0A%0A \n@@ -291,27 +291,60 @@\n         \n-%7D%0A%0A        \n+if pedra == 10 && i == 10%7B%0A            break\n %0A       \n@@ -367,20 +367,40 @@\n rint\n-ln(%22%5D\n+f(%22 \n %22)%0A    \n+    %0A        %0A       \n %0A   \n@@ -417,18 +417,51 @@\n     %0A       \n+ %0A        fmt.Println(%22 %5D%22)%0A    %7D\n %0A   %0A%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-05_22-24-38",
+            "content": "@@ -333,17 +333,16 @@\n rintln(%22\n- \n %5D%22)%0A    \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-05-05_22-24-49",
+            "content": "@@ -223,17 +223,16 @@\n int(%22ceu\n- \n %22)%0A     \n@@ -283,32 +283,42 @@\n d %22,i)%0A        %7D\n+%0A%0A        \n %0A        %7D%0A     \n@@ -333,16 +333,17 @@\n rintln(%22\n+ \n %5D%22)%0A    \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-05-05_22-26-12",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var pedra int\n    fmt.Scan(&pedra)\n    fmt.Print(\"[ \")\n    for i := 0; i <= 10; i++{\n        if i == pedra{\n            continue\n        }\n\n        if i == 10{\n            fmt.Print(\"ceu \")\n        \n        }else{\n            fmt.Printf(\"%d \",i)\n        }\n        }\n        fmt.Println(\"]\")\n    \n        }\n       \n       \n   \n\n",
+            "lines": "25"
         }
     ]
 }

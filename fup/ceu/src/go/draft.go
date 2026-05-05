@@ -5,19 +5,21 @@ func main() {
     fmt.Scan(&pedra)
     fmt.Print("[ ")
     for i := 0; i <= 10; i++{
-
         if i == pedra{
             continue
         }
 
         if i == 10{
-            fmt.Printf("ceu")
-            break
+            fmt.Print("ceu ")
+        
+        }else{
+            fmt.Printf("%d ",i)
         }
-        fmt.Printf("%d", i)
-        if i < 10{
-            fmt.Printf(" ")
         }
-    }
-    fmt.Printf(" ]")
-}
+        fmt.Println("]")
+    
+        }
+       
+       
+   
+
