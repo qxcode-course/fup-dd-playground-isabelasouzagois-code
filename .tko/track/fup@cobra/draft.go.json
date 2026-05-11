@@ -1,0 +1,74 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-10_20-16-13",
+            "content": "@@ -41,256 +41,35 @@\n     \n-var n,x,y int%0A    var c string%0A    var s int%0A    fmt.Scan(&n,&x,&y,&c,&c)%0A    switch c%7B%0A    case %22u%22:%0A        y=(y-s%25n+n)%25n%0A    case %22r%22:%0A        x=(x+s)%25n%0A    case %22d%22:%0A        y=(y+s)%25n%0A    case%22l%22:%0A        x=(x-s%25n+n)%25n%0A    %7D%0A    fmt.Println(x,y\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-11_16-58-10",
+            "content": "@@ -119,19 +119,31 @@\n     \n-if c ==%22u%22%7B\n+switch c%7B%0A    case %22u%22:\n %0A   \n@@ -169,27 +169,18 @@\n     \n-%7Delse if c== %22r%22%7B%0A \n+case %22r%22:%0A\n     \n@@ -201,25 +201,17 @@\n     \n-%7Delse if c ==%22d%22%7B\n+case %22d%22:\n %0A   \n@@ -233,24 +233,16 @@\n     \n-%7Delse if c==%22l%22%7B\n+case%22l%22:\n %0A   \n@@ -266,20 +266,16 @@\n n%0A    %7D%0A\n-    \n     fmt.\n@@ -291,16 +291,6 @@\n ,y)%0A\n-    %7D%0A    %0A\n+%7D\n %0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-11_17-02-11",
+            "content": "@@ -108,17 +108,17 @@\n ,&y,&c,&\n-s\n+c\n )%0A    if\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-11_17-03-04",
+            "content": "@@ -101,60 +101,18 @@\n n(&n\n-)%0A    fmt.Scan(&x,&y)%0A    fmt.Scan(&c)%0A    fmt.Scan(\n+,&x,&y,&c,\n &s)%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-11_17-04-03",
+            "content": "@@ -183,11 +183,19 @@\n   y=\n+(\n y-s\n+%25n+n)%25n\n %0A   \n@@ -228,11 +228,15 @@\n   x=\n+(\n x+s\n+)%25n\n %0A   \n@@ -268,11 +268,15 @@\n   y=\n+(\n y+s\n+)%25n\n %0A   \n@@ -307,11 +307,19 @@\n   x=\n+(\n x-s\n+%25n+n)%25n\n %0A   \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-11_17-06-09",
+            "content": "@@ -183,21 +183,11 @@\n   y=\n-((\n y-s\n-)%25n+n)%25n\n %0A   \n@@ -220,21 +220,11 @@\n   x=\n-((x-s)%25n+n)%25n\n+x+s\n %0A   \n@@ -256,21 +256,11 @@\n   y=\n-((\n y+s\n-)%25n+n)%25n\n %0A   \n@@ -291,21 +291,11 @@\n   x=\n-((x+s)%25n+n)%25n\n+x-s\n %0A   \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-11_17-10-30",
+            "content": "@@ -322,18 +322,17 @@\n  x=(\n+(\n x+s\n-+n*1000\n+)%25n+n\n )%25n%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-11_17-30-33",
+            "content": "@@ -169,9 +169,9 @@\n  ==%22\n-U\n+u\n %22%7B%0A \n@@ -215,9 +215,9 @@\n == %22\n-R\n+r\n %22%7B%0A \n@@ -262,9 +262,9 @@\n  ==%22\n-D\n+d\n %22%7B%0A \n@@ -307,9 +307,9 @@\n c==%22\n-L\n+l\n %22%7B%0A \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-11_17-31-07",
+            "content": "@@ -45,13 +45,13 @@\n var \n-N,X,Y\n+n,x,y\n  int\n@@ -59,17 +59,17 @@\n     var \n-C\n+c\n  string%0A\n@@ -76,17 +76,17 @@\n     var \n-S\n+s\n  int%0A   \n@@ -96,17 +96,17 @@\n t.Scan(&\n-N\n+n\n )%0A    fm\n@@ -117,12 +117,12 @@\n an(&\n-X,&Y\n+x,&y\n )%0A  \n@@ -133,17 +133,17 @@\n t.Scan(&\n-C\n+c\n )%0A    fm\n@@ -150,17 +150,17 @@\n t.Scan(&\n-S\n+s\n )%0A    if\n@@ -156,25 +156,25 @@\n (&s)%0A    if \n-C\n+c\n  ==%22U%22%7B%0A    \n@@ -181,23 +181,23 @@\n     \n-Y=((Y-S)%25N+N)%25N\n+y=((y-s)%25n+n)%25n\n %0A   \n@@ -206,17 +206,17 @@\n else if \n-C\n+c\n == %22R%22%7B%0A\n@@ -228,23 +228,23 @@\n     \n-X=((X-S)%25N+N)%25N\n+x=((x-s)%25n+n)%25n\n %0A   \n@@ -253,17 +253,17 @@\n else if \n-C\n+c\n  ==%22D%22%7B%0A\n@@ -274,23 +274,23 @@\n     \n-Y=((Y+S)%25N+N)%25N\n+y=((y+s)%25n+n)%25n\n %0A   \n@@ -303,9 +303,9 @@\n  if \n-C\n+c\n ==%22L\n@@ -319,24 +319,24 @@\n     \n-X=(X+S+N\n+x=(x+s+n\n *1000)%25\n-N\n+n\n %0A   \n@@ -362,11 +362,11 @@\n tln(\n-X,Y\n+x,y\n )%0A  \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-11_17-34-31",
+            "content": "@@ -184,11 +184,13 @@\n  Y=(\n+(\n Y-S\n+)\n %25N+N\n@@ -231,11 +231,13 @@\n  X=(\n+(\n X-S\n+)\n %25N+N\n@@ -277,11 +277,13 @@\n  Y=(\n+(\n Y+S\n+)\n %25N+N\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-11_17-35-52",
+            "content": "@@ -186,17 +186,14 @@\n =(Y-\n- \n S%25N\n- \n +N)\n- \n %25N%0A \n@@ -213,9 +213,9 @@\n == %22\n-D\n+R\n %22%7B%0A \n@@ -226,20 +226,19 @@\n     \n-Y=(Y+\n+X=(X-\n S%25N+N)\n- \n %25N%0A \n@@ -258,9 +258,9 @@\n  ==%22\n-L\n+D\n %22%7B%0A \n@@ -270,18 +270,16 @@\n     \n-X=(X- \n+Y=(Y+\n S%25N\n- \n +N)%25\n@@ -290,16 +290,25 @@\n   %7Delse \n+if C==%22L%22\n %7B%0A      \n@@ -313,18 +313,25 @@\n     X=(X\n--S\n++S+N*1000\n )%25N%0A    \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-11_17-39-23",
+            "content": "@@ -192,14 +192,12 @@\n %25N +\n- \n N) %25\n- \n N%0A  \n@@ -230,14 +230,17 @@\n    Y\n- \n =(Y+S\n+%25N+N\n ) %25N\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-11_17-40-34",
+            "content": "@@ -309,17 +309,17 @@\n     X=(X\n-+\n+-\n S)%25N%0A   \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-11_17-40-46",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var N,X,Y int\n    var C string\n    var S int\n    fmt.Scan(&N)\n    fmt.Scan(&X,&Y)\n    fmt.Scan(&C)\n    fmt.Scan(&S)\n    if C ==\"U\"{\n        Y=(Y- S%N + N) % N\n    }else if C== \"D\"{\n         Y =(Y+S) %N\n    }else if C ==\"L\"{\n        X=(X- S%N +N)%N\n    }else {\n        X=(X+S)%N\n    }\n        fmt.Println(X,Y)\n    }\n    \n\n",
+            "lines": "23"
+        }
+    ]
+}

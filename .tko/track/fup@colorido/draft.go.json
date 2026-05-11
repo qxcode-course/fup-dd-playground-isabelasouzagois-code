@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-10_18-38-39",
+            "content": "@@ -41,314 +41,35 @@\n     \n-var pedra int%0A    fmt.Scan(&pedra)%0A    fmt.Print(%22%5B %22)%0A    for i := 0; i %3C= 10; i++%7B%0A        if i == pedra%7B%0A            continue%0A        %7D%0A%0A        if i == 10%7B%0A            fmt.Print(%22ceu %22)%0A        %0A        %7Delse%7B%0A            fmt.Printf(%22%25d %22,i)%0A        %7D%0A        %7D%0A        fmt.Println(%22%5D%22)%0A    %0A        %7D%0A   \n+fmt.Println(%22Hello, World!%22)%0A%7D\n %0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-10_18-43-43",
+            "content": "@@ -253,18 +253,8 @@\n else\n- if i%252==0\n %7B%0A  \n@@ -281,57 +281,8 @@\n (%22%25d\n-d %22,i)%0A        %7Delse%7B%0A            fmt.Printf(%22%25de\n  %22,i\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-10_18-48-29",
+            "content": "@@ -45,11 +45,13 @@\n var \n-n,p\n+pedra\n  int\n@@ -69,12 +69,13 @@\n an(&\n-n,&p\n+pedra\n )%0A  \n@@ -138,17 +138,21 @@\n if i == \n-n\n+pedra\n %7B%0A      \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-10_18-57-28",
+            "content": "@@ -349,61 +349,8 @@\n   %7D%0A\n-        for i := 0; i %3C= 10; i++%7B%0A        if i == d%7B%0A\n     \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-10_19-00-48",
+            "content": "@@ -345,32 +345,76 @@\n       %7D%0A        \n+for i := 0; i %3C= 10; i++%7B%0A        if i == d%7B\n %0A        %7D%0A     \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-05-10_19-01-26",
+            "content": "@@ -45,36 +45,16 @@\n var \n-pedra\n+n,p\n  int%0A\n-    var pe string%0A\n     \n@@ -67,17 +67,12 @@\n an(&\n-pedra\n+n\n ,&p\n-e\n )%0A  \n@@ -93,21 +93,8 @@\n  %22)%0A\n-    passo:=0%0A\n     \n@@ -139,13 +139,9 @@\n  == \n-pedra\n+n\n %7B%0A  \n@@ -165,25 +165,25 @@\n e%0A        %7D%0A\n- \n+%0A\n         if i\n@@ -224,26 +224,24 @@\n  %22)%0A        \n- %7D\n %0A        if \n@@ -241,54 +241,25 @@\n     \n-if pe==%22d%22 %7B%0A            if passo \n+%7Delse if i\n %252==0\n- \n %7B%0A\n-    \n     \n@@ -353,162 +353,21 @@\n     \n-%7Delse if pe==%22e%22%7B%0A        if passo%252==0%7B%0A            fmt.Printf(%22%25de %22,i)%0A        %7Delse%7B%0A            fmt.Printf(%22%25dd %22,i)%0A        %7D%0A    %7D%0A        passo++%0A\n+    %0A        \n %7D%0A  \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-11_17-49-20",
+            "content": "@@ -320,14 +320,11 @@\n so %25\n- 2 \n+2\n ==\n- \n 0 %7B%0A\n@@ -460,11 +460,9 @@\n asso\n- %25 \n+%25\n 2==0\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-05-11_17-50-21",
+            "content": "@@ -286,20 +286,18 @@\n    if pe\n- \n ==\n- \n %22d%22 %7B%0A  \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-05-11_17-50-35",
+            "content": "@@ -262,37 +262,16 @@\n %22ceu %22)%0A\n-            continue%0A\n         \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-05-11_17-51-01",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var pedra int\n    var pe string\n    fmt.Scan(&pedra,&pe)\n    fmt.Print(\"[ \")\n    passo:=0\n    for i := 0; i <= 10; i++{\n        if i == pedra{\n            continue\n        }\n         if i == 10{\n            fmt.Print(\"ceu \")\n            continue\n         }\n        if pe == \"d\" {\n            if passo % 2 == 0 {\n                fmt.Printf(\"%dd \",i)\n        }else{\n            fmt.Printf(\"%de \",i)\n        }\n    }else if pe==\"e\"{\n        if passo % 2==0{\n            fmt.Printf(\"%de \",i)\n        }else{\n            fmt.Printf(\"%dd \",i)\n        }\n    }\n        passo++\n}\n        fmt.Println(\"]\")\n    \n        }\n   \n",
+            "lines": "35"
+        }
+    ]
+}

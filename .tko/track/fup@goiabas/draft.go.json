@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-10_19-06-03",
+            "content": "@@ -37,185 +37,8 @@\n ) %7B%0A\n-    var c,bananas,goiabas,mangas int%0A    fmt.Scan(&c,&bananas,&goiabas,&mangas)%0A    total:= bananas+goiabas+mangas%0A    viagens :=total/c%0A    if total%25c=0%7B%0A        viagens%0A    %7D%0A\n     \n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-10_19-13-06",
+            "content": "@@ -184,17 +184,16 @@\n  total%25c\n-!\n =0%7B%0A    \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-10_19-13-15",
+            "content": "@@ -208,10 +208,8 @@\n gens\n-++\n %0A   \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-10_19-13-26",
+            "content": "@@ -229,19 +229,27 @@\n Println(\n-viagens\n+%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-10_19-13-45",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var c,bananas,goiabas,mangas int\n    fmt.Scan(&c,&bananas,&goiabas,&mangas)\n    total:= bananas+goiabas+mangas\n    viagens :=total/c\n    if total%c!=0{\n        viagens++\n    }\n    fmt.Println(viagens)\n}\n",
+            "lines": "12"
+        }
+    ]
+}

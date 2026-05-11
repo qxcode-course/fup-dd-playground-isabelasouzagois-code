@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-07_10-54-53",
+            "content": "@@ -41,301 +41,35 @@\n     \n-var a,b int%0A    fmt.Scan(&a,&b)%0A    for i:=1;i%3Cb;i++%7B%0A        if i%253==0%7B%0A            fmt.Println(%22zig%22)%0A        %7D%0A        if i%253==0%7B%0A             fmt.Println(%22zag%22)%0A        %7D%0A        if i%253==0%7B%0A             fmt.Println(%22zigzag%22)%0A        %7Delse%7B%0A            continue%0A        %7D%0A        %0A    %7D%0A    \n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-07_11-06-30",
+            "content": "@@ -233,17 +233,8 @@\n 3==0\n-&& i%255==0\n %7B%0A  \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-07_11-07-31",
+            "content": "@@ -84,17 +84,16 @@\n  i:=1;i%3C\n-=\n b;i++%7B%0A \n@@ -112,16 +112,8 @@\n 3==0\n-&&i%255==0\n %7B%0A  \n@@ -138,19 +138,16 @@\n tln(%22zig\n-zag\n %22)%0A     \n@@ -146,28 +146,32 @@\n %22)%0A        %7D\n-else\n+%0A       \n  if i%253==0%7B%0A\n@@ -215,15 +215,28 @@\n    %7D\n-else if\n+%0A        if i%253==0&&\n  i%255\n@@ -261,32 +261,35 @@\n fmt.Println(%22zig\n+zag\n %22)%0A        %7Delse\n@@ -306,22 +306,16 @@\n     \n-fmt.Println(i)\n+continue\n %0A   \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-07_11-10-36",
+            "content": "@@ -205,17 +205,17 @@\n intln(%22z\n-i\n+a\n g%22)%0A    \n@@ -254,33 +254,33 @@\n   fmt.Println(%22z\n-a\n+i\n g%22)%0A        %7Dels\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-07_11-12-03",
+            "content": "@@ -80,17 +80,17 @@\n  for i:=\n-a\n+1\n ;i%3C=b;i+\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-07_11-13-06",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a,b int\n    fmt.Scan(&a,&b)\n    for i:=a;i<=b;i++{\n        if i%3==0&&i%5==0{\n            fmt.Println(\"zigzag\")\n        }else if i%3==0{\n             fmt.Println(\"zig\")\n        }else if i%5==0{\n             fmt.Println(\"zag\")\n        }else{\n            fmt.Println(i)\n        }\n        \n    }\n    \n}\n",
+            "lines": "19"
+        }
+    ]
+}

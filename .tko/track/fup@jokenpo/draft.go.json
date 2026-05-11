@@ -1,0 +1,109 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-10_19-43-24",
+            "content": "@@ -37,265 +37,8 @@\n ) %7B%0A\n-    var jog1,jog2 string%0A    fmt.Scan(&jog1,&jog2)%0A    if jog1 == %22pedra%22 && jog2 == %22papel%22%7B%0A        fmt.Println(jog1)%0A    %7Delse if jog1 == %22tesoura%22&& jog2 ==%22papel%22%7B%0A         fmt.Println(jog1)%0A    %7Delse if jog1 == jog2%7B%0A        fmt.Println(empate)%0A    %7D%0A\n     \n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-10_19-51-14",
+            "content": "@@ -276,16 +276,22 @@\n Println(\n+empate\n )%0A    %7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-10_19-51-23",
+            "content": "@@ -280,63 +280,47 @@\n tln(\n-%22empate%22)%0A    %7Delse%7B%0A        fmt.Println(jog2)%0A    %7D%0A   \n+)%0A    %7D%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-10_19-52-01",
+            "content": "@@ -151,11 +151,12 @@\n tln(\n-%22P%22\n+jog1\n )%0A  \n@@ -227,11 +227,12 @@\n tln(\n-%22T%22\n+jog1\n )%0A  \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-10_19-52-41",
+            "content": "@@ -152,9 +152,9 @@\n ln(%22\n-R\n+P\n %22)%0A \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-10_19-53-00",
+            "content": "@@ -223,17 +223,17 @@\n rintln(%22\n-S\n+T\n %22)%0A    %7D\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-10_19-53-19",
+            "content": "@@ -148,20 +148,17 @@\n rintln(%22\n-jog2\n+R\n %22)%0A    %7D\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-10_19-54-28",
+            "content": "@@ -226,20 +226,17 @@\n rintln(%22\n-jog1\n+S\n %22)%0A    %7D\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-10_19-54-59",
+            "content": "@@ -97,28 +97,28 @@\n f jog1 == %22p\n-apel\n+edra\n %22 && jog2 ==\n@@ -125,75 +125,11 @@\n  %22pa\n-dra%22%7C%7Cjog1==%22tesoura%22&&jog2==%22papel%22%7C%7Cjog1==%22pedra%22&&jog2==%22tesoura\n+pel\n %22%7B%0A \n@@ -147,20 +147,22 @@\n Println(\n+%22\n jog\n-1\n+2%22\n )%0A    %7De\n@@ -175,47 +175,13 @@\n  jog\n-2 == %22papel%22 && jog1 == %22padra%22%7C%7Cjog2==\n+1 == \n %22tes\n@@ -187,20 +187,22 @@\n soura%22&&\n+ \n jog\n-1\n+2 \n ==%22papel\n@@ -206,40 +206,8 @@\n pel%22\n-%7C%7Cjog2==%22pedra%22&&jog1==%22tesoura%22\n %7B%0A  \n@@ -225,20 +225,22 @@\n Println(\n+%22\n jog\n-2\n+1%22\n )%0A    %7De\n@@ -291,24 +291,55 @@\n pate%22)%0A    %7D\n+else%7B%0A        fmt.Println(jog2)\n %0A    %7D%0A   %0A%0A\n@@ -337,9 +337,10 @@\n   %7D%0A   %0A\n+%7D\n %0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-10_19-58-38",
+            "content": "@@ -215,14 +215,12 @@\n tln(\n-%22\n jog1\n-%22\n )%0A  \n@@ -355,14 +355,12 @@\n tln(\n-%22\n jog2\n-%22\n )%0A  \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-10_19-59-10",
+            "content": "@@ -224,20 +224,20 @@\n %22)%0A    %7D\n-%0A   \n+else\n  if jog2\n@@ -370,25 +370,19 @@\n    %7Delse\n-%7B%0A       \n+ if\n  jog1 ==\n@@ -386,16 +386,17 @@\n  == jog2\n+%7B\n %0A       \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-10_20-00-27",
+            "content": "@@ -102,65 +102,8 @@\n 1 ==\n- jog2%7B%0A        fmt.Println(%22empate%22)%0A    %7Delse if jog1 ==\n  %22pa\n@@ -362,24 +362,80 @@\n jog2%22)%0A    %7D\n+else%7B%0A        jog1 == jog2%0A        fmt.Println(%22empate%22)\n %0A    %7D%0A    %0A\n@@ -433,14 +433,15 @@\n   %7D%0A    \n+%7D\n %0A   %0A%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-10_20-02-05",
+            "content": "@@ -284,16 +284,118 @@\n     \n- %7Delse\n+%7D%0A    if jog2 == %22papel%22 && jog1 == %22padra%22%7C%7Cjog2==%22tesoura%22&&jog1==%22papel%22%7C%7Cjog2==%22pedra%22&&jog1==%22tesoura%22\n %7B%0A\n+ \n     \n@@ -426,31 +426,15 @@\n     \n- \n %7D%0A    \n-%0A    %7D%0A    %0A    \n+%7D\n %0A   \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-10_20-04-44",
+            "content": "@@ -135,17 +135,16 @@\n mpate%22)%0A\n-%0A\n     %7Dels\n@@ -201,17 +201,16 @@\n soura%22&&\n- \n jog2==%22p\n@@ -268,20 +268,22 @@\n Println(\n+%22\n jog1\n+%22\n )%0A     %7D\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-10_20-06-32",
+            "content": "@@ -178,17 +178,17 @@\n g2 == %22p\n-e\n+a\n dra%22%7C%7Cjo\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-10_20-08-01",
+            "content": "@@ -88,55 +88,8 @@\n g2)%0A\n-    S:=%22tesoura%22%0A    R:=%22pedra%22%0A    P:=%22papel%22%0A\n     \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-10_20-09-13",
+            "content": "@@ -205,17 +205,21 @@\n og1 == %22\n-P\n+papel\n %22 && jog\n@@ -224,17 +224,21 @@\n og2 == %22\n-R\n+pedra\n %22%7C%7Cjog1=\n@@ -239,17 +239,23 @@\n %7Cjog1==%22\n-S\n+tesoura\n %22&& jog2\n@@ -258,16 +258,20 @@\n jog2==%22p\n+apel\n %22%7C%7Cjog1=\n@@ -272,17 +272,21 @@\n %7Cjog1==%22\n-R\n+pedra\n %22&&jog2=\n@@ -287,17 +287,23 @@\n &jog2==%22\n-S\n+tesoura\n %22%7B%0A     \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-10_20-10-01",
+            "content": "@@ -204,17 +204,19 @@\n jog1 == \n-P\n+%22P%22\n  && jog2\n@@ -223,17 +223,19 @@\n  == \n-R\n+%22R%22\n %7C%7Cjog1==\n S&& \n@@ -230,17 +230,19 @@\n %7C%7Cjog1==\n-S\n+%22S%22\n && jog2=\n@@ -246,17 +246,19 @@\n g2==\n-P\n+%22p%22\n %7C%7Cjog1==\n R&&j\n@@ -257,17 +257,19 @@\n g1==\n-R\n+%22R%22\n &&jog2==\n S%7B%0A \n@@ -264,17 +264,19 @@\n &&jog2==\n-S\n+%22S%22\n %7B%0A      \n@@ -327,20 +327,22 @@\n Println(\n+%22\n jog2\n+%22\n )%0A     %7D\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-10_20-10-43",
+            "content": "@@ -92,17 +92,23 @@\n     S:=%22\n-S\n+tesoura\n %22%0A    R:\n@@ -109,17 +109,21 @@\n     R:=%22\n-R\n+pedra\n %22%0A    P:\n@@ -124,17 +124,21 @@\n     P:=%22\n-P\n+papel\n %22%0A    if\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-10_20-13-46",
+            "content": "@@ -267,14 +267,12 @@\n tln(\n-%22\n jog1\n-%22\n )%0A  \n@@ -305,14 +305,12 @@\n tln(\n-%22\n jog2\n-%22\n )%0A  \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-10_20-14-12",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var jog1,jog2 string\n    fmt.Scan(&jog1,&jog2)\n    S:=\"S\"\n    R:=\"R\"\n    P:=\"P\"\n    if jog1 == jog2{\n        fmt.Println(\"empate\")\n\n    }else if jog1 == P && jog2 == R||jog1==S&& jog2==P||jog1==R&&jog2==S{\n        fmt.Println(\"jog1\")\n     }else{\n        fmt.Println(\"jog2\")\n     }\n    \n    }\n    \n    \n    \n   \n\n",
+            "lines": "23"
+        }
+    ]
+}
