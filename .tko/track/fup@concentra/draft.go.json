@@ -2,8 +2,33 @@
     "patches": [
         {
             "label": "2026-05-10_19-03-05",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -41,152 +41,34 @@\n     \n-var a,b int%0A    fmt.Scan(&a,&b)%0A    fmt.Println(%22%5B%22)%0A    for i:=a;a%3C=b;i++%7B%0A        fmt.Printf(%22%25d %25d%22,i,b)%0A        --b%0A    %7D%0A    fmt.Println(%22%5D\n+fmt.Println(%22Hello, World!\n %22)%0A%7D\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-05-17_15-21-35",
+            "content": "@@ -157,11 +157,11 @@\n     \n-b\n --\n+b\n %0A   \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-17_15-21-47",
+            "content": "@@ -82,16 +82,18 @@\n mt.Print\n+ln\n (%22%5B%22)%0A  \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-17_15-21-58",
+            "content": "@@ -85,17 +85,16 @@\n Print(%22%5B\n- \n %22)%0A    f\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-17_15-22-04",
+            "content": "@@ -137,17 +137,16 @@\n f(%22%25d %25d\n- \n %22,i,b)%0A \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-17_15-22-56",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a,b int\n    fmt.Scan(&a,&b)\n    fmt.Print(\"[ \")\n    for i:=a;a<=b;i++{\n        fmt.Printf(\"%d %d \",i,b)\n        b--\n    }\n    fmt.Println(\"]\")\n}\n",
+            "lines": "12"
         }
     ]
 }
