@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-18_16-51-34",
+            "content": "@@ -1,10 +1,8 @@\n-  \n package \n@@ -41,281 +41,35 @@\n     \n-var id int%0A    fmt.Scan(&id)%0A    num :=id%0A    inverso:=0%0A    for%7B%0A        ud:=id %2510%0A        inverso=inverso*10+ud%0A        id=id/10%0A        if id==0%7B%0A            break%0A        %7D%0A    %7D%0A    if num==inverso%7B%0A        fmt.Println(%22%22)%0A    %7Delse%7B%0A         fmt.Println(%22%22)%0A    %7D%0A   \n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-19_17-18-50",
+            "content": "@@ -301,17 +301,16 @@\n rintln(%22\n-1\n %22)%0A    %7D\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-19_17-18-57",
+            "content": "@@ -301,17 +301,17 @@\n rintln(%22\n-0\n+1\n %22)%0A    %7D\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-19_17-19-03",
+            "content": "@@ -257,33 +257,32 @@\n    fmt.Println(%22\n-0\n %22)%0A    %7Delse%7B%0A  \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-19_17-19-17",
+            "content": "@@ -265,17 +265,17 @@\n rintln(%22\n-1\n+0\n %22)%0A    %7D\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-19_17-19-31",
+            "content": "  package main\nimport \"fmt\"\nfunc main() {\n    var id int\n    fmt.Scan(&id)\n    num :=id\n    inverso:=0\n    for{\n        ud:=id %10\n        inverso=inverso*10+ud\n        id=id/10\n        if id==0{\n            break\n        }\n    }\n    if num==inverso{\n        fmt.Println(\"1\")\n    }else{\n         fmt.Println(\"0\")\n    }\n   \n}\n",
+            "lines": "22"
+        }
+    ]
+}

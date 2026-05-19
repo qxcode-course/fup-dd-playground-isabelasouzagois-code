@@ -22,17 +22,17 @@ sources:
   quests: null
   tasks: null
 expanded:
+- fup@string
 - eval1@eval1
-- fup@list
 - fup@for2
 - fup@games
-- fup@string
+- fup@list
 flags:
   inbox: all
-  panel: graph
-  show_panel: 'false'
+  panel: skills
+  show_panel: 'true'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@for2
-selected_index: 6
+selected: fup@fatores
+selected_index: 14

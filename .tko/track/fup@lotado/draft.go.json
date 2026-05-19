@@ -2,8 +2,43 @@
     "patches": [
         {
             "label": "2026-04-13_14-07-04",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -37,53 +37,8 @@\n ) %7B%0A\n-    var m,c int%0A    fmt.Scan(&m,&c)   %0A    %7D%0A\n     \n",
             "lines": "5"
+        },
+        {
+            "label": "2026-05-18_16-43-40",
+            "content": "@@ -57,166 +57,26 @@\n     \n-passageiro:=0%0A    fmt.Scan(&c)   %0A    %7D%0A    for passageiro%3C2*c%7B%0A        fmt.Scan(&m)%0A        passageiro+=m%0A    if passageiro ==0%7B%0A        fmt.Println(%22vazio%22)\n+fmt.Scan(&m,&c)   \n %0A   \n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-05-18_16-50-12",
+            "content": "@@ -111,17 +111,16 @@\n ssageiro\n- \n %3C2*c%7B%0A  \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-19_16-50-01",
+            "content": "@@ -53,31 +53,8 @@\n int%0A\n-    %0A    fmt.Scan(&c) %0A\n     \n@@ -69,91 +69,43 @@\n ro:=\n- 0  \n+0\n %0A    f\n-or%7B%0A        var m int%0A        fmt.Scan(&m)%0A        passageiro +=m%0A\n+mt.Scan(&c)   %0A    %7D\n %0A    \n-i\n f\n+or\n  pas\n@@ -134,116 +134,42 @@\n fmt.\n-Println(%22hora de partir%22)%0A        break%0A    %7Delse if passageiro ==0 %7B%0A        fmt.Println(%22vazio%22)%0A    %7Delse\n+Scan(&m)%0A        passageiro+=m%0A   \n  if \n@@ -183,10 +183,11 @@\n iro \n-%3Cc\n+==0\n %7B%0A  \n@@ -209,91 +209,53 @@\n ln(%22\n-ainda cabe%22)%0A    %7Delse%7B%0A         fmt.Println(%22lotado%22)%0A    %7D%0A    %0A       %0A    %7D%0A    \n+vazio%22)%0A    %7D%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-19_16-57-28",
+            "content": "@@ -162,17 +162,16 @@\n geiro +=\n- \n m%0A%0A    i\n@@ -187,10 +187,9 @@\n iro \n-%3E=\n+%3C\n 2*c%7B\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-05-19_16-57-53",
+            "content": "@@ -114,17 +114,17 @@\n     var \n-M\n+m\n  int%0A   \n@@ -167,9 +167,9 @@\n  += \n-M\n+m\n %0A%0A  \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-05-19_16-58-19",
+            "content": "@@ -41,16 +41,18 @@\n     var \n+m,\n c int%0A  \n@@ -138,17 +138,17 @@\n t.Scan(&\n-M\n+m\n )%0A      \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-05-19_16-58-44",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var c int\n    \n    fmt.Scan(&c) \n    passageiro:= 0  \n    for{\n        var M int\n        fmt.Scan(&M)\n        passageiro += M\n\n    if passageiro >=2*c{\n        fmt.Println(\"hora de partir\")\n        break\n    }else if passageiro ==0 {\n        fmt.Println(\"vazio\")\n    }else if passageiro <c{\n        fmt.Println(\"ainda cabe\")\n    }else{\n         fmt.Println(\"lotado\")\n    }\n    \n       \n    }\n    \n}\n",
+            "lines": "27"
         }
     ]
 }
