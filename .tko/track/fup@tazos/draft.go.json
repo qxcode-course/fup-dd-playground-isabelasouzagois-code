@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-25_11-15-31",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tvetor := make([]int, n)\n\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&vetor[i])\n\t}\n\n\tmaiorFreq := 1\n\n\tfreq := 1\n\n\tresultado := []int{}\n\n\tfor i := 1; i <= n; i++ {\n\n\t\tif i < n && vetor[i] == vetor[i-1] {\n\t\t\tfreq++\n\t\t} else {\n\n\t\t\t// encontrou frequ\u00eancia maior\n\t\t\tif freq > maiorFreq {\n\t\t\t\tmaiorFreq = freq\n\t\t\t\tresultado = []int{vetor[i-1]}\n\t\t\t} else if freq == maiorFreq {\n\t\t\t\tresultado = append(resultado, vetor[i-1])\n\t\t\t}\n\n\t\t\tfreq = 1\n\t\t}\n\t}\n\n\tfmt.Print(\"[ \")\n\n\tfor i := 0; i < len(resultado); i++ {\n\t\tfmt.Print(resultado[i], \" \")\n\t}\n\n\tfmt.Println(\"]\")\n}\n",
+            "lines": "46"
+        }
+    ]
+}

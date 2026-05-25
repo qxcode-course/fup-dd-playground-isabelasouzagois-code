@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-24_20-23-58",
+            "content": "@@ -41,448 +41,34 @@\n     \n-var total,qtd int %0A    fmt.Scan(&total,&qtd)%0A    v:=make(%5B%5Dint,qtd)%0A    freq:=make(%5B%5Dint,total+1)%0A    for i:=0;i%3Cqtd;i++%7B%0A        fmt.Scan(&v%5Bi%5D)%0A        freq%5Bv%5Bi%5D%5D++%0A    %7D%0A    fmt.Println(%22%5B%22)%0A    for i:=1;i%3C=total;i++%7B%0A        if freq%5Bi%5D%3E1%7B%0A            fmt.Print(i,%22 %22)%0A        %7D%0A    %7D%0A    fmt.Println(%22%5D%22)%0A%0A    fmt.Print(%22%22)%0A    for i:=1;i%3C=total;i++%7B%0A        if freq%5Bi%5D==0%7B%0A            fmt.Print(i,%22%22)%0A        %7D%0A    %7D%0A    fmt.Println(%22%5D\n+fmt.Println(%22Hello, World!\n %22)%0A%7D\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-24_20-40-54",
+            "content": "@@ -362,17 +362,16 @@\n .Print(%22\n-%5B\n %22)%0A    f\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-05-24_20-41-09",
+            "content": "@@ -274,18 +274,16 @@\n if freq%5B\n-v%5B\n i%5D%3E1%7B%0A  \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-05-24_20-42-09",
+            "content": "@@ -135,17 +135,16 @@\n otal+1)%0A\n-%0A\n     for \n@@ -270,30 +270,22 @@\n     \n-for j:=1;j%3C\n+if \n freq%5B\n+v%5B\n i%5D\n-;j++\n+%3E1\n %7B%0A  \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-05-24_20-44-20",
+            "content": "@@ -216,32 +216,34 @@\n  %7D%0A    fmt.Print\n+ln\n (%22%5B%22)%0A    for i:\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-24_20-44-32",
+            "content": "@@ -227,17 +227,16 @@\n Print(%22%5B\n- \n %22)%0A    f\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-24_20-44-42",
+            "content": "@@ -443,33 +443,32 @@\n    fmt.Print(i,%22\n- \n %22)%0A        %7D%0A   \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-24_20-44-50",
+            "content": "@@ -365,33 +365,32 @@\n     fmt.Print(%22%5B\n- \n %22)%0A    for i:=1;\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-24_20-44-59",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var total,qtd int \n    fmt.Scan(&total,&qtd)\n    v:=make([]int,qtd)\n    freq:=make([]int,total+1)\n\n    for i:=0;i<qtd;i++{\n        fmt.Scan(&v[i])\n        freq[v[i]]++\n    }\n    fmt.Print(\"[ \")\n    for i:=1;i<=total;i++{\n        for j:=1;j<freq[i];j++{\n            fmt.Print(i,\" \")\n        }\n    }\n    fmt.Println(\"]\")\n\n    fmt.Print(\"[ \")\n    for i:=1;i<=total;i++{\n        if freq[i]==0{\n            fmt.Print(i,\" \")\n        }\n    }\n    fmt.Println(\"]\")\n}\n",
+            "lines": "28"
+        }
+    ]
+}

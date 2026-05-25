@@ -2,8 +2,13 @@
     "patches": [
         {
             "label": "2026-05-18_17-59-49",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,834 +37,39 @@\n ) %7B%0A\n-%09var n int%0A%09fmt.Scan(&n)%0A%0A%09// vetor para sabores%0A%09sabores := make(%5B%5Dstring, n)%0A%0A%09// vetor para turnos%0A%09turnos := make(%5B%5Dstring, n) %0A%0A%09// leitura dos dados%0A%09for i := 0; i %3C n; i++ %7B%0A%09%09fmt.Scan(&sabores%5Bi%5D, &turnos%5Bi%5D)%0A%09%7D%0A%0A%09// contadores%0A%09chocolate := 0%0A%09limao := 0%0A%0A%09manha := 0%0A%09tarde := 0%0A%0A%09// percorrendo os vetores%0A%09for i := 0; i %3C n; i++ %7B%0A%0A%09%09if sabores%5Bi%5D == %22c%22 %7B%0A%09%09%09chocolate++%0A%09%09%7D else if sabores%5Bi%5D == %22l%22 %7B%0A%09%09%09limao++%0A%09%09%7D%0A%0A%09%09if turnos%5Bi%5D == %22m%22 %7B%0A%09%09%09manha++%0A%09%09%7D else if turnos%5Bi%5D == %22t%22 %7B%0A%09%09%09tarde++%0A%09%09%7D%0A%09%7D%0A%0A%09// sabor mais vendido%0A%09if chocolate %3E limao %7B%0A%09%09fmt.Println(%22c%22)%0A%09%7D else if limao %3E chocolate %7B%0A%09%09fmt.Println(%22l%22)%0A%09%7D else %7B%0A%09%09fmt.Println(%22empate%22)%0A%09%7D%0A%0A%09// turno mais vago (menos vendas)%0A%09if manha %3C tarde %7B%0A%09%09fmt.Println(%22m%22)%0A%09%7D else if tarde %3C manha %7B%0A%09%09fmt.Println(%22t%22)%0A%09%7D else %7B%0A%09%09fmt.Println(%22empate%22)%0A%09%7D\n+    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-05-24_20-01-39",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\t// vetor para sabores\n\tsabores := make([]string, n)\n\n\t// vetor para turnos\n\tturnos := make([]string, n) \n\n\t// leitura dos dados\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&sabores[i], &turnos[i])\n\t}\n\n\t// contadores\n\tchocolate := 0\n\tlimao := 0\n\n\tmanha := 0\n\ttarde := 0\n\n\t// percorrendo os vetores\n\tfor i := 0; i < n; i++ {\n\n\t\tif sabores[i] == \"c\" {\n\t\t\tchocolate++\n\t\t} else if sabores[i] == \"l\" {\n\t\t\tlimao++\n\t\t}\n\n\t\tif turnos[i] == \"m\" {\n\t\t\tmanha++\n\t\t} else if turnos[i] == \"t\" {\n\t\t\ttarde++\n\t\t}\n\t}\n\n\t// sabor mais vendido\n\tif chocolate > limao {\n\t\tfmt.Println(\"c\")\n\t} else if limao > chocolate {\n\t\tfmt.Println(\"l\")\n\t} else {\n\t\tfmt.Println(\"empate\")\n\t}\n\n\t// turno mais vago (menos vendas)\n\tif manha < tarde {\n\t\tfmt.Println(\"m\")\n\t} else if tarde < manha {\n\t\tfmt.Println(\"t\")\n\t} else {\n\t\tfmt.Println(\"empate\")\n\t}\n}\n",
+            "lines": "60"
         }
     ]
 }

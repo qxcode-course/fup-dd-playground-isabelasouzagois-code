@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-24_20-02-11",
+            "content": "@@ -41,338 +41,35 @@\n     \n-var numeros, procurado int%0A    count := 0%0A    fmt.Scan(procurado, numeros)%0A%0A    var vetor = make(%5B%5Dint, numeros)%0A%0A    for i := 0; i %3C numeros; i++ %7B%0A        fmt.Scan(vetor%5Bi%5D)%0A    %7D%0A%0A    for i := 0; i %3C numeros; i++ %7B%0A       if(vetor%5Bi%5D == procurado)%7B%0A        count++%0A       %7D %0A       fmt.Print(count)%0A       fmt.Printf(%22%5Cn%22)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-24_20-10-09",
+            "content": "@@ -92,17 +92,16 @@\n mt.Scan(\n-&\n procurad\n@@ -107,9 +107,8 @@\n do, \n-&\n nume\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-24_20-10-22",
+            "content": "@@ -320,19 +320,16 @@\n   %7D %0A   \n- %7D%0A\n     fmt.\n@@ -341,16 +341,19 @@\n (count)%0A\n+   \n     fmt.\n@@ -365,10 +365,16 @@\n f(%22%5Cn%22)%0A\n+    %7D%0A\n %7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-24_20-10-49",
+            "content": "@@ -304,17 +304,18 @@\n    count\n- \n+++\n %0A       \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-24_20-11-51",
+            "content": "@@ -309,12 +309,8 @@\n unt \n-+= 1\n %0A   \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-24_20-12-06",
+            "content": "@@ -205,17 +205,16 @@\n mt.Scan(\n-&\n vetor%5Bi%5D\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-24_20-12-30",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var numeros, procurado int\n    count := 0\n    fmt.Scan(&procurado, &numeros)\n\n    var vetor = make([]int, numeros)\n\n    for i := 0; i < numeros; i++ {\n        fmt.Scan(&vetor[i])\n    }\n\n    for i := 0; i < numeros; i++ {\n       if(vetor[i] == procurado){\n        count += 1\n       } \n    }\n    fmt.Print(count)\n    fmt.Printf(\"\\n\")\n}\n",
+            "lines": "21"
+        }
+    ]
+}

@@ -2,8 +2,38 @@
     "patches": [
         {
             "label": "2026-05-05_23-04-37",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -1,9 +1,8 @@\n- \n package \n",
             "lines": "5"
+        },
+        {
+            "label": "2026-05-24_18-37-09",
+            "content": "@@ -1,9 +1,8 @@\n- \n  package\n@@ -41,262 +41,36 @@\n %0A   \n-var dias int%0A   fmt.Scan(dias)%0A%0A   var calorias = make(%5B%5Dint, dias)%0A%0A   for i := 0; i %3C dias; i++ %7B%0A    fmt.Scan(calorias%5Bi%5D)%0A   %7D%0A%0A   soma := 0%0A%0A   for i := 0; i %3C dias; i++ %7B%0A    soma += calorias%5Bi%5D %0A   %7D%0A%0A   media := soma / dias%0A%0A   fmt.Println(media)%0A\n+ fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-24_18-59-12",
+            "content": "@@ -287,35 +287,17 @@\n rint\n+ln\n (media)\n-%0A   fmt.Printf(%22%5Cn%22)\n %0A%0A%7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-24_18-59-47",
+            "content": "@@ -287,23 +287,34 @@\n rint\n-f(%22%251.f%22, media\n+(media)%0A   fmt.Printf(%22%5Cn%22\n )%0A%0A%7D\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-24_19-04-12",
+            "content": "@@ -63,17 +63,16 @@\n mt.Scan(\n-&\n dias)%0A%0A \n@@ -155,9 +155,8 @@\n can(\n-&\n calo\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-24_19-05-17",
+            "content": "@@ -289,36 +289,23 @@\n rint\n-(media)%0A   fmt.Printf(%22.0%5Cn%22\n+f(%22%251.f%22, media\n )%0A%0A%7D\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-24_19-06-18",
+            "content": "  package main\nimport \"fmt\"\nfunc main() {\n   var dias int\n   fmt.Scan(&dias)\n\n   var calorias = make([]int, dias)\n\n   for i := 0; i < dias; i++ {\n    fmt.Scan(&calorias[i])\n   }\n\n   soma := 0\n\n   for i := 0; i < dias; i++ {\n    soma += calorias[i] \n   }\n\n   media := soma / dias\n\n   fmt.Print(media)\n   fmt.Printf(\".0\\n\")\n\n}\n",
+            "lines": "24"
         }
     ]
 }
