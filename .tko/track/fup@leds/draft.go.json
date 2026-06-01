@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-01_14-09-07",
+            "content": "@@ -41,254 +41,35 @@\n     \n-var n int%0A    fmt.Scan(&n)%0A    leds:=%5B%5Dint%7B6,2,5,5,4,5,6,3,7,6%7D%0A    for i:=0;i%3Cn;i++%7B%0A        var v string%0A        fmt.Scan(&v)%0A        total:=0%0A        for _,c:=range v%7B%0A            total+=leds%5Bc-'0'%5D%0A        %7D%0A    %7D%0A    fmt.Printf(%22leds%22, total\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-01_14-17-27",
+            "content": "@@ -165,17 +165,16 @@\n can(&v)%0A\n-%0A\n         \n@@ -182,17 +182,16 @@\n otal:=0%0A\n-%0A\n         \n@@ -196,17 +196,16 @@\n   for _,\n- \n c:=range\n@@ -253,16 +253,17 @@\n   %7D%0A    \n+%7D\n %0A    fmt\n@@ -275,17 +275,12 @@\n tf(%22\n-%25d \n leds\n-%5Cn\n %22, t\n@@ -287,10 +287,8 @@\n otal)%0A%7D%0A\n-%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-01_14-20-10",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n    leds:=[]int{6,2,5,5,4,5,6,3,7,6}\n    for i:=0;i<n;i++{\n        var v string\n        fmt.Scan(&v)\n\n        total:=0\n\n        for _, c:=range v{\n            total+=leds[c-'0']\n        }\n    \n    fmt.Printf(\"%d leds\\n\", total)\n}\n}\n",
+            "lines": "19"
+        }
+    ]
+}

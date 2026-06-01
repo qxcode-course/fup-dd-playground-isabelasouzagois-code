@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-31_14-07-08",
+            "content": "@@ -42,384 +42,35 @@\n     \n-var n,x int %0A    soldados :=0%0A    rebeldes :=0%0A    fmt.Scan(&n)%0A    for i:=0;i%3Cn;i++%7B%0A        fmt.Scan(&x)%0A        if x%252==0%7B%0A            rebeldes+=x%0A        %7Delse %7B%0A            soldados +=x%0A        %7D%0A    %7D%0A    if soldados%3Erebeldes%7B%0A        fmt.Println(%22soldados%22)%0A    %7Delse if rebeldes %3Esoldados%7B%0A         fmt.Println(%22rebeldes%22)%0A    %7Delse%7B%0A        fmt.Println(%22empate%22)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-05-31_14-16-02",
+            "content": "\npackage main\nimport \"fmt\"\nfunc main() {\n    var n,x int \n    soldados :=0\n    rebeldes :=0\n    fmt.Scan(&n)\n    for i:=0;i<n;i++{\n        fmt.Scan(&x)\n        if x%2==0{\n            rebeldes+=x\n        }else {\n            soldados +=x\n        }\n    }\n    if soldados>rebeldes{\n        fmt.Println(\"soldados\")\n    }else if rebeldes >soldados{\n         fmt.Println(\"rebeldes\")\n    }else{\n        fmt.Println(\"empate\")\n    }\n}\n",
+            "lines": "24"
+        }
+    ]
+}

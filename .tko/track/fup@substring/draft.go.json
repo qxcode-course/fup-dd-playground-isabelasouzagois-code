@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-31_14-31-28",
+            "content": "@@ -41,273 +41,35 @@\n     \n-var texto string%0A    var inicio ,qtd int%0A    fmt.Scan(&texto,&inicio,&qtd)%0A    if inicio%3C0%7C%7Cinicio%3E=len(texto)%7C%7Cqtd%3C0%7B%0A        fmt.Println(%22%22)%0A        r%0A    %7D%0A    fim:=inicio+qtd%0A    if fim%3Elen(texto)%7B%0A        fim =len(texto)%0A    %7D%0A    fmt.Println(texto%5Binicio:fim%5D\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-31_14-39-01",
+            "content": "@@ -188,16 +188,17 @@\n         \n+r\n %0A    %7D%0A \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-31_14-39-07",
+            "content": "@@ -192,14 +192,8 @@\n     \n-return\n %0A   \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-31_14-39-27",
+            "content": "@@ -10,36 +10,21 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09\n %22fmt%22%0A\n-)%0A\n func\n@@ -82,55 +82,16 @@\n int%0A\n-    reader :=bufio.NewReader(os.Stdin)%0A\n     fmt.\n Fsca\n@@ -90,21 +90,13 @@\n fmt.\n-Fs\n+S\n can(\n-reader,\n &tex\n@@ -180,24 +180,24 @@\n tln(%22%22)%0A\n-\n         \n %0A    %7D%0A \n@@ -188,16 +188,22 @@\n         \n+return\n %0A    %7D%0A \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-31_14-42-04",
+            "content": "@@ -36,17 +36,8 @@\n mt%22%0A\n-    %22os%22%0A\n )%0Afu\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-31_14-43-16",
+            "content": "@@ -36,22 +36,14 @@\n mt%22%0A\n-%09%22os%22%0A%09%22string\n+    %22o\n s%22%0A)\n@@ -65,150 +65,87 @@\n     \n- reader :=bufio.NewReader(os.Stdin)%0A     texto, _:=reader.ReadString('%5Cn')%0A     texto= strings.TrimRight(texto,%22%5Cr%5Cn%22)%0A    var inicio ,q\n+var texto string%0A    var inicio ,qtd int%0A    reader :=bufio.NewReader(os.S\n td\n- \n in\n-t\n+)\n %0A   \n@@ -153,13 +153,28 @@\n fmt.\n-S\n+Fs\n can(\n+reader,&texto,\n &ini\n@@ -183,20 +183,16 @@\n o,&qtd)%0A\n-   %0A\n     if i\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-31_14-47-47",
+            "content": "@@ -10,55 +10,189 @@\n ain%0A\n+%0A\n import \n-%22fmt%22%0Afunc main() %7B%0A    var texto string\n+(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A%09%22strings%22%0A)%0Afunc main() %7B%0A     reader :=bufio.NewReader(os.Stdin)%0A     texto, _:=reader.ReadString('%5Cn')%0A     texto= strings.TrimRight(texto,%22%5Cr%5Cn%22)\n %0A   \n@@ -212,21 +212,16 @@\n qtd int%0A\n-    %0A\n     fmt.\n@@ -230,15 +230,8 @@\n an(&\n-texto,&\n inic\n@@ -239,16 +239,20 @@\n o,&qtd)%0A\n+   %0A\n     if i\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-31_14-48-58",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var texto string\n    var inicio ,qtd int\n    \n    fmt.Scan(&texto,&inicio,&qtd)\n    if inicio<0||inicio>=len(texto)||qtd<0{\n        fmt.Println(\"\")\n        \n    }\n    fim:=inicio+qtd\n    if fim>len(texto){\n        fim =len(texto)\n    }\n    fmt.Println(texto[inicio:fim])\n}\n",
+            "lines": "17"
+        }
+    ]
+}
