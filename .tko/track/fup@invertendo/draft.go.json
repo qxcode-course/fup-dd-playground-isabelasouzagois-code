@@ -1,0 +1,104 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-14_23-23-50",
+            "content": "@@ -41,153 +41,35 @@\n     \n-var n int%0A%09fmt.Scan(&n)%0Afmt.Print(%22%5B%22)%0A%09vetor := make(%5B%5Dint, n)%0A%0A%09for i := 0; i %3C n; i-- %7B%0A%09%09fmt.Scan(&vetor%5Bi%5D)%0A%09%7D%0A    fmt.Printf(%22%25d%22, vetor%5Bi%5D\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-14_23-27-02",
+            "content": "@@ -176,28 +176,18 @@\n %22%25d%22\n-)%0A    %0A%7D%0Afmt.Print(%22%5D%22)\n+, vetor%5Bi%5D)%0A%7D\n %0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-06-14_23-28-00",
+            "content": "@@ -176,21 +176,16 @@\n %22%25d%22\n-,vetor\n )%0A    %0A\n+%7D\n %0Afmt\n@@ -196,10 +196,8 @@\n nt(%22%5D%22)%0A\n-%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-06-14_23-28-42",
+            "content": "@@ -127,10 +127,10 @@\n n; i\n-++\n+--\n  %7B%0A%09\n@@ -157,37 +157,8 @@\n %0A%09%7D%0A\n-    for i := n; i %3E n; i-- %7B%0A\n     \n@@ -170,26 +170,26 @@\n rint\n-ln(\n+f(%22%25d%22,\n vetor\n-%5Bi%5D\n )%0A    \n-%7D\n %0A%0Afm\n@@ -205,11 +205,6 @@\n %5D%22)%0A\n-    \n %7D%0A\n-%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-14_23-36-16",
+            "content": "@@ -195,17 +195,18 @@\n mt.Print\n-f\n+ln\n (vetor%5Bi\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-14_23-36-54",
+            "content": "@@ -201,13 +201,8 @@\n ntf(\n-%22%25d%22,\n veto\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-14_23-37-57",
+            "content": "@@ -174,10 +174,8 @@\n n; i\n--1\n  %3E n\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-14_23-38-39",
+            "content": "@@ -175,17 +175,17 @@\n ; i-1 %3E \n-0\n+n\n ; i-- %7B%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-14_23-39-00",
+            "content": "@@ -170,16 +170,18 @@\n  := n; i\n+-1\n  %3E 0; i-\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-14_23-39-14",
+            "content": "@@ -171,11 +171,8 @@\n := n\n- -1\n ; i \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-14_23-40-39",
+            "content": "@@ -175,17 +175,16 @@\n  -1; i %3E\n-=\n  0; i-- \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-14_23-40-51",
+            "content": "@@ -169,17 +169,16 @@\n i := n -\n- \n 1; i %3E= \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-14_23-41-03",
+            "content": "@@ -205,17 +205,16 @@\n intf(%22%25d\n- \n %22,vetor%5B\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-14_23-41-17",
+            "content": "@@ -73,17 +73,16 @@\n Print(%22%5B\n- \n %22)%0A%09veto\n@@ -203,17 +203,16 @@\n Printf(%22\n- \n %25d %22,vet\n@@ -236,17 +236,16 @@\n .Print(%22\n- \n %5D%22)%0A    \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-14_23-41-24",
+            "content": "@@ -73,16 +73,17 @@\n Print(%22%5B\n+ \n %22)%0A%09veto\n@@ -238,16 +238,17 @@\n .Print(%22\n+ \n %5D%22)%0A    \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-14_23-41-35",
+            "content": "@@ -206,16 +206,17 @@\n ntf(%22 %25d\n+ \n %22,vetor%5B\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-14_23-41-49",
+            "content": "@@ -236,17 +236,16 @@\n .Print(%22\n- \n %5D%22)%0A    \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-14_23-41-56",
+            "content": "@@ -236,16 +236,17 @@\n .Print(%22\n+ \n %5D%22)%0A    \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-14_23-42-08",
+            "content": "@@ -238,13 +238,10 @@\n rint\n-ln\n (%22\n- \n %5D%22)%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-14_23-42-19",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n\tfmt.Scan(&n)\nfmt.Print(\"[\")\n\tvetor := make([]int, n)\n\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&vetor[i])\n\t}\n    for i := n - 1; i >= 0; i-- {\n    fmt.Printf(\" %d\",vetor[i])\n    }\n\nfmt.Println(\" ]\")\n    }\n\n",
+            "lines": "18"
+        }
+    ]
+}

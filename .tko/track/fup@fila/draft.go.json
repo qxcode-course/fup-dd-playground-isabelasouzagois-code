@@ -1,0 +1,109 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-14_19-31-17",
+            "content": "@@ -10,27 +10,21 @@\n ain%0A\n-%0A\n import \n-%0A%09\n %22fmt%22%0A\n-%09%0A%0A\n func\n@@ -41,427 +41,35 @@\n     \n-var n int%0A    fmt.Scan(&n)%0A    vetor:= make(%5B%5Dint, n)%0A    for i:=0; i%3Cn ;i++%7B%0A       fmt.Scan(&vetor%5Bi%5D)%0A    %7D%0A%0A    par:= make(%5B%5Dint,n)%0A    impar:=make(%5B%5Dint,n)%0A%0A    for i:=0;i%3Cn ;i++%7B%0A       if vetor%5Bi%5D %252 == 0%7B%0A        par%5Bi%5D = vetor%5Bi%5D%0A    %7D%0A       if vetor%5Bi%5D %252!=0%7B%0A        impar%5Bi%5D = vetor%5Bi%5D%0A     %7D%0A    %7D%0A    for i:=0; i%3Cn ;i++%7B%0A    fmt.Printf(%22%5B%25d%5D%5Cn%22,par%5Bi%5D)%0A    fmt.Printf(%22%5B%25d%5D%22,impar%5Bi%5D)%0A%7D%0A%0Afmt.Printf(%22%5Cn\n+fmt.Println(%22Hello, World!\n %22)%0A%7D%0A\n-%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-14_22-58-37",
+            "content": "@@ -399,16 +399,18 @@\n tf(%22%5B%25d%5D\n+%5Cn\n %22,par%5Bi%5D\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-14_22-58-47",
+            "content": "@@ -399,18 +399,16 @@\n tf(%22%5B%25d%5D\n-%5Cn\n %22,par%5Bi%5D\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-14_22-58-57",
+            "content": "@@ -446,12 +446,28 @@\n %5Bi%5D)%0A%7D%0A%0A\n+fmt.Printf(%22%5Cn%22)\n %0A%7D%0A%0A\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-14_22-59-05",
+            "content": "@@ -401,17 +401,16 @@\n (%22%5B%25d%5D%5Cn\n- \n %22,par%5Bi%5D\n@@ -431,17 +431,16 @@\n tf(%22%5B%25d%5D\n- \n %22,impar%5B\n@@ -450,24 +450,8 @@\n %0A%7D%0A%0A\n-fmt.Printf(%22%5Cn%22)\n %0A%7D%0A%0A\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-14_22-59-19",
+            "content": "@@ -432,16 +432,17 @@\n tf(%22%5B%25d%5D\n+ \n %22,impar%5B\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-14_22-59-26",
+            "content": "@@ -401,16 +401,17 @@\n (%22%5B%25d%5D%5Cn\n+ \n %22,par%5Bi%5D\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-14_22-59-32",
+            "content": "@@ -391,25 +391,24 @@\n fmt.Printf(%22\n- \n %5B%25d%5D%5Cn%22,par%5B\n@@ -427,17 +427,16 @@\n Printf(%22\n- \n %5B%25d%5D%22,im\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-14_22-59-40",
+            "content": "@@ -391,24 +391,25 @@\n fmt.Printf(%22\n+ \n %5B%25d%5D%5Cn%22,par%5B\n@@ -428,16 +428,17 @@\n Printf(%22\n+ \n %5B%25d%5D%22,im\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-14_23-00-22",
+            "content": "@@ -415,31 +415,8 @@\n i%5D)%0A\n-%7D%0A%0Afor i:=0; i%3Cn ;i++%7B%0A\n     \n@@ -446,17 +446,16 @@\n %5Bi%5D)%0A%7D%0A%0A\n-%0A\n fmt.Prin\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-14_23-03-46",
+            "content": "@@ -399,16 +399,18 @@\n tf(%22%5B%25d%5D\n+%5Cn\n %22,par%5Bi%5D\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-06-14_23-04-06",
+            "content": "@@ -359,28 +359,8 @@\n   %7D%0A\n-    fmt.Printf(%22%5B%22)%0A\n     \n@@ -395,18 +395,20 @@\n Printf(%22\n+%5B\n %25d\n+%5D\n %22,par%5Bi%5D\n@@ -416,49 +416,8 @@\n %0A%7D%0A%0A\n-   fmt.Printf(%22%5D%5Cn%22)%0A%0A   fmt.Printf(%22%5B%22)%0A\n for \n@@ -466,16 +466,18 @@\n r%5Bi%5D)%0A%7D%0A\n+%0A%0A\n fmt.Prin\n@@ -484,14 +484,12 @@\n tf(%22\n-%5D\n %5Cn%22)%0A\n-%0A\n %7D%0A%0A\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-06-14_23-05-30",
+            "content": "@@ -417,17 +417,16 @@\n intf(%22%25d\n- \n %22,par%5Bi%5D\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-06-14_23-05-38",
+            "content": "@@ -419,16 +419,13 @@\n tf(%22\n-%5B\n %25d\n-%5D\n+ \n %22,\n-im\n par%5B\n@@ -500,37 +500,40 @@\n     fmt.Printf(%22\n+%5B\n %25d\n- \n+%5D\n %22,\n+im\n par%5Bi%5D)%0A%7D%0Afmt.Pr\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-06-14_23-06-09",
+            "content": "@@ -511,17 +511,16 @@\n Printf(%22\n- \n %25d %22,par\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-06-14_23-06-38",
+            "content": "@@ -514,16 +514,17 @@\n ntf(%22 %25d\n+ \n %22,par%5Bi%5D\n@@ -539,17 +539,16 @@\n Printf(%22\n- \n %5D%5Cn%22)%0A%0A%7D\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-06-14_23-06-50",
+            "content": "@@ -415,18 +415,20 @@\n Printf(%22\n+%5B\n %25d\n+%5D\n %22,impar%5B\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-06-14_23-09-25",
+            "content": "@@ -22,16 +22,19 @@\n %0A%09%22fmt%22%0A\n+%09%0A%0A\n func mai\n@@ -292,46 +292,8 @@\n   %7D%0A\n-       %0A    %7D%0A%0A    for i:=0;i%3Cn ;i++%7B%0A\n     \n@@ -345,24 +345,29 @@\n r%5Bi%5D%0A     %7D%0A\n+    %7D\n %0A    fmt.Pri\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-06-14_23-15-23",
+            "content": "@@ -18,15 +18,16 @@\n ort \n+%0A%09\n %22fmt%22%0A\n-%0A\n func\n@@ -36,17 +36,20 @@\n ain() %7B%0A\n-%09\n+    \n var n in\n@@ -50,17 +50,20 @@\n r n int%0A\n-%09\n+    \n fmt.Scan\n@@ -71,16 +71,17 @@\n &n)%0A\n-%0A%09\n+    \n vetor\n- \n := m\n@@ -98,37 +98,39 @@\n  n)%0A\n-%0A%09\n+    \n for i\n- \n :=\n- \n 0; i\n- %3C n; \n+%3Cn ;\n i++\n- \n %7B%0A\n-%09%09\n+       \n fmt.\n@@ -149,17 +149,22 @@\n i%5D)%0A\n-%09%7D%0A%0A%09\n+    %7D%0A%0A    \n par\n- \n := m\n@@ -177,22 +177,22 @@\n int,\n- \n n)%0A\n-%09\n+    \n impar\n- \n :=\n- \n make\n@@ -202,70 +202,42 @@\n int,\n- \n n)%0A%0A\n-%09qtdPar := 0%0A%09qtdImpar := 0%0A%0A%09\n+    \n for i\n- \n :=\n- \n 0;\n- i %3C n; \n+i%3Cn ;\n i++\n- \n %7B%0A\n-%09%09\n+       \n if v\n@@ -247,120 +247,154 @@\n r%5Bi%5D\n+ \n %252 == 0\n- \n %7B%0A\n-%09%09%09par%5BqtdPar%5D = vetor%5Bi%5D%0A%09%09%09qtdPar++%0A%09%09%7D else %7B%0A%09%09%09impar%5BqtdImpar%5D = vetor%5Bi%5D%0A%09%09%09qtdImpar++%0A%09%09%7D%0A%09%7D%0A%0A%09\n+        par%5Bi%5D = vetor%5Bi%5D%0A    %7D%0A       %0A    %7D%0A%0A    for i:=0;i%3Cn ;i++%7B%0A       if vetor%5Bi%5D %252!=0%7B%0A        impar%5Bi%5D = vetor%5Bi%5D%0A     %7D%0A%0A    \n fmt.\n@@ -402,50 +402,43 @@\n rint\n+f\n (%22%5B\n- \n %22)%0A\n-%09\n+    \n for i\n- \n :=\n- \n 0; i\n- %3C qtdImpar; \n+%3Cn ;\n i++\n- \n %7B%0A\n-%09%09\n+    \n fmt.\n@@ -447,20 +447,18 @@\n intf(%22%25d\n- \n %22,\n- \n impar%5Bi%5D\n@@ -451,36 +451,38 @@\n (%22%25d%22,impar%5Bi%5D)%0A\n-%09\n %7D%0A\n-%09\n+%0A   \n fmt.Println(%22%5D%22)\n@@ -478,18 +478,21 @@\n rint\n-ln\n+f\n (%22%5D\n+%5Cn\n %22)%0A%0A\n-%09\n+   \n fmt.\n@@ -500,48 +500,39 @@\n rint\n+f\n (%22%5B\n- \n %22)%0A\n-%09\n for i\n- \n :=\n- \n 0; i\n- %3C qtdPar; \n+%3Cn ;\n i++\n- \n %7B%0A\n-%09%09\n+    \n fmt.\n@@ -543,22 +543,21 @@\n tf(%22\n+ \n %25d\n- \n %22,\n- \n par%5Bi%5D)%0A\n %09%7D%0A%09\n@@ -556,12 +556,10 @@\n i%5D)%0A\n-%09\n %7D%0A\n-%09\n fmt.\n@@ -567,16 +567,18 @@\n rint\n-ln\n+f\n (%22\n+ \n %5D%5Cn%22)%0A\n+%0A\n %7D%0A\n+%0A\n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-06-14_23-18-26",
+            "content": "@@ -563,13 +563,15 @@\n intln(%22%5D\n+%5Cn\n %22)%0A%7D%0A\n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-06-14_23-18-41",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tvetor := make([]int, n)\n\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&vetor[i])\n\t}\n\n\tpar := make([]int, n)\n\timpar := make([]int, n)\n\n\tqtdPar := 0\n\tqtdImpar := 0\n\n\tfor i := 0; i < n; i++ {\n\t\tif vetor[i]%2 == 0 {\n\t\t\tpar[qtdPar] = vetor[i]\n\t\t\tqtdPar++\n\t\t} else {\n\t\t\timpar[qtdImpar] = vetor[i]\n\t\t\tqtdImpar++\n\t\t}\n\t}\n\n\tfmt.Print(\"[ \")\n\tfor i := 0; i < qtdImpar; i++ {\n\t\tfmt.Printf(\"%d \", impar[i])\n\t}\n\tfmt.Println(\"]\")\n\n\tfmt.Print(\"[ \")\n\tfor i := 0; i < qtdPar; i++ {\n\t\tfmt.Printf(\"%d \", par[i])\n\t}\n\tfmt.Println(\"]\")\n}\n",
+            "lines": "42"
+        }
+    ]
+}
