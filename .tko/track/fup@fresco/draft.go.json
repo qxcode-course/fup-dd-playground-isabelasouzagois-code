@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-04_20-57-27",
+            "content": "@@ -10,538 +10,66 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A%09%22strings%22%0A)%0A%0Afunc vogal(c byte) bool %7B%0A%09return c == 'a' %7C%7C c == 'e' %7C%7C c == 'i' %7C%7C c == 'o' %7C%7C c == 'u'%0A%7D%0A%0Afunc main() %7B%0A%09reader := bufio.NewReader(os.Stdin)%0A%09texto, _ := reader.ReadString('%5Cn')%0A%09texto = strings.TrimSpace(texto)%0A%0A%09palavras := strings.Fields(texto)%0A%0A%09res := palavras%5B0%5D%0A%0A%09for i := 1; i %3C len(palavras); i++ %7B%0A%09%09ult := res%5Blen(res)-1%5D%0A%09%09prim := palavras%5Bi%5D%5B0%5D%0A%0A%09%09if vogal(ult) && vogal(pri) %7B%0A%09%09%09res += palavras%5Bi%5D%5B1:%5D%0A%09%09%7D else %7B%0A%09%09%09res += %22 %22 + palavras%5Bi%5D%0A%09%09%7D%0A%09%7D%0A%0A%09fmt.Println(res\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-04_21-02-11",
+            "content": "@@ -39,16 +39,25 @@\n %0A%09%22os%22%0A%09\n+%22strings%22\n %0A)%0A%0Afunc\n@@ -443,17 +443,16 @@\n ogal(pri\n-m\n ) %7B%0A%09%09%09r\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-07-04_21-02-37",
+            "content": "@@ -43,17 +43,8 @@\n s%22%0A%09\n-%22strings%22\n %0A)%0A%0A\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-07-04_21-02-43",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strings\"\n)\n\nfunc vogal(c byte) bool {\n\treturn c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u'\n}\n\nfunc main() {\n\treader := bufio.NewReader(os.Stdin)\n\ttexto, _ := reader.ReadString('\\n')\n\ttexto = strings.TrimSpace(texto)\n\n\tpalavras := strings.Fields(texto)\n\n\tres := palavras[0]\n\n\tfor i := 1; i < len(palavras); i++ {\n\t\tult := res[len(res)-1]\n\t\tprim := palavras[i][0]\n\n\t\tif vogal(ult) && vogal(prim) {\n\t\t\tres += palavras[i][1:]\n\t\t} else {\n\t\t\tres += \" \" + palavras[i]\n\t\t}\n\t}\n\n\tfmt.Println(res)\n}\n",
+            "lines": "35"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-03_19-45-44",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -23,696 +23,53 @@\n mt%22%0A\n-%0Atype Gomo struct %7B%0A%09x int%0A%09y int%0A%7D%0A%0Afunc main() %7B%0A%09var q int%0A%09var d string%0A%0A%09fmt.Scan(&q, &d)%0A%0A%09cobra := make(%5B%5DGomo, q)%0A%0A%09for i := 0; i %3C q; i++ %7B%0A%09%09fmt.Scan(&cobra%5Bi%5D.x, &cobra%5Bi%5D.y)%0A%09%7D%0A%0A%09// Guarda a posi%C3%A7%C3%A3o antiga da cabe%C3%A7a%0A%09xAnt := cobra%5B0%5D.x%0A%09yAnt := cobra%5B0%5D.y%0A%0A%09// Move a cabe%C3%A7a%0A%09if d == %22L%22 %7B%0A%09%09cobra%5B0%5D.x--%0A%09%7D else if d == %22R%22 %7B%0A%09%09cobra%5B0%5D.x++%0A%09%7D else if d == %22U%22 %7B%0A%09%09cobra%5B0%5D.y--%0A%09%7D else if d == %22D%22 %7B%0A%09%09cobra%5B0%5D.y++%0A%09%7D%0A%0A%09// Move os outros gomos%0A%09for i := 1; i %3C q; i++ %7B%0A%09%09auxX := cobra%5Bi%5D.x%0A%09%09auxY := cobra%5Bi%5D.y%0A%0A%09%09cobra%5Bi%5D.x = xAnt%0A%09%09cobra%5Bi%5D.y = yAnt%0A%0A%09%09xAnt = auxX%0A%09%09yAnt = auxY%0A%09%7D%0A%0A%09// Imprime o resultado%0A%09for i := 0; i %3C q; i++ %7B%0A%09%09fmt.Println(cobra%5Bi%5D.x, cobra%5Bi%5D.y)%0A%09%7D\n+func main() %7B%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-03_20-02-43",
+            "content": "package main\n\nimport \"fmt\"\n\ntype Gomo struct {\n\tx int\n\ty int\n}\n\nfunc main() {\n\tvar q int\n\tvar d string\n\n\tfmt.Scan(&q, &d)\n\n\tcobra := make([]Gomo, q)\n\n\tfor i := 0; i < q; i++ {\n\t\tfmt.Scan(&cobra[i].x, &cobra[i].y)\n\t}\n\n\t// Guarda a posi\u00e7\u00e3o antiga da cabe\u00e7a\n\txAnt := cobra[0].x\n\tyAnt := cobra[0].y\n\n\t// Move a cabe\u00e7a\n\tif d == \"L\" {\n\t\tcobra[0].x--\n\t} else if d == \"R\" {\n\t\tcobra[0].x++\n\t} else if d == \"U\" {\n\t\tcobra[0].y--\n\t} else if d == \"D\" {\n\t\tcobra[0].y++\n\t}\n\n\t// Move os outros gomos\n\tfor i := 1; i < q; i++ {\n\t\tauxX := cobra[i].x\n\t\tauxY := cobra[i].y\n\n\t\tcobra[i].x = xAnt\n\t\tcobra[i].y = yAnt\n\n\t\txAnt = auxX\n\t\tyAnt = auxY\n\t}\n\n\t// Imprime o resultado\n\tfor i := 0; i < q; i++ {\n\t\tfmt.Println(cobra[i].x, cobra[i].y)\n\t}\n}\n",
+            "lines": "53"
+        }
+    ]
+}

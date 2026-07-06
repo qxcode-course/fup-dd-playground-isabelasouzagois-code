@@ -107,8 +107,13 @@
         },
         {
             "label": "2026-03-31_00-14-02",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var nota1 ,nota2,notaf int\n    fmt.Scan(&nota1,&nota2)\n\n  media:= (nota1+nota2)/2\n\n    if media >=7 {\n         fmt.Println(\"aprovado\")\n\n    }else if media > 4 {\n         fmt.Scan(&notaf)\n         mediafinal := (media+notaf) /2\n\n    if mediafinal >= 5 {\n        fmt.Println(\"aprovado na final\")\n    }else {\n        fmt.Println(\"reprovado na final\")\n        \n        }\n    }else{\n          fmt.Println(\"reprovado\")\n    }\n}\n\n",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -33,17 +33,20 @@\n ain() %7B%0A\n-%09\n+    \n var nota\n@@ -50,17 +50,16 @@\n ota1\n-,\n  \n+,\n nota2,\n- \n nota\n@@ -64,17 +64,20 @@\n taf int%0A\n-%09\n+    \n fmt.Scan\n@@ -84,17 +84,16 @@\n (&nota1,\n- \n &nota2)%0A\n@@ -97,15 +97,15 @@\n 2)%0A%0A\n-%09\n+  \n media\n- \n := (\n@@ -113,24 +113,23 @@\n ota1\n- + \n++\n nota2)\n- / 2%0A%0A%09\n+/2%0A%0A    \n if m\n@@ -139,15 +139,21 @@\n a %3E=\n- \n 7 %7B%0A\n-%09%09\n+         \n fmt.\n@@ -173,19 +173,21 @@\n vado%22)%0A%0A\n-%09%7D \n+    %7D\n else if \n@@ -198,19 +198,25 @@\n a %3E 4 %7B%0A\n-%0A%09%09\n+         \n fmt.Scan\n@@ -224,18 +224,25 @@\n &notaf)%0A\n-%09%09\n+         \n mediafin\n@@ -257,19 +257,17 @@\n edia\n- + \n++\n notaf) /\n  2%0A%0A\n@@ -266,14 +266,15 @@\n f) /\n- \n 2%0A%0A\n-%09%09\n+    \n if m\n@@ -290,19 +290,24 @@\n  %3E= 5 %7B%0A\n-%09%09%09\n+        \n fmt.Prin\n@@ -335,23 +335,28 @@\n l%22)%0A\n-%0A%09%09%7D \n+    %7D\n else %7B%0A\n-%09%09%09\n+        \n fmt.\n@@ -389,25 +389,48 @@\n l%22)%0A\n-%0A%09%09%7D%0A%09%7D \n+        %0A        %7D%0A    %7D\n else\n- \n %7B%0A\n-%09%09\n+          \n fmt.\n@@ -454,9 +454,13 @@\n o%22)%0A\n-%09\n+    \n %7D%0A%7D%0A\n+%0A\n",
             "lines": "26"
+        },
+        {
+            "label": "2026-06-15_13-04-29",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar nota1, nota2, notaf int\n\tfmt.Scan(&nota1, &nota2)\n\n\tmedia := (nota1 + nota2) / 2\n\n\tif media >= 7 {\n\t\tfmt.Println(\"aprovado\")\n\n\t} else if media > 4 {\n\n\t\tfmt.Scan(&notaf)\n\t\tmediafinal := (media + notaf) / 2\n\n\t\tif mediafinal >= 5 {\n\t\t\tfmt.Println(\"aprovado na final\")\n\n\t\t} else {\n\t\t\tfmt.Println(\"reprovado na final\")\n\n\t\t}\n\t} else {\n\t\tfmt.Println(\"reprovado\")\n\t}\n}\n",
+            "lines": "29"
         }
     ]
 }

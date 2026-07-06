@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_19-26-11",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,360 +37,39 @@\n ) %7B%0A\n-%09var text, w1, w2 string%0A%09fmt.Scanln(&text)%0A%09fmt.Scanln(&w1)%0A%09fmt.Scanln(&w2)%0A%0A%09m := make(map%5Brune%5Drune)%0A%0A%09%0A%09for i := 0; i %3C len(w1) && i %3C len(w2); i++ %7B%0A%09%09a := rune(w1%5Bi%5D)%0A%09%09b := rune(w2%5Bi%5D)%0A%09%09m%5Ba%5D = b%0A%09%09m%5Bb%5D = a%0A%09%7D%0A%0A%09%0A%09res := %5B%5Drune(text)%0A%0A%09for i := 0; i %3C len(res); i++ %7B%0A%09%09if v, ok := m%5Bres%5Bi%5D%5D; ok %7B%0A%09%09%09res%5Bi%5D = v%0A%09%09%7D%0A%09%7D%0A%0A%09fmt.Println(string(res)\n+    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-06_19-36-53",
+            "content": "@@ -18,475 +18,107 @@\n ort \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A)%0A%0Afunc main() %7B%0A%09reader := bufio.NewReader(os.Stdin)%0A%0A%09text, _ := reader.ReadString('%5Cn')%0A%09w1, _ := reader.ReadString('%5Cn')%0A%09w2, _ := reader.ReadString('%5Cn')%0A%0A%09// remove '%5Cn' se existir%0A%09if len(text) %3E 0 && text%5Blen(text)-1%5D == '%5Cn' %7B%0A%09%09text = text%5B:len(text)-1%5D%0A%09%7D%0A%09if len(w1) %3E 0 && w1%5Blen(w1)-1%5D == '%5Cn' %7B%0A%09%09w1 = w1%5B:len(w1)-1%5D%0A%09%7D%0A%09if len(w2) %3E 0 && w2%5Blen(w2)-1%5D == '%5Cn' %7B%0A%09%09w2 = w2%5B:len(w2)-1%5D%0A%09%7D%0A%0A%09// mapa de substitui%C3%A7%C3%A3o (bidirecional)\n+%22fmt%22%0A%0Afunc main() %7B%0A%09var text, w1, w2 string%0A%09fmt.Scanln(&text)%0A%09fmt.Scanln(&w1)%0A%09fmt.Scanln(&w2)%0A\n %0A%09m \n@@ -133,20 +133,22 @@\n map%5B\n-byte%5Dbyt\n+rune%5Drun\n e)%0A%0A\n+%09%0A\n %09for\n@@ -196,48 +196,72 @@\n %7B%0A%09%09\n-m%5Bw1%5Bi%5D%5D = \n+a := rune(w1%5Bi%5D)%0A%09%09b := rune(\n w2%5Bi%5D\n+)\n %0A%09%09m%5B\n-w2%5Bi%5D%5D = w1%5Bi%5D\n+a%5D = b%0A%09%09m%5Bb%5D = a\n %0A%09%7D%0A%0A\n+%09%0A\n %09res\n@@ -270,11 +270,11 @@\n = %5B%5D\n-byt\n+run\n e(te\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-07-06_19-38-31",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\nfunc main() {\n\treader := bufio.NewReader(os.Stdin)\n\n\ttext, _ := reader.ReadString('\\n')\n\tw1, _ := reader.ReadString('\\n')\n\tw2, _ := reader.ReadString('\\n')\n\n\t// remove '\\n' se existir\n\tif len(text) > 0 && text[len(text)-1] == '\\n' {\n\t\ttext = text[:len(text)-1]\n\t}\n\tif len(w1) > 0 && w1[len(w1)-1] == '\\n' {\n\t\tw1 = w1[:len(w1)-1]\n\t}\n\tif len(w2) > 0 && w2[len(w2)-1] == '\\n' {\n\t\tw2 = w2[:len(w2)-1]\n\t}\n\n\t// mapa de substitui\u00e7\u00e3o (bidirecional)\n\tm := make(map[byte]byte)\n\n\tfor i := 0; i < len(w1) && i < len(w2); i++ {\n\t\tm[w1[i]] = w2[i]\n\t\tm[w2[i]] = w1[i]\n\t}\n\n\tres := []byte(text)\n\n\tfor i := 0; i < len(res); i++ {\n\t\tif v, ok := m[res[i]]; ok {\n\t\t\tres[i] = v\n\t\t}\n\t}\n\n\tfmt.Println(string(res))\n}\n",
+            "lines": "44"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-15_13-06-03",
+            "content": "@@ -28,429 +28,48 @@\n unc \n-casal(elemento int)int%7B%0A    vetor:= make(%5B%5Dint,elemento)%0A    for i:=0;i%3Celemento;i++%7B%0A        fmt.Scan(&vetor%5Bi%5D)%0A    %7D%0A    count:= 0%0A    for i:=0;i%3C elemento - 1 ;i++%7B%0A        for j:= 1; j %3C elemento - 1; j++%7B%0A            if (vetor%5Bi%5D * -1) == vetor%5Bj%5D%7B%0A                count++%0A            %7D%0A        %7D%0A        %0A%7D  %0A return count%0A%7D%0Afunc main() %7B%0A    var elemento int%0A    fmt.Scan(&elemento)%0A    fmt.Print(casal(elemento))%0A\n+main() %7B%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-15_13-38-24",
+            "content": "@@ -193,32 +193,65 @@\n 1 ;i++%7B%0A        \n+for j:= 1; j %3C elemento - 1; j++%7B\n %0A            if \n@@ -279,13 +279,9 @@\n tor%5B\n-i + 1\n+j\n %5D%7B%0A \n@@ -325,16 +325,17 @@\n         \n+%7D\n %0A       \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-15_13-40-10",
+            "content": "package main\nimport \"fmt\"\nfunc casal(elemento int)int{\n    vetor:= make([]int,elemento)\n    for i:=0;i<elemento;i++{\n        fmt.Scan(&vetor[i])\n    }\n    count:= 0\n    for i:=0;i< elemento - 1 ;i++{\n        \n            if (vetor[i] * -1) == vetor[i + 1]{\n                count++\n            }\n        \n        \n}  \n return count\n}\nfunc main() {\n    var elemento int\n    fmt.Scan(&elemento)\n    fmt.Print(casal(elemento))\n\n}\n",
+            "lines": "24"
+        }
+    ]
+}

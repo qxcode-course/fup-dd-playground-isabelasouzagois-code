@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_20-06-37",
+            "content": "@@ -10,578 +10,66 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A%09%22strings%22%0A)%0A%0Afunc main() %7B%0A%09reader := bufio.NewReader(os.Stdin)%0A%0A%09texto, _ := reader.ReadString('%5Cn')%0A%09alvo, _ := reader.ReadString('%5Cn')%0A%09novo, _ := reader.ReadString('%5Cn')%0A%0A%09texto = strings.TrimSpace(texto)%0A%09alvo = strings.TrimSpace(alvo)%0A%09novo = strings.TrimSpace(novo)%0A%0A%09n := len(texto)%0A%09m := len(alvo)%0A%0A%09var res strings.Builder%0A%0A%09for i := 0; i %3C n; %7B%0A%09%09// se bate a palavra alvo%0A%09%09if i+m %3C= n && texto%5Bi:i+m%5D == alvo %7B%0A%09%09%09res.WriteString(novo)%0A%09%09%09i += m%0A%09%09%7D else %7B%0A%09%09%09res.WriteByte(texto%5Bi%5D)%0A%09%09%09i++%0A%09%09%7D%0A%09%7D%0A%0A%09fmt.Println(res.String()\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-06_20-19-55",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strings\"\n)\n\nfunc main() {\n\treader := bufio.NewReader(os.Stdin)\n\n\ttexto, _ := reader.ReadString('\\n')\n\talvo, _ := reader.ReadString('\\n')\n\tnovo, _ := reader.ReadString('\\n')\n\n\ttexto = strings.TrimSpace(texto)\n\talvo = strings.TrimSpace(alvo)\n\tnovo = strings.TrimSpace(novo)\n\n\tn := len(texto)\n\tm := len(alvo)\n\n\tvar res strings.Builder\n\n\tfor i := 0; i < n; {\n\t\t// se bate a palavra alvo\n\t\tif i+m <= n && texto[i:i+m] == alvo {\n\t\t\tres.WriteString(novo)\n\t\t\ti += m\n\t\t} else {\n\t\t\tres.WriteByte(texto[i])\n\t\t\ti++\n\t\t}\n\t}\n\n\tfmt.Println(res.String())\n}\n",
+            "lines": "38"
+        }
+    ]
+}

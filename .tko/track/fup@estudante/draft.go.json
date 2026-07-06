@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-03_20-03-05",
+            "content": "@@ -10,991 +10,66 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A)%0A%0Atype Aluno struct %7B%0A%09nome  string%0A%09n1, n2, n3 float64%0A%09media float64%0A%7D%0A%0Afunc main() %7B%0A%09var n int%0A%0A%09fmt.Scan(&n)%0A%0A%09reader := bufio.NewReader(os.Stdin)%0A%0A%09// Consome o enter ap%C3%B3s ler o n%0A%09reader.ReadString('%5Cn')%0A%0A%09alunos := make(%5B%5DAluno, n)%0A%0A%09for i := 0; i %3C n; i++ %7B%0A%09%09nome, _ := reader.ReadString('%5Cn')%0A%09%09nome = nome%5B:len(nome)-1%5D // remove o '%5Cn'%0A%0A%09%09alunos%5Bi%5D.nome = nome%0A%0A%09%09fmt.Scan(&alunos%5Bi%5D.n1, &alunos%5Bi%5D.n2, &alunos%5Bi%5D.n3)%0A%0A%09%09alunos%5Bi%5D.media = (alunos%5Bi%5D.n1 + alunos%5Bi%5D.n2 + alunos%5Bi%5D.n3) / 3%0A%0A%09%09reader.ReadString('%5Cn')%0A%09%7D%0A%0A%09// Ordena%C3%A7%C3%A3o (Bubble Sort)%0A%09for i := 0; i %3C n-1; i++ %7B%0A%09%09for j := 0; j %3C n-1-i; j++ %7B%0A%09%09%09if alunos%5Bj%5D.media %3C alunos%5Bj+1%5D.media %7B%0A%09%09%09%09alunos%5Bj%5D, alunos%5Bj+1%5D = alunos%5Bj+1%5D, alunos%5Bj%5D%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D%0A%0A%09for i := 0; i %3C n; i++ %7B%0A%09%09fmt.Printf(%22%25d: %25s%5Cn%22, i, alunos%5Bi%5D.nome)%0A%09%09fmt.Printf(%22   Media: %25.2f%5Cn%22, alunos%5Bi%5D.media)%0A%09%09fmt.Printf(%22   N1: %25.2f, N2: %25.2f, N3: %25.2f%5Cn%22,%0A%09%09%09alunos%5Bi%5D.n1,%0A%09%09%09alunos%5Bi%5D.n2,%0A%09%09%09alunos%5Bi%5D.n3)%0A%09%7D\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-03_20-56-39",
+            "content": "@@ -68,22 +68,16 @@\n %0A%09nome  \n-      \n string%0A%09\n@@ -102,22 +102,16 @@\n %0A%09media \n-      \n float64%0A\n@@ -132,118 +132,129 @@\n  %7B%0A%09\n-entrada := bufio.NewReader(os.Stdin)%0A%0A%09var n int%0A%09fmt.Fscan(entrada, &n)%0A%09entrada.ReadByte() // consome o \n+var n int%0A%0A%09fmt.Scan(&n)%0A%0A%09reader := bufio.NewReader(os.Stdin)%0A%0A%09// Consome o enter ap%C3%B3s ler o n%0A%09reader.ReadString(\n '%5Cn'\n+)\n %0A%0A%09a\n@@ -319,23 +319,22 @@\n e, _ := \n-entrada\n+reader\n .ReadStr\n@@ -370,16 +370,33 @@\n nome)-1%5D\n+ // remove o '%5Cn'\n %0A%0A%09%09alun\n@@ -424,23 +424,13 @@\n fmt.\n-Fs\n+S\n can(\n-entrada, \n &alu\n@@ -473,29 +473,8 @@\n .n3)\n-%0A%09%09entrada.ReadByte()\n %0A%0A%09%09\n@@ -544,16 +544,54 @@\n / 3%0A\n-%09%7D%0A%0A%09// \n+%0A%09%09reader.ReadString('%5Cn')%0A%09%7D%0A%0A%09// Ordena%C3%A7%C3%A3o (\n Bubb\n@@ -597,16 +597,17 @@\n ble Sort\n+)\n %0A%09for i \n",
+            "lines": "57"
+        },
+        {
+            "label": "2026-07-03_20-57-34",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\ntype Aluno struct {\n\tnome        string\n\tn1, n2, n3 float64\n\tmedia       float64\n}\n\nfunc main() {\n\tentrada := bufio.NewReader(os.Stdin)\n\n\tvar n int\n\tfmt.Fscan(entrada, &n)\n\tentrada.ReadByte() // consome o '\\n'\n\n\talunos := make([]Aluno, n)\n\n\tfor i := 0; i < n; i++ {\n\t\tnome, _ := entrada.ReadString('\\n')\n\t\tnome = nome[:len(nome)-1]\n\n\t\talunos[i].nome = nome\n\n\t\tfmt.Fscan(entrada, &alunos[i].n1, &alunos[i].n2, &alunos[i].n3)\n\t\tentrada.ReadByte()\n\n\t\talunos[i].media = (alunos[i].n1 + alunos[i].n2 + alunos[i].n3) / 3\n\t}\n\n\t// Bubble Sort\n\tfor i := 0; i < n-1; i++ {\n\t\tfor j := 0; j < n-1-i; j++ {\n\t\t\tif alunos[j].media < alunos[j+1].media {\n\t\t\t\talunos[j], alunos[j+1] = alunos[j+1], alunos[j]\n\t\t\t}\n\t\t}\n\t}\n\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Printf(\"%d: %s\\n\", i, alunos[i].nome)\n\t\tfmt.Printf(\"   Media: %.2f\\n\", alunos[i].media)\n\t\tfmt.Printf(\"   N1: %.2f, N2: %.2f, N3: %.2f\\n\",\n\t\t\talunos[i].n1,\n\t\t\talunos[i].n2,\n\t\t\talunos[i].n3)\n\t}\n}\n",
+            "lines": "53"
+        }
+    ]
+}

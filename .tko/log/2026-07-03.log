@@ -1,0 +1,84 @@
+2026-07-03 19:05:50, MOVE, v:1, k:fup@pr_chute_a, mode:PICK
+2026-07-03 19:06:39, MOVE, v:1, k:fup@pr_chute_a, mode:EDIT
+2026-07-03 19:18:02, EXEC, v:1, k:fup@pr_chute_a, mode:LOCK, rate:0, size:46
+2026-07-03 19:18:11, EXEC, v:1, k:fup@pr_chute_a, mode:LOCK, rate:0
+2026-07-03 19:18:39, EXEC, v:1, k:fup@pr_chute_a, mode:LOCK, rate:0
+2026-07-03 19:18:43, EXEC, v:1, k:fup@pr_chute_a, mode:LOCK, rate:0
+2026-07-03 19:18:49, EXEC, v:1, k:fup@pr_chute_a, mode:LOCK, rate:0
+2026-07-03 19:18:51, MOVE, v:1, k:fup@pr_chute_a, mode:BACK
+2026-07-03 19:18:54, MOVE, v:1, k:fup@pr_chute_a, mode:PICK
+2026-07-03 19:18:58, EXEC, v:1, k:fup@pr_chute_a, mode:LOCK, rate:0
+2026-07-03 19:18:56, MOVE, v:1, k:fup@pr_chute_a, mode:EDIT
+2026-07-03 19:34:27, EXEC, v:1, k:fup@pr_chute_a, mode:LOCK, rate:0, size:41
+2026-07-03 19:34:40, EXEC, v:1, k:fup@pr_chute_a, mode:LOCK, rate:0, size:5
+2026-07-03 19:34:49, EXEC, v:1, k:fup@pr_chute_a, mode:LOCK, rate:0
+2026-07-03 19:34:54, EXEC, v:1, k:fup@pr_chute_a, mode:FREE
+2026-07-03 19:35:13, EXEC, v:1, k:fup@pr_chute_a, mode:LOCK, rate:0, size:41
+2026-07-03 19:35:03, MOVE, v:1, k:fup@pr_chute_a, mode:EDIT
+2026-07-03 19:35:11, MOVE, v:1, k:fup@pr_chute_a, mode:EDIT
+2026-07-03 19:36:14, EXEC, v:1, k:fup@pr_chute_a, mode:LOCK, rate:0, size:42
+2026-07-03 19:36:18, MOVE, v:1, k:fup@pr_chute_a, mode:BACK
+2026-07-03 19:36:33, MOVE, v:1, k:fup@pedra_struct, mode:DOWN
+2026-07-03 19:36:39, MOVE, v:1, k:fup@pedra_struct, mode:PICK
+2026-07-03 19:36:42, EXEC, v:1, k:fup@pedra_struct, mode:FULL, rate:0, size:5
+2026-07-03 19:37:06, EXEC, v:1, k:fup@pedra_struct, mode:FULL, rate:100, size:57
+2026-07-03 19:37:11, MOVE, v:1, k:fup@pedra_struct, mode:BACK
+2026-07-03 19:37:16, MOVE, v:1, k:fup@pizza, mode:DOWN
+2026-07-03 19:37:18, MOVE, v:1, k:fup@pizza, mode:PICK
+2026-07-03 19:37:19, EXEC, v:1, k:fup@pizza, mode:FULL, rate:0, size:5
+2026-07-03 19:36:11, MOVE, v:1, k:fup@pr_chute_a, mode:EDIT
+2026-07-03 19:36:12, MOVE, v:1, k:fup@pr_chute_a, mode:EDIT
+2026-07-03 19:36:33, MOVE, v:1, k:fup@pedra_struct, mode:EDIT
+2026-07-03 19:36:33, MOVE, v:1, k:fup@pedra_struct, mode:EDIT
+2026-07-03 19:36:33, MOVE, v:1, k:fup@pedra_struct, mode:EDIT
+2026-07-03 19:37:06, MOVE, v:1, k:fup@pedra_struct, mode:EDIT
+2026-07-03 19:37:06, MOVE, v:1, k:fup@pedra_struct, mode:EDIT
+2026-07-03 19:37:16, MOVE, v:1, k:fup@pizza, mode:EDIT
+2026-07-03 19:37:16, MOVE, v:1, k:fup@pizza, mode:EDIT
+2026-07-03 19:37:16, MOVE, v:1, k:fup@pizza, mode:EDIT
+2026-07-03 19:37:45, MOVE, v:1, k:fup@pizza, mode:EDIT
+2026-07-03 19:37:19, MOVE, v:1, k:fup@pizza, mode:EDIT
+2026-07-03 19:45:28, EXEC, v:1, k:fup@pizza, mode:FULL, rate:100, size:37
+2026-07-03 19:45:30, EXEC, v:1, k:fup@pizza, mode:FULL, rate:100
+2026-07-03 19:45:26, MOVE, v:1, k:fup@pizza, mode:EDIT
+2026-07-03 19:45:30, MOVE, v:1, k:fup@pizza, mode:EDIT
+2026-07-03 19:45:33, MOVE, v:1, k:fup@pizza, mode:BACK
+2026-07-03 19:45:40, MOVE, v:1, k:fup@gomos, mode:DOWN
+2026-07-03 19:45:42, MOVE, v:1, k:fup@gomos, mode:PICK
+2026-07-03 19:45:44, EXEC, v:1, k:fup@gomos, mode:FULL, rate:0, size:5
+2026-07-03 19:45:40, MOVE, v:1, k:fup@gomos, mode:EDIT
+2026-07-03 19:45:40, MOVE, v:1, k:fup@gomos, mode:EDIT
+2026-07-03 19:45:40, MOVE, v:1, k:fup@gomos, mode:EDIT
+2026-07-03 19:46:27, MOVE, v:1, k:fup@gomos, mode:EDIT
+2026-07-03 19:45:44, MOVE, v:1, k:fup@gomos, mode:EDIT
+2026-07-03 20:02:43, EXEC, v:1, k:fup@gomos, mode:FULL, rate:100, size:53
+2026-07-03 20:02:49, MOVE, v:1, k:fup@gomos, mode:BACK
+2026-07-03 20:02:54, MOVE, v:1, k:fup@estudante, mode:DOWN
+2026-07-03 20:02:55, MOVE, v:1, k:fup@estudante, mode:PICK
+2026-07-03 20:03:05, EXEC, v:1, k:fup@estudante, mode:FULL, rate:0, size:5
+2026-07-03 20:02:43, MOVE, v:1, k:fup@gomos, mode:EDIT
+2026-07-03 20:02:54, MOVE, v:1, k:fup@estudante, mode:EDIT
+2026-07-03 20:02:54, MOVE, v:1, k:fup@estudante, mode:EDIT
+2026-07-03 20:02:54, MOVE, v:1, k:fup@estudante, mode:EDIT
+2026-07-03 20:03:05, MOVE, v:1, k:fup@estudante, mode:EDIT
+2026-07-03 20:03:35, MOVE, v:1, k:fup@estudante, mode:EDIT
+2026-07-03 20:56:34, MOVE, v:1, k:fup@estudante, mode:PICK
+2026-07-03 20:56:39, EXEC, v:1, k:fup@estudante, mode:FULL, rate:0, size:57
+2026-07-03 20:56:40, EXEC, v:1, k:fup@estudante, mode:FULL, rate:0
+2026-07-03 20:56:54, EXEC, v:1, k:fup@estudante, mode:FULL, rate:0
+2026-07-03 20:57:34, EXEC, v:1, k:fup@estudante, mode:FULL, rate:100, size:53
+2026-07-03 20:57:38, MOVE, v:1, k:fup@estudante, mode:BACK
+2026-07-03 20:57:45, MOVE, v:1, k:fup@fatores_struct, mode:DOWN
+2026-07-03 20:57:48, MOVE, v:1, k:fup@fatores_struct, mode:PICK
+2026-07-03 20:57:53, EXEC, v:1, k:fup@fatores_struct, mode:FULL, rate:0, size:5
+2026-07-03 20:57:34, MOVE, v:1, k:fup@estudante, mode:EDIT
+2026-07-03 20:57:31, MOVE, v:1, k:fup@estudante, mode:EDIT
+2026-07-03 20:57:45, MOVE, v:1, k:fup@fatores_struct, mode:EDIT
+2026-07-03 20:57:45, MOVE, v:1, k:fup@fatores_struct, mode:EDIT
+2026-07-03 20:57:45, MOVE, v:1, k:fup@fatores_struct, mode:EDIT
+2026-07-03 20:57:53, MOVE, v:1, k:fup@fatores_struct, mode:EDIT
+2026-07-03 20:58:20, MOVE, v:1, k:fup@fatores_struct, mode:EDIT
+2026-07-03 21:09:31, EXEC, v:1, k:fup@fatores_struct, mode:FULL, rate:100, size:43
+2026-07-03 21:09:36, MOVE, v:1, k:fup@fatores_struct, mode:BACK
+2026-07-03 21:09:26, MOVE, v:1, k:fup@fatores_struct, mode:EDIT
+2026-07-03 21:09:31, MOVE, v:1, k:fup@fatores_struct, mode:EDIT

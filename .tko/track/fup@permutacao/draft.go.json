@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_20-31-14",
+            "content": "@@ -23,644 +23,53 @@\n mt%22%0A\n-%0A\n func \n-invert(s %5B%5Dbyte, i, j int) %7B%0A    for i %3C j %7B%0A        s%5Bi%5D, s%5Bj%5D = s%5Bj%5D, s%5Bi%5D%0A%0A        i++%0A        j--%0A    %7D%0A%7D%0A%0Afunc proxPermut(s %5B%5Dbyte) bool%7B%0A    n := len(s)%0A%0A    i := n - 2%0A    %0A    for i %3E= 0 && s%5Bi%5D %3E= s%5Bi + 1%5D%7B%0A        i--%0A    %7D%0A%0A    if i %3C 0 %7B%0A        return false%0A    %7D%0A%0A    j := n - 1%0A%0A    for s%5Bj%5D %3C= s%5Bi%5D %7B%0A        j--%0A    %7D%0A%0A    s%5Bi%5D, s%5Bj%5D = s%5Bj%5D, s%5Bi%5D%0A%0A    invert(s, i + 1, n - 1)%0A%0A    return true%0A%7D%0Afunc main() %7B%0A    var ficha string%0A    var n int%0A%0A    fmt.Scan(&ficha, &n)%0A%0A    s := %5B%5Dbyte(ficha)%0A%0A    for i := 0; i %3C n; i++%7B%0A        if !proxPermut(s)%7B%0A            break%0A        %7D%0A    %7D%0A        fmt.Println(string(s)\n+main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-06_21-18-24",
+            "content": "package main\nimport \"fmt\"\n\nfunc invert(s []byte, i, j int) {\n    for i < j {\n        s[i], s[j] = s[j], s[i]\n\n        i++\n        j--\n    }\n}\n\nfunc proxPermut(s []byte) bool{\n    n := len(s)\n\n    i := n - 2\n    \n    for i >= 0 && s[i] >= s[i + 1]{\n        i--\n    }\n\n    if i < 0 {\n        return false\n    }\n\n    j := n - 1\n\n    for s[j] <= s[i] {\n        j--\n    }\n\n    s[i], s[j] = s[j], s[i]\n\n    invert(s, i + 1, n - 1)\n\n    return true\n}\nfunc main() {\n    var ficha string\n    var n int\n\n    fmt.Scan(&ficha, &n)\n\n    s := []byte(ficha)\n\n    for i := 0; i < n; i++{\n        if !proxPermut(s){\n            break\n        }\n    }\n        fmt.Println(string(s))\n}\n",
+            "lines": "52"
+        }
+    ]
+}

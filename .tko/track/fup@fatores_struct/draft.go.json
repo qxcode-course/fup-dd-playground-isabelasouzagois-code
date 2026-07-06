@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-03_20-57-53",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -23,486 +23,53 @@\n mt%22%0A\n-%0Atype Fator struct %7B%0A%09num int%0A%09qtd int%0A%7D%0A%0Afunc calc_fatores(num int) %5B%5DFator %7B%0A%09var fatores %5B%5DFator%0A%0A%09divisor := 2%0A%0A%09for num %3E 1 %7B%0A%09%09cont := 0%0A%0A%09%09for num%25divisor == 0 %7B%0A%09%09%09cont++%0A%09%09%09num = num / divisor%0A%09%09%7D%0A%0A%09%09if cont %3E 0 %7B%0A%09%09%09f := Fator%7Bdivisor, cont%7D%0A%09%09%09fatores = append(fatores, f)%0A%09%09%7D%0A%0A%09%09divisor++%0A%09%7D%0A%0A%09return fatores%0A%7D%0A%0Afunc main() %7B%0A%09var n int%0A%09fmt.Scan(&n)%0A%0A%09fatores := calc_fatores(n)%0A%0A%09for i := 0; i %3C len(fatores); i++ %7B%0A%09%09fmt.Println(fatores%5Bi%5D.num, fatores%5Bi%5D.qtd\n+func main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A\n-%09\n %7D%0A\n-%7D %0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-03_21-09-31",
+            "content": "package main\n\nimport \"fmt\"\n\ntype Fator struct {\n\tnum int\n\tqtd int\n}\n\nfunc calc_fatores(num int) []Fator {\n\tvar fatores []Fator\n\n\tdivisor := 2\n\n\tfor num > 1 {\n\t\tcont := 0\n\n\t\tfor num%divisor == 0 {\n\t\t\tcont++\n\t\t\tnum = num / divisor\n\t\t}\n\n\t\tif cont > 0 {\n\t\t\tf := Fator{divisor, cont}\n\t\t\tfatores = append(fatores, f)\n\t\t}\n\n\t\tdivisor++\n\t}\n\n\treturn fatores\n}\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tfatores := calc_fatores(n)\n\n\tfor i := 0; i < len(fatores); i++ {\n\t\tfmt.Println(fatores[i].num, fatores[i].qtd)\n\t}\n} \n",
+            "lines": "43"
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-04_20-31-15",
+            "content": "@@ -10,347 +10,66 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A%09%22unicode%22%0A)%0A%0Afunc main() %7B%0A%09reader := bufio.NewReader(os.Stdin)%0A%09texto, _ := reader.ReadString('%5Cn')%0A%0A%09for _, c := range texto %7B%0A%09%09if unicode.IsLower(c) %7B%0A%09%09%09fmt.Printf(%22%25c%22, unicode.ToUpper(c))%0A%09%09%7D else if unicode.IsUpper(c) %7B%0A%09%09%09fmt.Printf(%22%25c%22, unicode.ToLower(c))%0A%09%09%7D else %7B%0A%09%09%09fmt.Printf(%22%25c%22, )%0A%09%09%7D%0A%09%7D\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-04_20-35-25",
+            "content": "@@ -342,15 +342,15 @@\n c%22, \n-c\n )%0A%09%09%7D%0A%09\n+%7D\n %0A%7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-07-04_20-35-41",
+            "content": "@@ -349,12 +349,8 @@\n %09%09%7D%0A\n-    %7D\n+%09\n %0A%7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-07-04_20-35-48",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"unicode\"\n)\n\nfunc main() {\n\treader := bufio.NewReader(os.Stdin)\n\ttexto, _ := reader.ReadString('\\n')\n\n\tfor _, c := range texto {\n\t\tif unicode.IsLower(c) {\n\t\t\tfmt.Printf(\"%c\", unicode.ToUpper(c))\n\t\t} else if unicode.IsUpper(c) {\n\t\t\tfmt.Printf(\"%c\", unicode.ToLower(c))\n\t\t} else {\n\t\t\tfmt.Printf(\"%c\", c)\n\t\t}\n    }\n}\n",
+            "lines": "23"
+        }
+    ]
+}

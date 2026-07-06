@@ -2,7 +2,12 @@
     "patches": [
         {
             "label": "2026-03-15_23-53-37",
-            "content": "package main\n\nimport \"fmt\"\n\nfunc main (){\n\tvar a,b int\n  fmt.Scan(&a)\n  fmt.Scan(&b)\n  var div int = a/b\n  var resto int = a%b\n  fmt.Println(div,resto)\n\n}\n ",
+            "content": "@@ -149,9 +149,8 @@\n to)%0A%0A%7D%0A \n-%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-06-15_13-02-27",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main (){\n\tvar a,b int\n  fmt.Scan(&a)\n  fmt.Scan(&b)\n  var div int = a/b\n  var resto int = a%b\n  fmt.Println(div,resto)\n\n}\n \n",
             "lines": "14"
         }
     ]

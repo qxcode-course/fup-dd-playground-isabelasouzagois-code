@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-27_19-39-49",
+            "content": "@@ -10,416 +10,66 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A)%0A%0Afunc main() %7B%0A%09reader := bufio.NewReader(os.Stdin)%0A%0A%09frase, _ := reader.ReadString('%5Cn')%0A%0A%09vogais := %22%22%0A%09consoantes := %22%22%0A%0A%09for _, c := range frase %7B%0A%09%09if c == ' ' %7C%7C c == '%5Cn' %7B%0A%09%09%09continue%0A%09%09%7D%0A%0A%09%09if c == 'a' %7C%7C c == 'e' %7C%7C c == 'i' %7C%7C c == 'o' %7C%7C c == 'u' %7B%0A%09%09%09vogais += string(c)%0A%09%09%7D else %7B%0A%09%09%09consoantes += string(c)%0A%09%09%7D%0A%09%7D%0A%0A%09fmt.Println(vogais)%0A%09fmt.Println(consoantes\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-27_19-40-39",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\nfunc main() {\n\treader := bufio.NewReader(os.Stdin)\n\n\tfrase, _ := reader.ReadString('\\n')\n\n\tvogais := \"\"\n\tconsoantes := \"\"\n\n\tfor _, c := range frase {\n\t\tif c == ' ' || c == '\\n' {\n\t\t\tcontinue\n\t\t}\n\n\t\tif c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' {\n\t\t\tvogais += string(c)\n\t\t} else {\n\t\t\tconsoantes += string(c)\n\t\t}\n\t}\n\n\tfmt.Println(vogais)\n\tfmt.Println(consoantes)\n}\n",
+            "lines": "31"
+        }
+    ]
+}

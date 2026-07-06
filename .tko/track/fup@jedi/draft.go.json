@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-27_19-29-41",
+            "content": "@@ -41,572 +41,35 @@\n     \n-var nElementos int%0A%0A    fmt.Scan(&nElementos)%0A%0A    vetor := make(%5B%5Dint, nElementos)%0A%0A    for i := 0; i %3C nElementos; i++ %7B%0A        fmt.Scan(&vetor%5Bi%5D)%0A    %7D%0A%0A    forcaJ := 0%0A    forcaS := 0%0A%0A    for i := 0; i %3C nElementos; i++ %7B%0A        if i %3C (nElementos / 2) %7B%0A            forcaJ += vetor%5Bi%5D%0A        %7D else if i %3E= (nElementos / 2) %7B%0A            forcaS += vetor%5Bi%5D%0A        %7D%0A    %7D%0A%0A    if forcaJ %3E forcaS %7B%0A        fmt.Println(%22Jedi%22)%0A    %7D else if forcaS %3E forcaJ %7B%0A        fmt.Println(%22Sith%22)%0A    %7D else if forcaS == forcaJ %7B%0A        fmt.Println(%22Empate%22)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-27_19-30-37",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var nElementos int\n\n    fmt.Scan(&nElementos)\n\n    vetor := make([]int, nElementos)\n\n    for i := 0; i < nElementos; i++ {\n        fmt.Scan(&vetor[i])\n    }\n\n    forcaJ := 0\n    forcaS := 0\n\n    for i := 0; i < nElementos; i++ {\n        if i < (nElementos / 2) {\n            forcaJ += vetor[i]\n        } else if i >= (nElementos / 2) {\n            forcaS += vetor[i]\n        }\n    }\n\n    if forcaJ > forcaS {\n        fmt.Println(\"Jedi\")\n    } else if forcaS > forcaJ {\n        fmt.Println(\"Sith\")\n    } else if forcaS == forcaJ {\n        fmt.Println(\"Empate\")\n    }\n}\n",
+            "lines": "32"
+        }
+    ]
+}

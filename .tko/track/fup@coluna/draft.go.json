@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_20-23-37",
+            "content": "@@ -1,9 +1,8 @@\n- \n package \n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-06_20-29-12",
+            "content": "@@ -1,8 +1,9 @@\n+ \n package \n@@ -42,556 +42,35 @@\n     \n-var n int%0A%0A    fmt.Scan(&n)%0A%0A    var matriz%5B100%5D%5B100%5Dint%0A%0A    for i := 0; i %3C n; i++%7B%0A        for j := 0; j %3C n; j++%7B%0A            fmt.Scan(&matriz%5Bi%5D%5Bj%5D)%0A        %7D%0A    %7D%0A%0A        maiorColuna := 0%0A        maiorValor := 0%0A%0A        for j := 0; j %3C n; j++%7B%0A            soma := 0%0A%0A            for i := 0; i %3C n; i++%7B%0A                soma += matriz%5Bi%5D%5Bj%5D * matriz%5Bi%5D%5Bj%5D%0A            %7D%0A%0A            if j == 0 %7C%7C soma %3E maiorValor%7B%0A                maiorValor = soma%0A                maiorColuna = j%0A            %7D%0A        %7D%0A            fmt.Println(maiorColuna\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-06_20-29-56",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n\n    fmt.Scan(&n)\n\n    var matriz[100][100]int\n\n    for i := 0; i < n; i++{\n        for j := 0; j < n; j++{\n            fmt.Scan(&matriz[i][j])\n        }\n    }\n\n        maiorColuna := 0\n        maiorValor := 0\n\n        for j := 0; j < n; j++{\n            soma := 0\n\n            for i := 0; i < n; i++{\n                soma += matriz[i][j] * matriz[i][j]\n            }\n\n            if j == 0 || soma > maiorValor{\n                maiorValor = soma\n                maiorColuna = j\n            }\n        }\n            fmt.Println(maiorColuna)\n}\n",
+            "lines": "32"
+        }
+    ]
+}

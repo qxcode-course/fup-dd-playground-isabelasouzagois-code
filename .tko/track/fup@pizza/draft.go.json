@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-03_19-37-19",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -23,582 +23,53 @@\n mt%22%0A\n-%0Atype Restaurante struct %7B%0A%09nome  string%0A%09ponto int%0A%7D%0A%0Afunc melhorRestaurante(lista %5B%5DRestaurante) string %7B%0A%09melhor := lista%5B0%5D%0A%0A%09for i := 1; i %3C len(lista); i++ %7B%0A%09%09if lista%5Bi%5D.ponto %3E melhor.ponto %7B%0A%09%09%09melhor = lista%5Bi%5D%0A%09%09%7D else if lista%5Bi%5D.ponto == melhor.ponto %7B%0A%09%09%09if lista%5Bi%5D.nome %3C melhor.nome %7B%0A%09%09%09%09melhor = lista%5Bi%5D%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D%0A%0A%09return melhor.nome%0A%7D%0A%0Afunc main() %7B%0A%09var n int%0A%09fmt.Scan(&n)%0A%0A%09restaurantes := make(%5B%5DRestaurante, n)%0A%0A%09for i := 0; i %3C n; i++ %7B%0A%09%09fmt.Scan(&restaurantes%5Bi%5D.nome, &restaurantes%5Bi%5D.ponto)%0A%09%7D%0A%0A%09fmt.Println(melhorRestaurante(restaurantes)\n+func main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-03_19-45-28",
+            "content": "package main\n\nimport \"fmt\"\n\ntype Restaurante struct {\n\tnome  string\n\tponto int\n}\n\nfunc melhorRestaurante(lista []Restaurante) string {\n\tmelhor := lista[0]\n\n\tfor i := 1; i < len(lista); i++ {\n\t\tif lista[i].ponto > melhor.ponto {\n\t\t\tmelhor = lista[i]\n\t\t} else if lista[i].ponto == melhor.ponto {\n\t\t\tif lista[i].nome < melhor.nome {\n\t\t\t\tmelhor = lista[i]\n\t\t\t}\n\t\t}\n\t}\n\n\treturn melhor.nome\n}\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\trestaurantes := make([]Restaurante, n)\n\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&restaurantes[i].nome, &restaurantes[i].ponto)\n\t}\n\n\tfmt.Println(melhorRestaurante(restaurantes))\n}\n",
+            "lines": "37"
+        }
+    ]
+}

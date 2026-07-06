@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-04_20-43-52",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,807 +37,39 @@\n ) %7B%0A\n-%09var n int%0A%09fmt.Scan(&n)%0A%0A%09mat := make(%5B%5D%5B%5Dstring, n)%0A%0A%09linhaLeao, colunaLeao := -1, -1%0A%0A%09for i := 0; i %3C n; i++ %7B%0A%09%09mat%5Bi%5D = make(%5B%5Dstring, n)%0A%09%09for j := 0; j %3C n; j++ %7B%0A%09%09%09fmt.Scan(&mat%5Bi%5D%5Bj%5D)%0A%09%09%09if mat%5Bi%5D%5Bj%5D == %22L%22 %7B%0A%09%09%09%09linhaLeao = i%0A%09%09%09%09colunaLeao = j%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D%0A%0A%09gladiadores := 0%0A%09condenados := 0%0A%0A%09for i := 0; i %3C n; i++ %7B%0A%09%09for j := 0; j %3C n; j++ %7B%0A%0A%09%09%09// Ignora a linha e a coluna do le%C3%A3o%0A%09%09%09if i == linhaLeao %7C%7C j == colunaLeao %7B%0A%09%09%09%09continue%0A%09%09%09%7D%0A%0A%09%09%09if mat%5Bi%5D%5Bj%5D == %22G%22 %7B%0A%09%09%09%09gladiadores += 2%0A%09%09%09%7D else if mat%5Bi%5D%5Bj%5D == %22C%22 %7B%0A%09%09%09%09if i+j == n-1 %7B%0A%09%09%09%09%09condenados += 2%0A%09%09%09%09%7D else %7B%0A%09%09%09%09%09condenados++%0A%09%09%09%09%7D%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D%0A%0A%09if gladiadores %3E condenados %7B%0A%09%09fmt.Println(%22Gladiadores%22)%0A%09%7D else if condenados %3E gladiadores %7B%0A%09%09fmt.Println(%22Condenados a morte%22)%0A%09%7D else %7B%0A%09%09fmt.Println(%22Ningue%22)%0A%09%7D\n+    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-04_20-45-37",
+            "content": "@@ -655,16 +655,17 @@\n %09%09%09%7D%0A%09%09%09\n+%7D\n %0A%09%09%7D%0A%09%7D%0A\n@@ -830,17 +830,16 @@\n (%22Ningue\n-m\n %22)%0A%09%7D%0A%7D%0A\n",
+            "lines": "54"
+        },
+        {
+            "label": "2026-07-04_20-46-02",
+            "content": "@@ -656,34 +656,11 @@\n %09%09%7D%0A\n-            %7D%0A            \n+%09%09%09\n %0A%09%09%7D\n",
+            "lines": "54"
+        },
+        {
+            "label": "2026-07-04_20-51-09",
+            "content": "@@ -666,16 +666,28 @@\n       %7D%0A\n+            \n %0A%09%09%7D%0A%09%7D%0A\n",
+            "lines": "55"
+        },
+        {
+            "label": "2026-07-06_21-20-02",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tmat := make([][]string, n)\n\n\tlinhaLeao, colunaLeao := -1, -1\n\n\tfor i := 0; i < n; i++ {\n\t\tmat[i] = make([]string, n)\n\t\tfor j := 0; j < n; j++ {\n\t\t\tfmt.Scan(&mat[i][j])\n\t\t\tif mat[i][j] == \"L\" {\n\t\t\t\tlinhaLeao = i\n\t\t\t\tcolunaLeao = j\n\t\t\t}\n\t\t}\n\t}\n\n\tgladiadores := 0\n\tcondenados := 0\n\n\tfor i := 0; i < n; i++ {\n\t\tfor j := 0; j < n; j++ {\n\n\t\t\t// Ignora a linha e a coluna do le\u00e3o\n\t\t\tif i == linhaLeao || j == colunaLeao {\n\t\t\t\tcontinue\n\t\t\t}\n\n\t\t\tif mat[i][j] == \"G\" {\n\t\t\t\tgladiadores += 2\n\t\t\t} else if mat[i][j] == \"C\" {\n\t\t\t\tif i+j == n-1 {\n\t\t\t\t\tcondenados += 2\n\t\t\t\t} else {\n\t\t\t\t\tcondenados++\n\t\t\t\t}\n            }\n\n\t\t}\n\t}\n\n\tif gladiadores > condenados {\n\t\tfmt.Println(\"Gladiadores\")\n\t} else if condenados > gladiadores {\n\t\tfmt.Println(\"Condenados a morte\")\n\t} else {\n\t\tfmt.Println(\"Ninguem\")\n\t}\n}\n",
+            "lines": "55"
+        }
+    ]
+}

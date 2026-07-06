@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_18-57-43",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,241 +37,39 @@\n ) %7B%0A\n-%09var a, b string%0A%09fmt.Scan(&a)%0A%09fmt.Scan(&b)%0A%0A%0A%0A%09limite := len(a)%0A%09if len(b) %3C limite %7B%0A%09%09limite = len(b)%0A%09%7D%0A%0A%09for i := 1; i %3C= limite; i++ %7B%0A%09%09if a%5Blen(a)-i:%5D == b%5B:i%5D %7B%0A%09%09%09maior = i%0A%09%09%7D%0A%09%7D%0A%0A%09fmt.Println(a%5B:len(a)-maior%5D + b%5Bmaior:%5D\n+    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-06_19-00-53",
+            "content": "@@ -85,20 +85,8 @@\n b)%0A%0A\n-    maior:=1\n %0A%0A%09l\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-07-06_19-01-15",
+            "content": "@@ -96,9 +96,9 @@\n or:=\n-0\n+1\n %0A%0A%09l\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-07-06_19-08-13",
+            "content": "@@ -85,18 +85,19 @@\n b)%0A%0A\n-%09\n+    \n maior\n- \n :=\n- \n 0%0A%0A%09\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-07-06_19-08-30",
+            "content": "@@ -91,17 +91,17 @@\n aior := \n-1\n+0\n %0A%0A%09limit\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-07-06_19-08-51",
+            "content": "@@ -95,9 +95,9 @@\n  := \n-0\n+1\n %0A%0A%09l\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-07-06_19-09-08",
+            "content": "@@ -64,18 +64,28 @@\n .Scan(&a\n-, \n+)%0A%09fmt.Scan(\n &b)%0A%0A%09ma\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-07-06_19-14-23",
+            "content": "@@ -68,20 +68,10 @@\n n(&a\n-)%0A%09fmt.Scan(\n+, \n &b)%0A\n@@ -83,20 +83,24 @@\n or := 0%0A\n+%0A\n %09lim\n+ite\n  := len(\n@@ -122,16 +122,19 @@\n  lim\n+ite\n  %7B%0A%09%09lim\n  = l\n@@ -129,16 +129,19 @@\n  %7B%0A%09%09lim\n+ite\n  = len(b\n@@ -167,16 +167,19 @@\n i %3C= lim\n+ite\n ; i++ %7B%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-07-06_19-15-45",
+            "content": "@@ -30,34 +30,74 @@\n unc \n-overlap(a, b string) int %7B\n+main() %7B%0A%09var a, b string%0A%09fmt.Scan(&a)%0A%09fmt.Scan(&b)%0A%0A%09maior := 0\n %0A%09li\n@@ -160,24 +160,24 @@\n  := \n-lim\n+1\n ; i \n-%3E= 1; i--\n+%3C= lim; i++\n  %7B%0A%09\n@@ -207,22 +207,23 @@\n i%5D %7B%0A%09%09%09\n-return\n+maior =\n  i%0A%09%09%7D%0A%09\n@@ -228,179 +228,50 @@\n %0A%09%7D%0A\n-%09return 0%0A%7D%0A%0Afunc main() %7B%0A%09var a, b string%0A%09fmt.Scan(&a, &b)%0A%0A%09for %7B%0A%09%09k := overlap(a, b)%0A%09%09if k == 0 %7B%0A%09%09%09break%0A%09%09%7D%0A%09%09a = a%5B:len(a)-k%5D%0A%09%09b = b%5Bk:%5D%0A%09%7D%0A%0A%09fmt.Println(a + b\n+%0A%09fmt.Println(a%5B:len(a)-maior%5D + b%5Bmaior:%5D\n )%0A%7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-07-06_19-16-20",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc overlap(a, b string) int {\n\tlim := len(a)\n\tif len(b) < lim {\n\t\tlim = len(b)\n\t}\n\n\tfor i := lim; i >= 1; i-- {\n\t\tif a[len(a)-i:] == b[:i] {\n\t\t\treturn i\n\t\t}\n\t}\n\treturn 0\n}\n\nfunc main() {\n\tvar a, b string\n\tfmt.Scan(&a, &b)\n\n\tfor {\n\t\tk := overlap(a, b)\n\t\tif k == 0 {\n\t\t\tbreak\n\t\t}\n\t\ta = a[:len(a)-k]\n\t\tb = b[k:]\n\t}\n\n\tfmt.Println(a + b)\n}\n",
+            "lines": "33"
+        }
+    ]
+}

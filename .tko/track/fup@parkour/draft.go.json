@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-27_19-27-08",
+            "content": "@@ -41,897 +41,35 @@\n     \n-  var m int%0A    fmt.Scan(&m)%0A%0A    anterior := 0%0A    fmt.Scan(&anterior)%0A    var x int%0A    parkour := 0%0A    for i := 1; i %3C m; i++ %7B%0A        fmt.Scan(&x)%0A        if x-anterior %3E 1 %7C%7C x-anterior %3C -1 %7B%0A            anterior = x%0A            parkour++%0A        %7D else %7B%0A            anterior = x%0A            continue%0A        %7D%0A    %7D%0A%0A    fmt.Println(parkour)**/%0A%0A    var elementos int%0A%0A    fmt.Scan(&elementos)%0A%0A    vetorElementos := make(%5B%5Dint, elementos)%0A%0A    for i := 0; i %3C elementos; i++ %7B%0A        fmt.Scan(&vetorElementos%5Bi%5D)%0A    %7D%0A%0A    movimentos := 0%0A%0A    for i := 0; i %3C elementos-1; i++ %7B%0A        if vetorElementos%5Bi%5D %3C vetorElementos%5Bi+1%5D && vetorElementos%5Bi+1%5D-vetorElementos%5Bi%5D %3E 1 %7B%0A            movimentos++%0A        %7D else if vetorElementos%5Bi%5D %3E vetorElementos%5Bi+1%5D && vetorElementos%5Bi%5D-vetorElementos%5Bi+1%5D %3E 1 %7B%0A            movimentos++%0A        %7D%0A    %7D%0A%0A    fmt.Println(movimentos)%0A\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-27_19-27-34",
+            "content": "@@ -43,11 +43,8 @@\n     \n-/**\n var \n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-06-27_19-27-40",
+            "content": "@@ -36,16 +36,374 @@\n () %7B%0A   \n+   /**var m int%0A    fmt.Scan(&m)%0A%0A    anterior := 0%0A    fmt.Scan(&anterior)%0A    var x int%0A    parkour := 0%0A    for i := 1; i %3C m; i++ %7B%0A        fmt.Scan(&x)%0A        if x-anterior %3E 1 %7C%7C x-anterior %3C -1 %7B%0A            anterior = x%0A            parkour++%0A        %7D else %7B%0A            anterior = x%0A            continue%0A        %7D%0A    %7D%0A%0A    fmt.Println(parkour)**/\n %0A%0A    va\n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-06-27_19-28-07",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n   \n\n    var elementos int\n\n    fmt.Scan(&elementos)\n\n    vetorElementos := make([]int, elementos)\n\n    for i := 0; i < elementos; i++ {\n        fmt.Scan(&vetorElementos[i])\n    }\n\n    movimentos := 0\n\n    for i := 0; i < elementos-1; i++ {\n        if vetorElementos[i] < vetorElementos[i+1] && vetorElementos[i+1]-vetorElementos[i] > 1 {\n            movimentos++\n        } else if vetorElementos[i] > vetorElementos[i+1] && vetorElementos[i]-vetorElementos[i+1] > 1 {\n            movimentos++\n        }\n    }\n\n    fmt.Println(movimentos)\n\n}\n",
+            "lines": "28"
+        }
+    ]
+}
