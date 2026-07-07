@@ -24,7 +24,7 @@ func main() {
 			freq++
 		} else {
 
-			// encontrou frequência maior
+			
 			if freq > maiorFreq {
 				maiorFreq = freq
 				resultado = []int{vetor[i-1]}
