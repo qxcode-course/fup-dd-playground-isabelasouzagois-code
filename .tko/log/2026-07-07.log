@@ -149,3 +149,45 @@
 2026-07-07 13:14:37, MOVE, v:1, k:fup@mario, mode:EDIT
 2026-07-07 13:12:16, MOVE, v:1, k:fup@mario, mode:EDIT
 2026-07-07 13:14:42, MOVE, v:1, k:fup@permutacao, mode:EDIT
+2026-07-07 13:14:37, MOVE, v:1, k:fup@mario, mode:EDIT
+2026-07-07 13:12:16, MOVE, v:1, k:fup@mario, mode:EDIT
+2026-07-07 13:14:42, MOVE, v:1, k:fup@permutacao, mode:EDIT
+2026-07-07 13:16:39, MOVE, v:1, k:fup@mario, mode:EDIT
+2026-07-07 13:16:39, MOVE, v:1, k:fup@mario, mode:EDIT
+2026-07-07 13:26:48, MOVE, v:1, k:fup@gamados, mode:PICK
+2026-07-07 13:26:52, MOVE, v:1, k:fup@gamados, mode:BACK
+2026-07-07 13:28:20, MOVE, v:1, k:fup@atbash, mode:PICK
+2026-07-07 13:28:22, EXEC, v:1, k:fup@atbash, mode:FULL, rate:100, size:46
+2026-07-07 13:30:01, MOVE, v:1, k:fup@atbash, mode:BACK
+2026-07-07 13:28:34, MOVE, v:1, k:fup@atbash, mode:EDIT
+2026-07-07 13:28:22, MOVE, v:1, k:fup@atbash, mode:EDIT
+2026-07-07 13:28:59, MOVE, v:1, k:fup@traficantes, mode:EDIT
+2026-07-07 13:29:30, MOVE, v:1, k:fup@quadrado, mode:EDIT
+2026-07-07 13:30:09, MOVE, v:1, k:fup@bingo, mode:PICK
+2026-07-07 13:30:10, EXEC, v:1, k:fup@bingo, mode:FULL, rate:100
+2026-07-07 13:30:38, MOVE, v:1, k:fup@bingo, mode:BACK
+2026-07-07 13:30:44, MOVE, v:1, k:fup@quadrado, mode:PICK
+2026-07-07 13:30:45, EXEC, v:1, k:fup@quadrado, mode:FULL, rate:100, size:60
+2026-07-07 13:31:03, MOVE, v:1, k:fup@quadrado, mode:BACK
+2026-07-07 13:28:34, MOVE, v:1, k:fup@atbash, mode:EDIT
+2026-07-07 13:28:22, MOVE, v:1, k:fup@atbash, mode:EDIT
+2026-07-07 13:28:59, MOVE, v:1, k:fup@traficantes, mode:EDIT
+2026-07-07 13:30:57, MOVE, v:1, k:fup@quadrado, mode:EDIT
+2026-07-07 13:30:10, MOVE, v:1, k:fup@bingo, mode:EDIT
+2026-07-07 13:30:24, MOVE, v:1, k:fup@imperador, mode:EDIT
+2026-07-07 13:30:45, MOVE, v:1, k:fup@quadrado, mode:EDIT
+2026-07-07 13:31:20, MOVE, v:1, k:fup@permutacao, mode:PICK
+2026-07-07 13:31:21, EXEC, v:1, k:fup@permutacao, mode:FULL, rate:100
+2026-07-07 13:31:29, MOVE, v:1, k:fup@permutacao, mode:BACK
+2026-07-07 13:31:35, MOVE, v:1, k:fup@pedra_struct, mode:PICK
+2026-07-07 13:31:36, EXEC, v:1, k:fup@pedra_struct, mode:FULL, rate:100
+2026-07-07 13:28:34, MOVE, v:1, k:fup@atbash, mode:EDIT
+2026-07-07 13:28:22, MOVE, v:1, k:fup@atbash, mode:EDIT
+2026-07-07 13:28:59, MOVE, v:1, k:fup@traficantes, mode:EDIT
+2026-07-07 13:30:57, MOVE, v:1, k:fup@quadrado, mode:EDIT
+2026-07-07 13:30:10, MOVE, v:1, k:fup@bingo, mode:EDIT
+2026-07-07 13:30:24, MOVE, v:1, k:fup@imperador, mode:EDIT
+2026-07-07 13:30:45, MOVE, v:1, k:fup@quadrado, mode:EDIT
+2026-07-07 13:31:20, MOVE, v:1, k:fup@permutacao, mode:EDIT
+2026-07-07 13:31:36, MOVE, v:1, k:fup@pedra_struct, mode:EDIT
+2026-07-07 13:32:38, MOVE, v:1, k:fup@pedra_struct, mode:BACK

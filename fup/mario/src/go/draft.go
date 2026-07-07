@@ -19,7 +19,7 @@ func main() {
                 fmt.Print("_")
             }
         }
-        
-        
+         fmt.Println()
+    }
    
 }

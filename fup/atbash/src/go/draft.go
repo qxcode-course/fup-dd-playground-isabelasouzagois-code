@@ -13,7 +13,7 @@ func main() {
 	w1, _ := reader.ReadString('\n')
 	w2, _ := reader.ReadString('\n')
 
-	// remove '\n' se existir
+	
 	if len(text) > 0 && text[len(text)-1] == '\n' {
 		text = text[:len(text)-1]
 	}
@@ -24,7 +24,7 @@ func main() {
 		w2 = w2[:len(w2)-1]
 	}
 
-	// mapa de substituição (bidirecional)
+	
 	m := make(map[byte]byte)
 
 	for i := 0; i < len(w1) && i < len(w2); i++ {

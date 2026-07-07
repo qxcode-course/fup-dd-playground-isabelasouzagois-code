@@ -24,7 +24,7 @@ func main() {
 	var res strings.Builder
 
 	for i := 0; i < n; {
-		// se bate a palavra alvo
+		
 		if i+m <= n && texto[i:i+m] == alvo {
 			res.WriteString(novo)
 			i += m

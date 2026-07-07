@@ -19,15 +19,15 @@ sources:
   writeable: false
   quests: null
 expanded:
-- fup@games
-- fup@if1
+- fup@string
+- fup@mat
 - fup@if2
+- fup@list
+- fup@if1
+- eval1@eval1
+- fup@games
 - fup@struct
 - fup@base
-- fup@list
-- fup@string
-- eval1@eval1
-- fup@mat
 flags:
   inbox: all
   panel: logs
@@ -37,5 +37,5 @@ audit:
   enabled: false
   interval_seconds: null
 lang: go
-selected: fup@permutacao
-selected_index: 166
+selected: fup@pr_game21
+selected_index: 195

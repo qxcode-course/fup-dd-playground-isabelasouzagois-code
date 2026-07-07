@@ -17,7 +17,12 @@
         },
         {
             "label": "2026-07-06_21-26-00",
-            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar mat [3][3]int\n\n\tfor i := 0; i < 3; i++ {\n\t\tfor j := 0; j < 3; j++ {\n\t\t\tfmt.Scan(&mat[i][j])\n\t\t}\n\t}\n\n\tsoma := 0\n\n\t// soma da primeira linha como refer\u00eancia\n\tfor j := 0; j < 3; j++ {\n\t\tsoma += mat[0][j]\n\t}\n\n\t// verifica linhas\n\tfor i := 1; i < 3; i++ {\n\t\tatual := 0\n\t\tfor j := 0; j < 3; j++ {\n\t\t\tatual += mat[i][j]\n\t\t}\n\t\tif atual != soma {\n\t\t\tfmt.Println(\"nao\")\n\t\t\treturn\n\t\t}\n\t}\n\n\t// verifica colunas\n\tfor j := 0; j < 3; j++ {\n\t\tatual := 0\n\t\tfor i := 0; i < 3; i++ {\n\t\t\tatual += mat[i][j]\n\t\t}\n\t\tif atual != soma {\n\t\t\tfmt.Println(\"nao\")\n\t\t\treturn\n\t\t}\n\t}\n\n\t// diagonal principal\n\tatual := mat[0][0] + mat[1][1] + mat[2][2]\n\tif atual != soma {\n\t\tfmt.Println(\"nao\")\n\t\treturn\n\t}\n\n\t// diagonal secund\u00e1ria\n\tatual = mat[0][2] + mat[1][1] + mat[2][0]\n\tif atual != soma {\n\t\tfmt.Println(\"nao\")\n\t\treturn\n\t}\n\n\tfmt.Println(\"sim\")\n}\n",
+            "content": "@@ -153,16 +153,57 @@\n  := 0%0A%0A%09\n+// soma da primeira linha como refer%C3%AAncia\n %0A%09for j \n@@ -246,16 +246,34 @@\n j%5D%0A%09%7D%0A%0A%09\n+// verifica linhas\n %0A%09for i \n@@ -589,24 +589,45 @@\n rn%0A%09%09%7D%0A%09%7D%0A%0A%09\n+// diagonal principal\n %0A%09atual := m\n@@ -714,16 +714,38 @@\n rn%0A%09%7D%0A%0A%09\n+// diagonal secund%C3%A1ria\n %0A%09atual \n",
+            "lines": "60"
+        },
+        {
+            "label": "2026-07-07_13-30-45",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar mat [3][3]int\n\n\tfor i := 0; i < 3; i++ {\n\t\tfor j := 0; j < 3; j++ {\n\t\t\tfmt.Scan(&mat[i][j])\n\t\t}\n\t}\n\n\tsoma := 0\n\n\t\n\tfor j := 0; j < 3; j++ {\n\t\tsoma += mat[0][j]\n\t}\n\n\t\n\tfor i := 1; i < 3; i++ {\n\t\tatual := 0\n\t\tfor j := 0; j < 3; j++ {\n\t\t\tatual += mat[i][j]\n\t\t}\n\t\tif atual != soma {\n\t\t\tfmt.Println(\"nao\")\n\t\t\treturn\n\t\t}\n\t}\n\n\t// verifica colunas\n\tfor j := 0; j < 3; j++ {\n\t\tatual := 0\n\t\tfor i := 0; i < 3; i++ {\n\t\t\tatual += mat[i][j]\n\t\t}\n\t\tif atual != soma {\n\t\t\tfmt.Println(\"nao\")\n\t\t\treturn\n\t\t}\n\t}\n\n\t\n\tatual := mat[0][0] + mat[1][1] + mat[2][2]\n\tif atual != soma {\n\t\tfmt.Println(\"nao\")\n\t\treturn\n\t}\n\n\t\n\tatual = mat[0][2] + mat[1][1] + mat[2][0]\n\tif atual != soma {\n\t\tfmt.Println(\"nao\")\n\t\treturn\n\t}\n\n\tfmt.Println(\"sim\")\n}\n",
             "lines": "60"
         }
     ]

@@ -27,7 +27,7 @@ func main() {
 	for i := 0; i < n; i++ {
 		for j := 0; j < n; j++ {
 
-			// Ignora a linha e a coluna do leão
+			
 			if i == linhaLeao || j == colunaLeao {
 				continue
 			}

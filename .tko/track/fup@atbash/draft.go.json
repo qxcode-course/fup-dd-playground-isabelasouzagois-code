@@ -12,8 +12,13 @@
         },
         {
             "label": "2026-07-06_19-38-31",
-            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\nfunc main() {\n\treader := bufio.NewReader(os.Stdin)\n\n\ttext, _ := reader.ReadString('\\n')\n\tw1, _ := reader.ReadString('\\n')\n\tw2, _ := reader.ReadString('\\n')\n\n\t// remove '\\n' se existir\n\tif len(text) > 0 && text[len(text)-1] == '\\n' {\n\t\ttext = text[:len(text)-1]\n\t}\n\tif len(w1) > 0 && w1[len(w1)-1] == '\\n' {\n\t\tw1 = w1[:len(w1)-1]\n\t}\n\tif len(w2) > 0 && w2[len(w2)-1] == '\\n' {\n\t\tw2 = w2[:len(w2)-1]\n\t}\n\n\t// mapa de substitui\u00e7\u00e3o (bidirecional)\n\tm := make(map[byte]byte)\n\n\tfor i := 0; i < len(w1) && i < len(w2); i++ {\n\t\tm[w1[i]] = w2[i]\n\t\tm[w2[i]] = w1[i]\n\t}\n\n\tres := []byte(text)\n\n\tfor i := 0; i < len(res); i++ {\n\t\tif v, ok := m[res[i]]; ok {\n\t\t\tres[i] = v\n\t\t}\n\t}\n\n\tfmt.Println(string(res))\n}\n",
+            "content": "@@ -199,19 +199,41 @@\n '%5Cn')%0A%0A%09\n-%0A%0A%09\n+// remove '%5Cn' se existir\n %0A%09if len\n@@ -443,16 +443,54 @@\n 1%5D%0A%09%7D%0A%0A%09\n+// mapa de substitui%C3%A7%C3%A3o (bidirecional)\n %0A%09m := m\n",
             "lines": "44"
+        },
+        {
+            "label": "2026-07-07_13-28-22",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\nfunc main() {\n\treader := bufio.NewReader(os.Stdin)\n\n\ttext, _ := reader.ReadString('\\n')\n\tw1, _ := reader.ReadString('\\n')\n\tw2, _ := reader.ReadString('\\n')\n\n\t\n\n\t\n\tif len(text) > 0 && text[len(text)-1] == '\\n' {\n\t\ttext = text[:len(text)-1]\n\t}\n\tif len(w1) > 0 && w1[len(w1)-1] == '\\n' {\n\t\tw1 = w1[:len(w1)-1]\n\t}\n\tif len(w2) > 0 && w2[len(w2)-1] == '\\n' {\n\t\tw2 = w2[:len(w2)-1]\n\t}\n\n\t\n\tm := make(map[byte]byte)\n\n\tfor i := 0; i < len(w1) && i < len(w2); i++ {\n\t\tm[w1[i]] = w2[i]\n\t\tm[w2[i]] = w1[i]\n\t}\n\n\tres := []byte(text)\n\n\tfor i := 0; i < len(res); i++ {\n\t\tif v, ok := m[res[i]]; ok {\n\t\t\tres[i] = v\n\t\t}\n\t}\n\n\tfmt.Println(string(res))\n}\n",
+            "lines": "46"
         }
     ]
 }
