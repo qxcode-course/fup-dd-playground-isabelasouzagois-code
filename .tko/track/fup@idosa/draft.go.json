@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-07_12-18-30",
+            "content": "@@ -41,497 +41,35 @@\n     \n-var n int%0A    fmt.Scan(&n)%0A    pessoas:=make(%5B%5Dpessoa,n)%0A    for i:=0;i%3Cn;i++%7B%0A        fmt.Scan(&pessoas%5Bi%5D.nome,&pessoas%5Bi%5D.idade,&pessoas%5Bi%5D.sexo)%0A    %7D%0A    maioridade:=-1%0A    nome:=%22%22%0A    for i:=0;i%3Cn;i++%7B%0A        if pessoas%5Bi%5D.sexo==%22f%22 &&pessoas%5Bi%5D.idade%3Emaioridade%7B%0A            maioridade=pessoas%5Bi%5D,idade%0A            nome=pessoas%5Bi%5D.nome%0A        %7D%0A    %7D%0A    if maioridade==1%7B%0A        fmt.Println(%22nao tem mulher%22)%0A    %7Delse%7B%0A         fmt.Println(%22nao tem mulher%22)%0A        %0A    %7D%0A    \n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-07_12-30-40",
+            "content": "@@ -492,19 +492,29 @@\n intln(%22n\n-ome\n+ao tem mulher\n %22)%0A     \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-07-07_12-30-52",
+            "content": "@@ -23,63 +23,8 @@\n mt%22%0A\n-type pessoa struct%7B%0Anome string%0Aidade int%0Asexo string%7D%0A\n func\n@@ -338,25 +338,25 @@\n e=pessoas%5Bi%5D\n-.\n+,\n idade%0A      \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-07-07_12-32-13",
+            "content": "@@ -266,24 +266,32 @@\n ade:=-1%0A    \n+nome:=%22%22\n %0A    for i:=\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-07-07_12-32-27",
+            "content": "@@ -274,18 +274,8 @@\n     \n-nome := %22%22\n %0A   \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-07-07_12-32-43",
+            "content": "@@ -474,17 +474,16 @@\n ridade==\n--\n 1%7B%0A     \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-07-07_12-32-53",
+            "content": "@@ -548,20 +548,22 @@\n Println(\n+%22\n nome\n+%22\n )%0A      \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-07-07_12-33-13",
+            "content": "package main\nimport \"fmt\"\ntype pessoa struct{\nnome string\nidade int\nsexo string}\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n    pessoas:=make([]pessoa,n)\n    for i:=0;i<n;i++{\n        fmt.Scan(&pessoas[i].nome,&pessoas[i].idade,&pessoas[i].sexo)\n    }\n    maioridade:=-1\n    nome := \"\"\n    for i:=0;i<n;i++{\n        if pessoas[i].sexo==\"f\" &&pessoas[i].idade>maioridade{\n            maioridade=pessoas[i].idade\n            nome=pessoas[i].nome\n        }\n    }\n    if maioridade==-1{\n        fmt.Println(\"nao tem mulher\")\n    }else{\n         fmt.Println(nome)\n        \n    }\n    \n}\n",
+            "lines": "29"
+        }
+    ]
+}

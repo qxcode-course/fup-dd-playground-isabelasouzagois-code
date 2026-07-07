@@ -12,8 +12,13 @@
         },
         {
             "label": "2026-06-15_13-40-10",
-            "content": "package main\nimport \"fmt\"\nfunc casal(elemento int)int{\n    vetor:= make([]int,elemento)\n    for i:=0;i<elemento;i++{\n        fmt.Scan(&vetor[i])\n    }\n    count:= 0\n    for i:=0;i< elemento - 1 ;i++{\n        \n            if (vetor[i] * -1) == vetor[i + 1]{\n                count++\n            }\n        \n        \n}  \n return count\n}\nfunc main() {\n    var elemento int\n    fmt.Scan(&elemento)\n    fmt.Print(casal(elemento))\n\n}\n",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -23,407 +23,378 @@\n mt%22%0A\n-%0A\n func \n-main() %7B%0A%09var n int%0A%09fmt.Scan(&n)%0A%0A%09machos := make(map%5Bint%5Dint)%0A%09femeas := make(map%5Bint%5Dint)%0A%0A%09\n+casal(elemento int)int%7B%0A    vetor:= make(%5B%5Dint,elemento)%0A    \n for i\n- \n :=\n- \n 0;\n- i %3C n; \n+i%3Celemento;\n i++\n- \n %7B%0A\n-%09%09var x int%0A%09%09fmt.Scan(&x)%0A%0A%09%09if x %3E 0 %7B%0A%09%09%09machos%5Bx%5D++%0A%09%09%7D else %7B%0A%09%09%09femeas%5B-x%5D++%0A%09%09%7D%0A%09%7D%0A%0A%09casais := 0%0A%0A%09for especie, qtdMachos := range machos %7B%0A%09%09qtdFemeas := femeas%5Bespecie%5D%0A%09%09if qtdMachos %3C qtdFemeas %7B%0A%09%09%09casais += qtdMachos%0A%09%09%7D else %7B%0A%09%09%09casais += qtdFemeas%0A%09%09%7D%0A%09%7D%0A%0A%09\n+        fmt.Scan(&vetor%5Bi%5D)%0A    %7D%0A    count:= 0%0A    for i:=0;i%3C elemento - 1 ;i++%7B%0A        %0A            if (vetor%5Bi%5D * -1) == vetor%5Bi + 1%5D%7B%0A                count++%0A            %7D%0A        %0A        %0A%7D  %0A return count%0A%7D%0Afunc main() %7B%0A    var elemento int%0A    fmt.Scan(&elemento)%0A    \n fmt.\n@@ -402,17 +402,25 @@\n rint\n-ln\n (casa\n-is)\n+l(elemento))%0A\n %0A%7D%0A\n",
             "lines": "24"
+        },
+        {
+            "label": "2026-07-07_12-45-56",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tmachos := make(map[int]int)\n\tfemeas := make(map[int]int)\n\n\tfor i := 0; i < n; i++ {\n\t\tvar x int\n\t\tfmt.Scan(&x)\n\n\t\tif x > 0 {\n\t\t\tmachos[x]++\n\t\t} else {\n\t\t\tfemeas[-x]++\n\t\t}\n\t}\n\n\tcasais := 0\n\n\tfor especie, qtdMachos := range machos {\n\t\tqtdFemeas := femeas[especie]\n\t\tif qtdMachos < qtdFemeas {\n\t\t\tcasais += qtdMachos\n\t\t} else {\n\t\t\tcasais += qtdFemeas\n\t\t}\n\t}\n\n\tfmt.Println(casais)\n}\n",
+            "lines": "35"
         }
     ]
 }

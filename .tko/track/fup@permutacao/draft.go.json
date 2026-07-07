@@ -7,8 +7,28 @@
         },
         {
             "label": "2026-07-06_21-18-24",
-            "content": "package main\nimport \"fmt\"\n\nfunc invert(s []byte, i, j int) {\n    for i < j {\n        s[i], s[j] = s[j], s[i]\n\n        i++\n        j--\n    }\n}\n\nfunc proxPermut(s []byte) bool{\n    n := len(s)\n\n    i := n - 2\n    \n    for i >= 0 && s[i] >= s[i + 1]{\n        i--\n    }\n\n    if i < 0 {\n        return false\n    }\n\n    j := n - 1\n\n    for s[j] <= s[i] {\n        j--\n    }\n\n    s[i], s[j] = s[j], s[i]\n\n    invert(s, i + 1, n - 1)\n\n    return true\n}\nfunc main() {\n    var ficha string\n    var n int\n\n    fmt.Scan(&ficha, &n)\n\n    s := []byte(ficha)\n\n    for i := 0; i < n; i++{\n        if !proxPermut(s){\n            break\n        }\n    }\n        fmt.Println(string(s))\n}\n",
+            "content": "@@ -184,16 +184,17 @@\n  len(s)%0A\n+%0A\n     i :=\n@@ -200,16 +200,21 @@\n = n - 2%0A\n+    %0A\n     for \n",
             "lines": "52"
+        },
+        {
+            "label": "2026-07-07_11-40-37",
+            "content": "@@ -98,24 +98,25 @@\n  s%5Bj%5D, s%5Bi%5D%0A\n+%0A\n         i++%0A\n@@ -249,24 +249,25 @@\n   i--%0A    %7D%0A\n+%0A\n     if i %3C 0\n@@ -292,24 +292,25 @@\n false%0A    %7D%0A\n+%0A\n     j := n -\n@@ -350,24 +350,25 @@\n   j--%0A    %7D%0A\n+%0A\n     s%5Bi%5D, s%5B\n@@ -383,16 +383,17 @@\n %5D, s%5Bi%5D%0A\n+%0A\n     inve\n@@ -412,16 +412,17 @@\n  n - 1)%0A\n+%0A\n     retu\n@@ -466,16 +466,16 @@\n  string%0A\n-\n     var \n@@ -480,16 +480,17 @@\n r n int%0A\n+%0A\n     fmt.\n",
+            "lines": "50"
+        },
+        {
+            "label": "2026-07-07_11-41-12",
+            "content": "@@ -10,54 +10,21 @@\n ain%0A\n-%0A\n import \n-(%0A%09\n %22fmt%22%0A\n-%09%22internal/runtime/gc/scan%22%0A)\n %0Afun\n@@ -45,16 +45,19 @@\n yte,\n+ \n i,\n+ \n j int)\n+ \n %7B%0A  \n@@ -67,10 +67,13 @@\n or i\n-%3Cj\n+ %3C j \n %7B%0A  \n@@ -79,34 +79,38 @@\n        s%5Bi%5D,\n+ \n s%5Bj%5D\n-=\n+ = \n s%5Bj%5D,\n+ \n s%5Bi%5D%0A       \n@@ -134,16 +134,17 @@\n     %7D%0A%7D%0A\n+%0A\n func pro\n@@ -160,16 +160,17 @@\n  %5B%5Dbyte)\n+ \n bool%7B%0A  \n@@ -172,18 +172,20 @@\n l%7B%0A    n\n+ \n :=\n+ \n len(s)%0A \n@@ -188,20 +188,24 @@\n s)%0A    i\n+ \n :=\n-n-\n+ n - \n 2%0A    fo\n@@ -207,18 +207,20 @@\n    for i\n+ \n %3E=\n+ \n 0 && s%5Bi\n@@ -227,13 +227,15 @@\n %5D %3E=\n+ \n s%5Bi +\n+ \n 1%5D%7B%0A\n@@ -264,10 +264,13 @@\n if i\n-%3C0\n+ %3C 0 \n %7B%0A  \n@@ -303,13 +303,18 @@\n    j\n+ \n :=\n-n-1\n+ n - 1%0A\n %0A   \n@@ -326,14 +326,17 @@\n s%5Bj%5D\n+ \n %3C=\n+ \n s%5Bi%5D\n+ \n %7B%0A  \n@@ -364,18 +364,22 @@\n %5Bi%5D,\n+ \n s%5Bj%5D\n-=\n+ = \n s%5Bj%5D,\n+ \n s%5Bi%5D\n@@ -396,14 +396,20 @@\n t(s,\n-i+1,n-\n+ i + 1, n - \n 1)%0A \n@@ -436,16 +436,17 @@\n c main()\n+ \n %7B%0A    va\n@@ -498,19 +498,23 @@\n cha,\n+ \n &n)%0A\n+%0A\n     s\n+ \n :=\n+ \n %5B%5Dby\n@@ -523,16 +523,17 @@\n (ficha)%0A\n+%0A\n     for \n@@ -537,16 +537,22 @@\n or i\n+ \n :=\n+ \n 0;\n-i%3C\n+ i %3C \n n;\n+ \n i++%7B\n@@ -609,24 +609,28 @@\n     %7D%0A    %7D%0A\n+    \n     fmt.Prin\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-07-07_11-55-07",
+            "content": "@@ -24,16 +24,42 @@\n %09%22fmt%22%0A%09\n+%22internal/runtime/gc/scan%22\n %0A)%0Afunc \n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-07-07_11-55-33",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\n)\nfunc invert(s []byte,i,j int){\n    for i<j{\n        s[i],s[j]=s[j],s[i]\n        i++\n        j--\n    }\n}\nfunc proxPermut(s []byte)bool{\n    n:=len(s)\n    i:=n-2\n    for i>=0 && s[i] >=s[i +1]{\n        i--\n    }\n    if i<0{\n        return false\n    }\n    j:=n-1\n    for s[j]<=s[i]{\n        j--\n    }\n    s[i],s[j]=s[j],s[i]\n    invert(s,i+1,n-1)\n    return true\n}\nfunc main(){\n    var ficha string\n    var n int\n    fmt.Scan(&ficha,&n)\n    s:=[]byte(ficha)\n    for i:=0;i<n;i++{\n        if !proxPermut(s){\n            break\n        }\n    }\n    fmt.Println(string(s))\n}\n",
+            "lines": "42"
         }
     ]
 }

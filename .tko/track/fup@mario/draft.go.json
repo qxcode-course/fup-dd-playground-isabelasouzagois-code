@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-07_13-01-40",
+            "content": "@@ -37,394 +37,8 @@\n ) %7B%0A\n-    var n int%0A    fmt.Scan(&n)%0A    vet:=make(%5B%5Dint,n)%0A    maior:=0%0A    for i:=0;i%3Cn;i++%7B%0A        fmt.Scan(&vet%5Bi%5D)%0A        if vet%5Bi%5D%3Emaior%7B%0A            maior=vet%5Bi%5D%0A        %7D%0A    %7D%0A    for nivel:=maior;nivel%3E=1;nivel--%7B%0A        for i:=0;i%3Cn;i++%7B%0A            if vet%5Bi%5D%3E=nivel%7B%0A                fmt.Print(%22#%22)%0A            %7Delse%7B%0A                fmt.Print(%22_%22)%0A            %7D%0A        %7D%0A     \n     \n@@ -70,16 +70,6 @@\n !%22)%0A\n-    %7D%0A   %0A\n %7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-07_13-11-59",
+            "content": "@@ -435,16 +435,31 @@\n Println(\n+%22Hello, World!%22\n )%0A    %7D%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-07-07_13-12-16",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n    vet:=make([]int,n)\n    maior:=0\n    for i:=0;i<n;i++{\n        fmt.Scan(&vet[i])\n        if vet[i]>maior{\n            maior=vet[i]\n        }\n    }\n    for nivel:=maior;nivel>=1;nivel--{\n        for i:=0;i<n;i++{\n            if vet[i]>=nivel{\n                fmt.Print(\"#\")\n            }else{\n                fmt.Print(\"_\")\n            }\n        }\n         fmt.Println()\n    }\n   \n}\n",
+            "lines": "25"
+        }
+    ]
+}

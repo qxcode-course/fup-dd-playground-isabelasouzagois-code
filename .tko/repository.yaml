@@ -19,18 +19,18 @@ sources:
   writeable: false
   quests: null
 expanded:
-- fup@string
-- fup@if1
-- fup@base
-- fup@mat
-- fup@struct
-- fup@list
 - fup@games
+- fup@if1
 - fup@if2
+- fup@struct
+- fup@base
+- fup@list
+- fup@string
 - eval1@eval1
+- fup@mat
 flags:
   inbox: all
-  panel: skills
+  panel: logs
   task_graph_mode: executions
   show_time: 'true'
 audit:
