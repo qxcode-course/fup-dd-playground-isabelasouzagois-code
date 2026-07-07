@@ -17,7 +17,7 @@ func main() {
 
 	var n int
 	fmt.Fscan(entrada, &n)
-	entrada.ReadByte() // consome o '\n'
+	entrada.ReadByte()
 
 	alunos := make([]Aluno, n)
 
@@ -33,7 +33,7 @@ func main() {
 		alunos[i].media = (alunos[i].n1 + alunos[i].n2 + alunos[i].n3) / 3
 	}
 
-	// Bubble Sort
+	
 	for i := 0; i < n-1; i++ {
 		for j := 0; j < n-1-i; j++ {
 			if alunos[j].media < alunos[j+1].media {

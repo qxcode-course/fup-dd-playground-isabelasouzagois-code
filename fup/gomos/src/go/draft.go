@@ -19,11 +19,11 @@ func main() {
 		fmt.Scan(&cobra[i].x, &cobra[i].y)
 	}
 
-	// Guarda a posição antiga da cabeça
+	
 	xAnt := cobra[0].x
 	yAnt := cobra[0].y
 
-	// Move a cabeça
+	
 	if d == "L" {
 		cobra[0].x--
 	} else if d == "R" {
@@ -34,7 +34,6 @@ func main() {
 		cobra[0].y++
 	}
 
-	// Move os outros gomos
 	for i := 1; i < q; i++ {
 		auxX := cobra[i].x
 		auxY := cobra[i].y
@@ -46,7 +45,7 @@ func main() {
 		yAnt = auxY
 	}
 
-	// Imprime o resultado
+	
 	for i := 0; i < q; i++ {
 		fmt.Println(cobra[i].x, cobra[i].y)
 	}
